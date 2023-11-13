@@ -46,6 +46,11 @@ Empezaremos con el display #1 - LCD 16x2 o 20x4 i2C : solo caracteres o Characte
 
 - [ ]     **BMMR_bhwt_lcd20x4_I2C_v2.py**
 
+![image](https://github.com/Jcspoza/CMM_Python_uP_PicoW/assets/28370801/a8f9912c-ecb3-49a2-8d28-0b5a6629bda6)
+
+![image](https://github.com/Jcspoza/CMM_Python_uP_PicoW/assets/28370801/14af6816-78e3-4cc6-95e0-f9430b4d15db)
+
+
 Hay otros HW´s no vamos a ver y que que también se pueden considerar displays:
 
 - 7 Segment Display
