@@ -1,17 +1,17 @@
 # Spanish
 
 En esta clase terminamos la serie de 4: **Primeros pasos con internet con Pico W**
-He querido hacer en esta serie los programas que ofrecen una panorámica de lo que se puede hacer de lo mas sencillo: un programa que escanee redes wifi a hacer web servers
+He querido hacer en esta serie los programas que ofrecen una panorámica de lo que se puede hacer, desde lo mas sencillo: un programa que escanee redes wifi, a hacer web servers para controlar HW de la Pico W.
 
 # Contenido CL21
 
-1. [R] Conexión Pico W modo STA - Web server local - 1ros pasos#4
+1. [R] Conexión Pico W modo STA - Web server local - 1ros pasos#4 - 30'
    
-   1. [R] Modos de conexión de un uC y capas OSI - 5’
+   1. [R] Modos de conexión de un uC y capas OSI 
    
    2. [R] Pico W modo STA - servidor TCP/IP con sockets Web botones  para control Led + información cambiante: temperatura Pico-5’
 
-2. [R] Conexión Pico W modo STA - Web server global con Adafruit IoT
+2. [R] Conexión Pico W modo STA - Web server global con Adafruit IoT - 45'
 
 3. [R] Usar Displays #1 -> solo texto: LCD I2C ( si da tiempo) 
 
@@ -31,5 +31,5 @@ Hay otros HW´s que también se pueden considerar displays:
 - 8x8 LED Matrix
 
 - 4 Digit LED
-
- ver [tutoriales de MicroPython for Kids](https://www.coderdojotc.org/micropython/displays/non-graph/01-intro/) si se necesita
+  
+  ver [tutoriales de MicroPython for Kids](https://www.coderdojotc.org/micropython/displays/non-graph/01-intro/) si se necesita
