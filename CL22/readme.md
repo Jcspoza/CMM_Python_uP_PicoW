@@ -26,11 +26,11 @@ En esta clase, vamos por un lado a empezar le estudio de los **Displays,** que s
 
 En **1- Display LCD I2C**, empezaremos una serie de programas de control básico de Displays. Veremos 
 
-1 - LCD 16x2 o 20x4 i2C : solo caracteres
-2 - SSD1306 I2C - Graphic : 0.96”  128 x64 1 color
-3 - TFT ST7735r SPI Graphic:  1.8” 128x160 RGB 64K
-4- TFT SPI- ST7789VW Graphic: 1.14” 240 × 135, RGB 64K
-5 – TFT SPI ILI9341  Graphic: 2.8” or 3.2"· 320 x 240, RGB 64K + touch screen XPT2046 + SD card
+1. LCD 16x2 o 20x4 i2C : solo caracteres
+2. SSD1306 I2C - Graphic : 0.96”  128 x64 1 color
+3. TFT ST7735r SPI Graphic:  1.8” 128x160 RGB 64K
+4. TFT SPI- ST7789VW Graphic: 1.14” 240 × 135, RGB 64K
+5. TFT SPI ILI9341  Graphic: 2.8” or 3.2"· 320 x 240, RGB 64K + touch screen XPT2046 + SD card
 
 Empezaremos con el display #1 - LCD 16x2 o 20x4 i2C : solo caracteres o Character LCD, que ya estamos usando de facto. Veremos:
 
