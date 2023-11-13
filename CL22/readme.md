@@ -32,6 +32,9 @@ En **1- Display LCD I2C**, empezaremos una serie de programas de control básico
 4. TFT SPI- ST7789VW Graphic: 1.14” 240 × 135, RGB 64K
 5. TFT SPI ILI9341  Graphic: 2.8” or 3.2"· 320 x 240, RGB 64K + touch screen XPT2046 + SD card
 
+![image](https://github.com/Jcspoza/CMM_Python_uP_PicoW/assets/28370801/2b2e0b35-7af3-4ec8-9d7c-dba7cc06b7da)
+
+
 Empezaremos con el display #1 - LCD 16x2 o 20x4 i2C : solo caracteres o Character LCD, que ya estamos usando de facto. Veremos:
 
 - Librería: no hay una standard en este caso
