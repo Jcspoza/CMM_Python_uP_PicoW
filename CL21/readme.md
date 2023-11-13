@@ -29,7 +29,8 @@ El problema es que no se puede controlar ni visualizar fuera de la red local.
 
 Ejemplo servidor LOCAL web TCP/IP : se conecta en modo STA, y sirve una pagina web con 4 botones que encienden/ apagan en un LED RGB de cátodo común , el led rojo, verde o el azul . Ademas muestra Temperatura de un NTC y el estado de los leds
 
-![](C:\Users\josec\AppData\Roaming\marktext\images\2023-11-13-17-03-51-image.png)
+![image](https://github.com/Jcspoza/CMM_Python_uP_PicoW/assets/28370801/a25037b7-baa8-4bf1-8247-837a9643e36f)
+
 
 2- **BMMR_CL21s_AfIoT_NTC_RGB_2_0.py**
 
@@ -39,8 +40,7 @@ Los "switch" sirven para cambiar los led. Tienen un cierto "lag"
 
 El grafico circulo para mostrar temperatura de NTC
 
-![](C:\Users\josec\AppData\Roaming\marktext\images\2023-11-13-17-07-30-image.png)
-
+![image](https://github.com/Jcspoza/CMM_Python_uP_PicoW/assets/28370801/f56a19a9-4d4e-4f2b-888c-b24f461d428a)
 
 
 ### Tutoriales de interes
