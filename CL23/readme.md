@@ -74,7 +74,6 @@ Veremos:
 
 - [ ]  **BMMR_bhwt_ssd1306_img_en_lista_3_0.py**
 
-- [ ] 
 - [ ]  **BMMR_bhwt_ssd1306_img_en_file_2_0.py**
 
 ## 2- Potenciómetro, ver lectura grafica en OLED – 55’
