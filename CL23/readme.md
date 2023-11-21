@@ -52,17 +52,23 @@ Veremos:
   
   Avanzado: Se explicara como transformar una imagen para poder ser vista en el display
 
-- Avanzado: se estudiara la libreria SSD1306 para ver lso conceptos OOP de Herencia y sobrecarga de metodos
+- Avanzado: se estudiara la librería SSD1306 para ver lso conceptos OOP de Herencia y sobrecarga de métodos
 
-- 
 
-- [ ]   **BMMR_bhwt_ssd1306_cmd_graph_3_0.py**
+
+- [ ] <u>Programa menú con comandos gráficos</u>
+
+- [ ]  **BMMR_bhwt_ssd1306_cmd_graph_3_0.py**
+
+- [ ] <u> Básicos</u>
 
 - [ ]  **BMMR_bhwt_ssd1306_all_lines_1_0.py**
 
 - [ ]  **BMMR_bhwt_ssd1306_text_logo_lin_1_5.py**
 
 - [ ]  **BMMR_bhwt_ssd1306_icon_en_matriz_1_0.py**
+
+- [ ]  <u>Avanzados</u>
 
 - [ ]  **BMMR_bhwt_ssd1306_blit_1_0.py**
 
