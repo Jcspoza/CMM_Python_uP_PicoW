@@ -1,6 +1,7 @@
 # Spanish
-
-En esta clase, vamos por un lado a empezar le estudio de los **Displays,** que se usan en la mayoría de los proyectos "de verdad" dado que, normalmente no tendremso conectada la PICO ni la PICO W al PC por USB, como cuando porbamos los proyecto con Thony: necesitaremos una forma de mostrar información compleja, y sera con displays.
+## Intro
+En esta clase, vamos por un lado a empezar el estudio de los **Displays,** que se usan en la mayoría de los proyectos "de verdad" dado que, normalmente no tendremso conectada la PICO, ni la PICO W al PC por USB, como cuando probamos los proyecto con Thonny -> necesitaremos una forma de mostrar información compleja, y sera con displays. 
+El display SSD1306 es el diplay **grafico** más simple de los que normañmente se usan en los proyectos maker. En **1- Display OLED I2C**, veremos el primer display gráfico del curso 
 
 # Contenido CL23
 
@@ -29,18 +30,15 @@ En esta clase, vamos por un lado a empezar le estudio de los **Displays,** que s
    3. SOLUCION: seudocódigo y explicación
 
 ## 1- Displays#2 OLED I2C 128X64
-
-En **1- Display OLED I2C**, veremos el primer display gráfico del curso 
-
-Veremos:
-
-- Librería: hay una standard
-
+Como resumen decir que:
+- Librería: hay una standard ==> los tutoriales que encontremos usaran siempre esta libreria
 - Montaje: sencillo usamos I2C, usaremos el I2C1 para poder compatibilizar con LCD
-
 - Pantalla: IMPORTANTE dedicar tiempo a acostumbrarse a como se dispone la maya de coordenadas, porque en el resto de las pantallas graficas, habrá mas colores y mas pixeles, pero la lógica será muy similar
+- Podemos usar tanto una placa PICO como una PICO W
 
-- Comandos de la librería + programa de menú con casi todos los comandos gráficos
+En la presentacion veremos:
+
+- Comandos de la librería + **programa de menú con casi todos los comandos gráficos**
   
   - Adicionalmente veremos como hacer un programa con un menú, de forma que se puedan añadir opciones fácilmente
   
@@ -52,8 +50,7 @@ Veremos:
   
   Avanzado: Se explicara como transformar una imagen para poder ser vista en el display
 
-- Avanzado: se estudiara la librería SSD1306 para ver lso conceptos OOP de Herencia y sobrecarga de métodos
-
+- Avanzado: se estudiara la librería SSD1306 para ver los conceptos OOP de Herencia y sobrecarga de métodos
 
 
 - [ ] <u>Programa menú con comandos gráficos</u>
@@ -82,9 +79,10 @@ En la parte 2, haremos un proyecto donde la idea es usar intensivamente las capa
 
 Objetivo: **Representar gráficamente un valor analógico en unos ejes de coordenadas standard Y= valor analógico, X=tiempo**. Para el valor analógico elegimos la lectura por uno de los ADC de la PICO, del voltaje del pin intermedio de un potenciómetro cuyos otros 2 pines pines estan a 0 y +3.3 voltios respectivamente, de forma que el voltaje en este pin este en este rango que es el que puede leer el ADC directamente
 
-### 2.1 1.Un ejemplo que funciona con mal codigo
+### 2.1 1.Un ejemplo que funciona con un codigo de no mucha calidad
+1ro siempre hay que buscar ejemplos similares
 
-[Encontramos un ejemplo que funciona](https://controlautomaticoeducacion.com/micropython/display-oled-raspberry-pi-pico-esp8266/), pero cuyo codigo es confuso, mal organizado y probablemente una "traducción" de C a Python, es decir poco "*pytonico*". Lo bueno es que fijamos mejor el objetivo:
+[Encontramos un ejemplo que funciona](https://controlautomaticoeducacion.com/micropython/display-oled-raspberry-pi-pico-esp8266/), pero cuyo codigo es confuso, mal organizado y probablemente una "traducción" de C a Python, es decir poco "*pytonico*". Lo bueno es que fijamos mejor el objetivo y sub-objetivos:
 
 - Dejamos la línea 0 para mostrar en texto el voltaje
 
@@ -106,9 +104,9 @@ Mezcla codigo de distintos niveles de abstracción
 
 Lo peor, desde mi punto de vista, es que en la funcion **plot_time** hay demasiadas cosas, esta casi todo el programa --> mala estructura
 
-
-
 - [ ] **BMMR_ssd1306_graf_pot_malcode_3_0.py.py**
+
+Asi que, vamso a empezar en **base cero** reciclando alguans ideas del codigo anterior
 
 ### 2.1.2 Planteamiento y seudocódigo
 
@@ -119,4 +117,6 @@ Lo peor, desde mi punto de vista, es que en la funcion **plot_time** hay demasia
 **SOLUCION** : Con lo aprendido del codigo “mal codificado” , empiezo en base cero a codificar.
 Lo más laborioso es la definición de zonas, y revisar los valores frontera de los pixeles,  ver si en al ejecución no "desbordamos" zonas o el propio display, etc. 
 
-Recomiendo usar papel cuadriculado
+Recomiendo:
+   1. usar papel cuadriculado para la definicion de las zonas
+   2. Codificacion progresiva, es decir codificar por segmentos. Ejemplo: mostrar los voltios en la primera linea
