@@ -79,7 +79,7 @@ En la parte 2, haremos un proyecto donde la idea es usar intensivamente las capa
 
 Objetivo: **Representar gráficamente un valor analógico en unos ejes de coordenadas standard Y= valor analógico, X=tiempo**. Para el valor analógico elegimos la lectura por uno de los ADC de la PICO, del voltaje del pin intermedio de un potenciómetro cuyos otros 2 pines pines estan a 0 y +3.3 voltios respectivamente, de forma que el voltaje en este pin este en este rango que es el que puede leer el ADC directamente
 
-### 2.1 1.Un ejemplo que funciona con un codigo de no mucha calidad
+### 2.2.Un ejemplo que funciona con un codigo de no mucha calidad
 1ro siempre hay que buscar ejemplos similares
 
 [Encontramos un ejemplo que funciona](https://controlautomaticoeducacion.com/micropython/display-oled-raspberry-pi-pico-esp8266/), pero cuyo codigo es confuso, mal organizado y probablemente una "traducción" de C a Python, es decir poco "*pytonico*". Lo bueno es que fijamos mejor el objetivo y sub-objetivos:
@@ -108,9 +108,10 @@ Lo peor, desde mi punto de vista, es que en la funcion **plot_time** hay demasia
 
 Asi que, vamso a empezar en **base cero** reciclando alguans ideas del codigo anterior
 
-### 2.1.2 Planteamiento y seudocódigo
+### 2.3.1 Planteamiento y seudocódigo
 
-### 2.1.3 Codigo nuevo y explicación
+
+### 2.3.2 Codigo nuevo y explicación
 
 - [ ] **BMMR_ssd1306_graf_pot_4_1.py**
 
@@ -118,5 +119,21 @@ Asi que, vamso a empezar en **base cero** reciclando alguans ideas del codigo an
 Lo más laborioso es la definición de zonas, y revisar los valores frontera de los pixeles,  ver si en al ejecución no "desbordamos" zonas o el propio display, etc. 
 
 Recomiendo:
-   1. usar papel cuadriculado para la definicion de las zonas
-   2. Codificacion progresiva, es decir codificar por segmentos. Ejemplo: mostrar los voltios en la primera linea
+   1. Usar papel cuadriculado para la definicion de las zonas
+   2. Codificacion progresiva, es decir codificar por segmentos => Probar. Por ejemplo:
+         1. Parte 1- mostrar los voltios actualizandose en texto en la primera linea
+         2. Parte 2- Voltios en texto actualizandose + dibujo ejes ( hacerlo como funcion) VER SI LAS ZONAS ESTAN OK
+         3. Parte 3- Voltios en texto actualizandose + dibujo ejes + Dibujo grafico voltios SIN scroll ==> Cambio a bucle 'for'
+              Aqui estará la programación de como se dibuja el grafico de los voltios:
+                  a) Ver comos e mapea el valor de voltios a coordenadas verticales del display
+                  b) Ver como se almacenan las coordenadas
+                  b) Ver que se dibuja una linea desde punto anterior, no solo un punto ( queda mejor) 
+         4. Parte 4 (programa completo) - parte 3 + Añado 2do bucle para el scroll, necesito funcion de borrado de top, zona izquierda y ejes.
+
+- [ ] **BMMR_ssd1306_graf_pot_parte1.py**
+- [ ] **BMMR_ssd1306_graf_pot_parte2.py**
+- [ ] **BMMR_ssd1306_graf_pot_parte3.py**
+
+TO DO : scroll con un framebuffer para la zona grafica + scroll solo de ese frambuffer + ‘blit’
+
+
