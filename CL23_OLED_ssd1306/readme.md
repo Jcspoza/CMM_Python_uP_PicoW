@@ -77,7 +77,7 @@ En la presentación veremos:
 - [ ] **BMMR_bhwt_ssd1306_img_en_file_2_0.py**
 
 ## 2- Potenciómetro, ver lectura grafica en OLED – 55’
-
+### 2.1. Planteamiento del proyecto
 En la parte 2, haremos un proyecto donde la idea es usar intensivamente las capacidades gráficas del display. 
 
 Objetivo: **Representar gráficamente un valor analógico en unos ejes de coordenadas standard Y= valor analógico, X=tiempo**. Para el valor analógico elegimos la lectura por uno de los ADC de la PICO, del voltaje del pin intermedio de un potenciómetro cuyos otros 2 pines pines estan a 0 y +3.3 voltios respectivamente, de forma que el voltaje en este pin este en este rango que es el que puede leer el ADC directamente
