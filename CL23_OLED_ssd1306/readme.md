@@ -100,7 +100,7 @@ Objetivo: **Representar gráficamente un valor analógico en unos ejes de coorde
   
   - Scroll horizontal SOLO de la parte grafica del valor de voltaje
 
-**¿ Por qué el codigo es malo?**
+**¿ Por qué el codigo es de no buena calidad?**
 
 Mal comentado
 
@@ -110,7 +110,7 @@ Lo peor, desde mi punto de vista, es que en la función **plot_time** hay demasi
 
 - [ ] **BMMR_ssd1306_graf_pot_malcode_3_0.py.py**
 
-Asi que, vamos a empezar en **base cero** reciclando algunas ideas del codigo anterior
+Asi que, vamos a empezar en **base cero** reciclando algunas ideas del codigo anterior. Con sinceridad quiero agradecer al autor de ese programa, sus muchas ideas, tanto las buenas, como las no tan buenas, porque me han hecho ganar mucho tiempo.
 
 ### 2.3.1 Planteamiento y seudocódigo
 
