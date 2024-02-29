@@ -24,7 +24,7 @@ Se trata de compilar en este tutorial, todos los test hw básicos de los display
 
 ### Alimentación
 
-Estos dos displays se deben alimentar a 5volt, por lo que :
+Estos dos displays se deben alimentar a `5volt`, por lo que :
 
 1. la tarjeta pico esta conectada al ordenador por USB, 
 
