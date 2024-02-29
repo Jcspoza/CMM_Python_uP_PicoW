@@ -22,11 +22,62 @@ Se trata de compilar en este tutorial, todos los test hw básicos de los display
 
 ## LCD 16x2 y 20x4 - I2C: solo texto
 
+### Alimentación
+
+Estos dos displays se deben alimentar a 5volt, por lo que :
+
+1. la tarjeta pico esta conectada al ordenador por USB, 
+
+2. o se alimenta por un powerbank o 
+
+3. Se alimenta la PICO por VSYS a 5volt
+
 ### Libreria/s
+
+No hay una librería standard en micropython, por lo que se investigaron 3 opciones 
+
+1. T622 -> Test ok tiene 3 años ==> OK con Pico 
+
+2. Brainelectronics : 3 meses muchas funciones y custom char —> MAL algunas funnciones
+
+3. Sunfounder : pocas funciones
+
+Selecciono la librería del usuario T62 : [GitHub - T-622/RPI-PICO-I2C-LCD: ](https://github.com/T-622/RPI-PICO-I2C-LCD)
+
+Va Ok a 400.000Hz, tiene función de crear emojis x8. **Se usan dos librerías combinadas en jerarquía**, re-definiendo la capa superior algunas funciones como ***hal_write_command***
+
+
 
 ### Conexionado usado en los Test
 
+| pin # PICO | Pin Logico en PICO | Display |
+|:----------:|:------------------:|:-------:|
+| 40         | VSYS               | VCC     |
+| 8          | GND                | GND     |
+| 6          | I2C0 SDA           | SDA     |
+| 7          | I2C0 SCL           | SCL     |
+
+
+
+### Dirección I2C
+
+Los displays LCD suelen tener una de dos direcciones 3E o 3F.
+
+El programa de test incluye un scan del bus I2C
+
 ### Test1 - LCD 20x4 -
+
+
+
+0- Crea los objetos I2C y luego el display lcd
+
+1- Llenar display con todo el juego de caracteres los caracteres
+
+2- Llenar display con mensaje de prueba
+
+- Incluye un carácter creado por bit
+
+- Muestra el día y la hora
 
 ---
 
