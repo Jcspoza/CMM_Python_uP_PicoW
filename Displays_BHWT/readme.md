@@ -46,8 +46,6 @@ Selecciono la librería del usuario T62 : [GitHub - T-622/RPI-PICO-I2C-LCD: ](ht
 
 Va Ok a 400.000Hz, tiene función de crear emojis x8. **Se usan dos librerías combinadas en jerarquía**, re-definiendo la capa superior algunas funciones como ***hal_write_command***
 
-
-
 ### Conexionado usado en los Test
 
 | pin # PICO | Pin Logico en PICO | Display |
@@ -57,17 +55,11 @@ Va Ok a 400.000Hz, tiene función de crear emojis x8. **Se usan dos librerías c
 | 6          | I2C0 SDA           | SDA     |
 | 7          | I2C0 SCL           | SCL     |
 
-
-
 ### Dirección I2C
 
-Los displays LCD suelen tener una de dos direcciones 3E o 3F.
+Los displays LCD suelen tener una de dos direcciones 3E o 3F. El programa de test incluye un *scan* del bus I2C que muestra las direcciones I2C encontradas
 
-El programa de test incluye un scan del bus I2C
-
-### Test1 - LCD 20x4 -
-
-
+### Test1 - LCD 20x4 - I2C
 
 0- Crea los objetos I2C y luego el display lcd
 
