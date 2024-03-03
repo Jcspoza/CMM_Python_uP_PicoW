@@ -14,23 +14,31 @@ Se trata de compilar en este tutorial, todos los test hw básicos de los display
 
 ## Tabla resumen de programas
 
-| Programa | Funcionalidad |
-| -------- | ------------- |
-|          |               |
-|          |               |
-|          |               |
+| Programa              | HW                        | Funcionalidad                                                                                   |
+| --------------------- | ------------------------- | ----------------------------------------------------------------------------------------------- |
+| bhwt_LCDi2c20x4_v3.py | LCD i2c 20x4 - i2c dir 3E | Test básico de prueba de juego de caracteres + crear un caracter en char0, de los 8 disponibles |
+| bhwt_LCDi2c16x2_v2.py | LCD i2c 20x4 - i2c dir 3F | Test básico de escritura + crear un caracter en char0, de los 8 disponibles                     |
+|                       |                           |                                                                                                 |
+|                       |                           |                                                                                                 |
+|                       |                           |                                                                                                 |
 
 ## LCD 16x2 y 20x4 - I2C: solo texto
 
-### Alimentación
+### Alimentación y Consumo
 
-Estos dos displays se deben alimentar a `5volt`, por lo que :
+Estos dos displays se deben alimentar a 5volt, por lo que :
 
 1. la tarjeta pico esta conectada al ordenador por USB, 
 
 2. o se alimenta por un powerbank o 
 
 3. Se alimenta la PICO por VSYS a 5volt
+
+Consumo medido por mi 
+
+16 x 2 -> 25 mA a 5 volt
+
+20 x 4 -> 43 mA a 5 volt
 
 ### Libreria/s
 
