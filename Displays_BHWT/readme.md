@@ -117,8 +117,6 @@ Es la libreria standard, creada originariamente por Adafruit, la versión que us
 ### Conexionado para SSD1306 usado en los Test
 <img src="./doc/pico_oled_bb.png" title="SSD1306 conexionado PICO" alt="Conexionado" width="287">
 
-![Conexionado](./doc/pico_oled_bb.png "SSD1306 conexionado PICO")
-
 | pin # PICO | Pin Lógico en PICO | Display |
 | ---------- | ------------------ | ------- |
 | 5          | 3.3volt out pico   | VCC     |
