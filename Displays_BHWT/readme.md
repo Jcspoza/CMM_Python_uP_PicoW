@@ -115,6 +115,8 @@ Es la libreria standard, creada originariamente por Adafruit, la versión que us
 [GitHub - stlehmann/micropython-ssd1306: A fork of the driver for SSD1306 displays to make it installable via upip](https://github.com/stlehmann/micropython-ssd1306)
 
 ### Conexionado para SSD1306 usado en los Test
+<img src="./doc/pico_oled_bb.png" title="SSD1306 conexionado PICO" alt="Conexionado" width="287">
+
 ![Conexionado](./doc/pico_oled_bb.png "SSD1306 conexionado PICO")
 
 | pin # PICO | Pin Lógico en PICO | Display |
