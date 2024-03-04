@@ -115,6 +115,7 @@ Es la libreria standard, creada originariamente por Adafruit, la versión que us
 [GitHub - stlehmann/micropython-ssd1306: A fork of the driver for SSD1306 displays to make it installable via upip](https://github.com/stlehmann/micropython-ssd1306)
 
 ### Conexionado para SSD1306 usado en los Test
+![Conexionado](./doc/pico_oled_bb.png "SSD1306 conexionado PICO")
 
 | pin # PICO | Pin Lógico en PICO | Display |
 | ---------- | ------------------ | ------- |
@@ -133,7 +134,7 @@ Los displays OLED suelen tener una direcciones i2c = 3C. El programa de test inc
 
 Los displays OLED son gráficos y el posicionado es (x, y), (0,0) corresponde a esquina superior derecha.
 
-![Coordenadas](..\doc\ssd1306coor.png "SSD1306 coordenadas")
+![Coordenadas](./doc/ssd1306coor.png "SSD1306 coordenadas")
 
 Los textos se posicionan con la primera letra en la esquina superior derecha
 
