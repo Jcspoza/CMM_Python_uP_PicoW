@@ -38,7 +38,7 @@ Full-Step = 32 * 64 = 2048 pasos por giro , o 0,18º por paso
 
 Half-step = 64 * 64 = 4096 pasos por giro , o 0,09º por paso
 
-![lll](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_O23_J24\limpios_hechos\CL28_SteppM\doc\28BYJ48-Stepper-Motor-Gear-Ratio-Explanation.webp)
+![lll](./doc/28BYJ48-Stepper-Motor-Gear-Ratio-Explanation.webp)
 
 ### 
 
