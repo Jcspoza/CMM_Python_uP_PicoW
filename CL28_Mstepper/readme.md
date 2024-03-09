@@ -16,7 +16,7 @@ En esta clase, vamos a estudiar los **motores Paso a Paso o Steeper.**
 
 Resumen : Un **motor paso a paso** es parecido a los motores de continua, pero en lugar de montar un sistema de asegurarnos de que siempre hay una bobina fuera del equilibrio, en un **motor paso a paso** montamos un sistema de varias bobinas que garantizan que solo se mueve la distancia (O paso) entre las bobinas contiguas.
 
-![](./doc\gira.gif)
+![step action](./doc/gira.gif)
 
 [In-Depth: Control 28BYJ-48 Stepper Motor with ULN2003 Driver &amp; Arduino](https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/?utm_content=cmp-true)
 
@@ -38,7 +38,7 @@ Full-Step = 32 * 64 = 2048 pasos por giro , o 0,18º por paso
 
 Half-step = 64 * 64 = 4096 pasos por giro , o 0,09º por paso
 
-![lll](./doc/28BYJ48-Stepper-Motor-Gear-Ratio-Explanation.webp)
+![gear](./doc/28BYJ48-Stepper-Motor-Gear-Ratio-Explanation.webp)
 
 ### 
 
