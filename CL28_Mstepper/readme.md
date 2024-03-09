@@ -12,11 +12,11 @@ En esta clase, vamos a estudiar los **motores Paso a Paso o Steeper.**
 
 ### Para entender el HW del motor
 
-[Tutorial en castellano parte 1 de motores PaP]([Motores paso a paso &#8211; Prometec](https://www.prometec.net/motores-paso-a-paso/))
+[Motores paso a paso &#8211; Prometec](https://www.prometec.net/motores-paso-a-paso/)
 
 Resumen : Un **motor paso a paso** es parecido a los motores de continua, pero en lugar de montar un sistema de asegurarnos de que siempre hay una bobina fuera del equilibrio, en un **motor paso a paso** montamos un sistema de varias bobinas que garantizan que solo se mueve la distancia (O paso) entre las bobinas contiguas.
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_O23_J24\limpios_hechos\CL28_SteppM\doc\gira.gif)
+![](./doc\gira.gif)
 
 [In-Depth: Control 28BYJ-48 Stepper Motor with ULN2003 Driver &amp; Arduino](https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/?utm_content=cmp-true)
 
