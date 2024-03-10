@@ -20,7 +20,7 @@ Resumen : Un **motor paso a paso** es parecido a los motores de continua, pero
 
 [In-Depth: Control 28BYJ-48 Stepper Motor with ULN2003 Driver &amp; Arduino](https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/?utm_content=cmp-true)
 
-Es un tutorial excelente, con explicaciones detalladas de como funciona tanto el motor como el controlador
+Es un tutorial excelente, con explicaciones detalladas de como funciona tanto el motor como el controlador (leer solo ahsta codigo Arduino)
 
 #### Entendiendo el numero de pasos por giro
 
@@ -44,17 +44,16 @@ Half-step = 64 * 64 = 4096 pasos por giro , o 0,09º por paso
 
 ### Controladora ULN2003
 
-El motor requiere un consumo elevado 240 mA, por lo que necesitamos un "driver" que proporcione los mA requeridos . El ULN2003a proporciona 500mA por salida con un voltaje máximo de 50volt.
+El motor requiere un consumo elevado 240 mA, por lo que necesitamos un "driver" que proporcione los mA requeridos pudiendo ser controlado por niveles logicos a 3.3. El ULN2003a proporciona 500mA por salida con un voltaje máximo de 50volt.
 
 ULN2003  empaqueta 7 pares de transistores en montaje Darlington
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_O23_J24\limpios_hechos\CL28_SteppM\doc\uln2003_internal.png)
+![Circuito par Darlington](./doc/uln2003_internal.png)
 
 Lo que se suele vender como driver ULN2003, añade algo de circuitería y simplifica las conexiones. Supuestamente  los 4 leds facilitan el aprendizaje de los pasos, pero dado que la secuencia corre a mucha velocidad, sirven de poco. Se puede usar el integrado ULN2003 directamente pinchándolo en la protoboard.
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_O23_J24\limpios_hechos\CL28_SteppM\doc\ULN2003schematic.jpg)
+![Driver ULN2003 comercial](./doc/ULN2003schematic.jpg)
 
-### Para ver un programa en uP
 
 ## <u>Practica de aprendizaje con motores PaP</u>
 
@@ -62,9 +61,9 @@ Lo que se suele vender como driver ULN2003, añade algo de circuitería y simpli
 
 | Programa                   | HW                                            | Funcionalidad                                                                                                                          |
 | -------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| pico_stepM_simple.py       | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 |                                                                                                                                        |
-| pico_steeper_simple_2_0.py |                                               | Primeras pruebas de funcionalidad con los 3 tipos de stepping + los giros en dirección contraria / Parámetro critico Delay entre pasos |
-|                            |                                               |                                                                                                                                        |
+| pico_stepM_simple.py       | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters                                                                                                                                     |
+| pico_stepM_simple_2_0.py |           idem                                    | Stepper simple - check ALL modes and delays by manual input |
+| pico_stepM_1giro__3_0.py | idem                        | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap                                                                                                                                 |
 
 ### Alimentación y Consumo
 
@@ -89,13 +88,13 @@ No vamos a usar libreria.
 
 [Interface 28BYJ-48 Stepper Motor with ESP32 using MicroPython](https://microcontrollerslab.com/28byj-48-stepper-motor-esp32-micropython/)
 
-[▷ Motores Paso a Paso (PaP) MicroPython- [Raspberry Pi Pico/ESP]](https://controlautomaticoeducacion.com/micropython/motores-paso-a-paso-pap/)
+[Motores Paso a Paso (PaP) MicroPython- [Raspberry Pi Pico/ESP]](https://controlautomaticoeducacion.com/micropython/motores-paso-a-paso-pap/)
 
 En todos los tutoriales la idea es usar 4 pines digitales activándolos o desactivándolos en la secuencia adecuada
 
 ### Programa 1 - pico_stepM_simple.py
 
-Seria el **test mas básico** de estos motores. **Usamos una secuencia de medio-paso**, porque es mas facil que funcione (¡creedme!) : el parámetro 'delay entre pasos' es menso critico, y también la alimentación puede ser también mas baja, que en otros modos.
+Seria el **test mas básico** de estos motores y seria el primero a usar para probar un motor recien comprado. **Usamos una secuencia de medio-paso**, porque es mas facil que funcione (¡creedme!) : el parámetro 'delay entre pasos' es critico por eso se toma un valor conservador. La alimentación en half mode puede ser también mas baja, que en otros modos por lo que es mas probable que funcione si teneis probelmas de alimentacion
 
 La secuencia de medio paso la definimos de golpe en una lista
 
@@ -112,24 +111,28 @@ half_step_sequence = [
     ]
 ```
 
-otra opción mas compleja seria ir generando esta secuencia a medida que recorremos un bucle. Esta es mas sencilla y rápida.
+(otra opción mas compleja, seria ir generando esta secuencia a medida que recorremos un bucle, pero creo que esta opcion es mas sencilla y rápida)
 
 ### Programa 2 - pico_stepM_in_mode_del_2_0.py
 
 Vamos a ver como funcionan todos los modos posibles Clockwise y Counter Clock Wise, con diferentes parámetros de Delay.
 
-| Mode    | Tipo modo      | min Delay           |
+| Mode    | Tipo modo      | Delay minimo           |
 | ------- | -------------- | ------------------- |
 | FULL1S  |                | 500                 |
-| FULL1Sr |                |                     |
-| FULL2S  |                |                     |
-| FULL2Sr |                |                     |
+| FULL1Sr |                | 500                 |
+| FULL2S  |                | 450                 |
+| FULL2Sr |                | 450                 |
 | HALF    | Medio paso CW  | 180 micro segundos  |
 | HALFr   | Medio paso CCW | 180  micro segundos |
 
-### Programa 3 - pico_stepM_1giro_1_0.py
+### Programa 3 - pico_stepM_1giro_3_0.py
 
-Vamos a ver cuantos pasos corresponden a un giro de 360º 
+Desencriptando los tutoriales, se ve que el numero de secuencias completas para un giro de 360º es de 64 * 8 => 64 viene de la reductora y los 8 debe ser por que cada una de las 4 bobinas esta 'clonada' 8 veces a lo largo del circulo del motor.
+
+El programa 'pico_stepM_1giro_3_0.py' hace estas asunciones y debe dar un giro completo. Si no es vuestro caso, vuestro motor tendrá diferencias construcctivas a estudiar.
+
+Se puede estudiar en los 6 modos posibles las velocidades que da el usar diferentes 'delays'. La velocidad maxima esta alrededor de los 16 RPM
 
 ---
 
