@@ -54,16 +54,16 @@ Lo que se suele vender como driver ULN2003, añade algo de circuitería y simpli
 
 ![Driver ULN2003 comercial](./doc/ULN2003schematic.jpg)
 
-
 ## <u>Practica de aprendizaje con motores PaP</u>
 
 ### Tabla resumen de programas
 
-| Programa                   | HW                                            | Funcionalidad                                                                                                                          |
-| -------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| [pico_stepM_simple.py](pico_stepM_simple.py)    | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters                                                                                                                                     |
-| [pico_stepM_simple_2_0.py](pico_stepM_simple_2_0.py) |           idem                                    | Stepper simple - check ALL modes and delays by manual input |
-| [pico_stepM_1giro__3_0.py](pico_stepM_1giro__3_0.py) | idem                        | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap                                                                                                                                 |
+| Programa                                                         | HW                                            | Funcionalidad                                                             |
+| ---------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------- |
+| [pico_stepM_simple.py](pico_stepM_simple.py)                     | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters                 |
+| [pico_stepM_simple_2_0.py](pico_stepM_simple_2_0.py)             | idem                                          | Stepper simple - check ALL modes and delays by manual input               |
+| [pico_stepM_1giro__3_0.py](pico_stepM_1giro__3_0.py)             | idem                                          | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap |
+| [pico_stepM_FspinGrade_ex1_0.py](pico_stepM_FspinGrade_ex1_0.py) | idem                                          | Stepper Motor managed by a function with all parameters- Example          |
 
 ### Alimentación y Consumo
 
@@ -117,7 +117,7 @@ half_step_sequence = [
 
 Vamos a ver como funcionan todos los modos posibles Clockwise y Counter Clock Wise, con diferentes parámetros de Delay.
 
-| Mode    | Tipo modo      | Delay minimo           |
+| Mode    | Tipo modo      | Delay minimo        |
 | ------- | -------------- | ------------------- |
 | FULL1S  |                | 500                 |
 | FULL1Sr |                | 500                 |
@@ -132,8 +132,22 @@ Desencriptando los tutoriales, se ve que el numero de secuencias completas para 
 
 El programa 'pico_stepM_1giro_3_0.py' hace estas asunciones y debe dar un giro completo. Si no es vuestro caso, vuestro motor tendrá diferencias construcctivas a estudiar.
 
-Se puede estudiar en los 6 modos posibles las velocidades que da el usar diferentes 'delays'. La velocidad maxima esta alrededor de los 16 RPM
+Se pueden estudiar en los 6 modos posibles las velocidades que da el usar diferentes 'delays'. La velocidad maxima esta alrededor de los 16 RPM
+
+
+
+### Programa 4 - pico_stepM_FspinGrade_ex1_0.py
+
+Aqui la idea es definir una función para mover el motor que incluya todos los parámetros : 
+
+Parameters
+        @ pinlist : lista de los 4 pines usado por las 34 fases del motor 
+        @ grad : giro deseado en grados  0- 360 
+        @ modStep : modo FULL1S, FULL2S, HALF (str) 
+        @ vel : velocidad 100 = minimo retardo entre pasos 
+        @ CCW : direccion de giro como boolean True = counter clock wise, 
+        @ Debug : muestra info de debug
 
 ---
 
-TO DO : 
+TO DO :  hacer una libreria con una clase StepperMotor
