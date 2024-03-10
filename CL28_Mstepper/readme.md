@@ -61,9 +61,9 @@ Lo que se suele vender como driver ULN2003, añade algo de circuitería y simpli
 
 | Programa                   | HW                                            | Funcionalidad                                                                                                                          |
 | -------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| pico_stepM_simple.py       | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters                                                                                                                                     |
-| pico_stepM_simple_2_0.py |           idem                                    | Stepper simple - check ALL modes and delays by manual input |
-| pico_stepM_1giro__3_0.py | idem                        | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap                                                                                                                                 |
+| [pico_stepM_simple.py](pico_stepM_simple.py)    | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters                                                                                                                                     |
+| [pico_stepM_simple_2_0.py](pico_stepM_simple_2_0.py) |           idem                                    | Stepper simple - check ALL modes and delays by manual input |
+| [pico_stepM_1giro__3_0.py](pico_stepM_1giro__3_0.py) | idem                        | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap                                                                                                                                 |
 
 ### Alimentación y Consumo
 
