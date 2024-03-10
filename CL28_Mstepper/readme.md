@@ -119,12 +119,12 @@ Vamos a ver como funcionan todos los modos posibles Clockwise y Counter Clock Wi
 
 | Mode    | Tipo modo      | Delay minimo        |
 | ------- | -------------- | ------------------- |
-| FULL1S  |                | 500                 |
-| FULL1Sr |                | 500                 |
-| FULL2S  |                | 450                 |
-| FULL2Sr |                | 450                 |
-| HALF    | Medio paso CW  | 180 micro segundos  |
-| HALFr   | Medio paso CCW | 180  micro segundos |
+| FULL1S  |                | 500 micro segundos  |
+| FULL1Sr |                | 500  usec           |
+| FULL2S  |                | 450  usec           |
+| FULL2Sr |                | 450  usec           |
+| HALF    | Medio paso CW  | 180 u sec -> usar 200 |
+| HALFr   | Medio paso CCW | 180 u sec -> usar 200 |
 
 ### Programa 3 - pico_stepM_1giro_3_0.py
 
@@ -141,12 +141,12 @@ Se pueden estudiar en los 6 modos posibles las velocidades que da el usar difere
 Aqui la idea es definir una función para mover el motor que incluya todos los parámetros : 
 
 Parameters
-        @ pinlist : lista de los 4 pines usado por las 34 fases del motor 
-        @ grad : giro deseado en grados  0- 360 
-        @ modStep : modo FULL1S, FULL2S, HALF (str) 
-        @ vel : velocidad 100 = minimo retardo entre pasos 
-        @ CCW : direccion de giro como boolean True = counter clock wise, 
-        @ Debug : muestra info de debug
+- pinlist : lista de los 4 pines usado por las 34 fases del motor
+- grad : giro deseado en grados  0- 360 
+- modStep : modo FULL1S, FULL2S, HALF (str) 
+- vel : velocidad 100 = minimo retardo entre pasos 
+- CCW : direccion de giro como boolean True = counter clock wise, 
+- Debug : muestra info de debug
 
 ---
 
