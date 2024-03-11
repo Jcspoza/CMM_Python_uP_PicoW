@@ -121,8 +121,8 @@ Es la libreria standard, creada originariamente por Adafruit, la versión que us
 | ---------- | ------------------ | ------- |
 | 5          | 3.3volt out pico   | VCC     |
 | 8          | GND                | GND     |
-| 9          | I2C1 SDA           | SDA     |
-| 10         | I2C1 SCL           | SCL     |
+| 9          | GPIO06-I2C1 SDA    | SDA     |
+| 10         | GPIO07-I2C1 SCL    | SCL     |
 
 Algunos displays SSD1306 incluyen una línea de **RESET** que ha de estar primero a GND y luego a +5volt para que el display funcione, en cualquier caso ver documentación.
 
