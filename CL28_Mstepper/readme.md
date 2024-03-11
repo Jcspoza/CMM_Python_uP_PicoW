@@ -1,4 +1,4 @@
-# Spanish (wip)
+# Spanish (Trabajo en proceso)
 
 ## Objetivo
 
@@ -117,14 +117,14 @@ half_step_sequence = [
 
 Vamos a ver como funcionan todos los modos posibles Clockwise y Counter Clock Wise, con diferentes parámetros de Delay.
 
-| Mode    | Tipo modo      | Delay minimo        |
-| ------- | -------------- | ------------------- |
-| FULL1S  |                | 500 micro segundos  |
-| FULL1Sr |                | 500  usec           |
-| FULL2S  |                | 450  usec           |
-| FULL2Sr |                | 450  usec           |
-| HALF    | Medio paso CW  | 180 u sec -> usar 200 |
-| HALFr   | Medio paso CCW | 180 u sec -> usar 200 |
+| Mode    | Tipo modo           | Delay minimo        |
+| ------- | --------------------| ------------------- |
+| FULL1S  | 1 Paso 1 bobina CW  | 500 micro segundos  |
+| FULL1Sr | 1 Paso 1 bobina CCW | 500  usec           |
+| FULL2S  | 1 Paso 2 bobinas CW | 450  usec           |
+| FULL2Sr | 1 Paso 2 bobina CCW | 450  usec           |
+| HALF    | Medio paso CW       | 180 usec-> usar 200 |
+| HALFr   | Medio paso CCW      | 180 usec-> usar 200 |
 
 ### Programa 3 - pico_stepM_1giro_3_0.py
 
