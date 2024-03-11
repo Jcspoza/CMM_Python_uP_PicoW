@@ -57,8 +57,8 @@ Va Ok a 400.000Hz, tiene función de crear emojis x8. **Se usan dos librerías c
 |:----------:|:-------------------------------:|:-------:|
 | 40         | VSYS o **+5volt** con GND común | VCC     |
 | 8          | GND                             | GND     |
-| 6          | I2C0 SDA                        | SDA     |
-| 7          | I2C0 SCL                        | SCL     |
+| 6          | GPIO04-I2C0 SDA                 | SDA     |
+| 7          | GPIO05-I2C0 SCL                 | SCL     |
 
 Importante: **comprobar que el puente de la iluminación esta conectado**
 
