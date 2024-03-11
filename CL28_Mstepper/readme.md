@@ -147,4 +147,4 @@ Aqui la idea es definir una función para mover el motor que incluya todos los p
 - Debug : muestra info de debug (boolean)
 ---
 
-TO DO :  Hacer una libreria con una clase StepperMotor, ver ejemplo2 de upython para ver funciones típicas
+TO DO :  Hacer una libreria con una clase StepperMotor, ver [otro ejemplo de upython](https://github.com/raupulus/rpi-pico-stepper-28byj-48/tree/main) para ver funciones típicas
