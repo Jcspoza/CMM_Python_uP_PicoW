@@ -139,15 +139,12 @@ Se pueden estudiar en los 6 modos posibles las velocidades que da el usar difere
 ### Programa 4 - pico_stepM_FspinGrade_ex1_0.py
 
 Aqui la idea es definir una función para mover el motor que incluya todos los parámetros : 
-
-Parameters
-- pinlist : lista de los 4 pines usado por las 34 fases del motor
-- grad : giro deseado en grados  0- 360 
+- pinlist : lista de los 4 pines usado por las 4 fases del motor ( no tienen que ir seguidos, pero es visual)
+- grad : giro deseado en grados  0- 360 (int)
 - modStep : modo FULL1S, FULL2S, HALF (str) 
-- vel : velocidad 100 = minimo retardo entre pasos 
+- vel : velocidad 100 = minimo retardo entre pasos (int)
 - CCW : direccion de giro como boolean True = counter clock wise, 
-- Debug : muestra info de debug
-
+- Debug : muestra info de debug (boolean)
 ---
 
-TO DO :  hacer una libreria con una clase StepperMotor
+TO DO :  Hacer una libreria con una clase StepperMotor, ver ejemplo2 de upython para ver funciones típicas
