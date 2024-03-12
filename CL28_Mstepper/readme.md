@@ -161,7 +161,7 @@ Aqui la idea es definir una función para mover el motor que incluya todos los p
 
 ### Programas 5 - pico_stepM_simplePIO_h_1_0.py / ...f1_1_0.py  / f2_1_0.py
 
-Aqui la idea es mostrar como se puede en viar la secuencia de bits a las bobinas con el hw PIO. El codigo es el mas simple posible ver 
+Aqui la idea es mostrar como se puede enviar la secuencia de bits a las bobinas con el hw PIO. El codigo es el mas simple posible ver 
 
 [Raspberry Pi Pico Stepper Motors via PIO - YouTube](https://www.youtube.com/watch?v=UJ4JjeCLuaI)
 
