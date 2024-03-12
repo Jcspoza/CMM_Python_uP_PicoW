@@ -66,9 +66,9 @@ Lo que se suele vender como driver ULN2003, añade algo de circuitería y simpli
 | [pico_stepM_simple_2_0.py](pico_stepM_simple_2_0.py)             | idem                                          | Stepper simple - check ALL modes and delays by manual input                  |
 | [pico_stepM_1giro__3_0.py](pico_stepM_1giro__3_0.py)             | idem                                          | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap    |
 | [pico_stepM_FspinGrade_ex1_0.py](pico_stepM_FspinGrade_ex1_0.py) | idem                                          | Stepper Motor managed by a function with all parameters- Example             |
-| pico_stepM_simplePIO_h_1_0.py                                    | idem                                          | Stepper simple - PIO simple approach / HALF stepp  mode                      |
-| pico_stepM_simplePIO_f1_1_0.py                                   | idem                                          | Stepper simple - PIO simple approach / FULL 1 SPEPP  mode                    |
-| pico_stepM_simplePIO_f2_1_0.py                                   | idem                                          | Stepper simple - PIO simple approach / FULL 2 STEPPS  mode                   |
+| [pico_stepM_simplePIO_h_1_0.py](pico_stepM_simplePIO_h_1_0.py)                                    | idem                                          | Stepper simple - PIO simple approach / HALF stepp  mode                      |
+| [pico_stepM_simplePIO_f1_1_0.py](pico_stepM_simplePIO_f1_1_0.py)                                   | idem                                          | Stepper simple - PIO simple approach / FULL 1 SPEPP  mode                    |
+| [pico_stepM_simplePIO_f2_1_0.py](pico_stepM_simplePIO_f2_1_0.py)                                  | idem                                          | Stepper simple - PIO simple approach / FULL 2 STEPPS  mode                   |
 
 ### Alimentación y Consumo
 
@@ -165,7 +165,7 @@ Aqui la idea es mostrar como se puede en viar la secuencia de bits a las bobinas
 
 [Video]([Raspberry Pi Pico Stepper Motors via PIO - YouTube](https://www.youtube.com/watch?v=UJ4JjeCLuaI))
 
-[Github](ttps://github.com/tinkertechtrove/pico-pi-playing/tree/main/pio-steppers)
+[Github](https://github.com/tinkertechtrove/pico-pi-playing/tree/main/pio-steppers)
 
 ---
 
