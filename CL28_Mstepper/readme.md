@@ -163,9 +163,9 @@ Aqui la idea es definir una función para mover el motor que incluya todos los p
 
 Aqui la idea es mostrar como se puede en viar la secuencia de bits a las bobinas con el hw PIO. El codigo es el mas simple posible ver 
 
-[Video]([Raspberry Pi Pico Stepper Motors via PIO - YouTube](https://www.youtube.com/watch?v=UJ4JjeCLuaI))
+[Raspberry Pi Pico Stepper Motors via PIO - YouTube](https://www.youtube.com/watch?v=UJ4JjeCLuaI)
 
-[Github](https://github.com/tinkertechtrove/pico-pi-playing/tree/main/pio-steppers)
+[Raspberry Pi Pico Stepper Motors via PIO-Github](https://github.com/tinkertechtrove/pico-pi-playing/tree/main/pio-steppers)
 
 ---
 
