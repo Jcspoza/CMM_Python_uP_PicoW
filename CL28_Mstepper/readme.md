@@ -12,6 +12,8 @@ En esta clase, vamos a estudiar los **motores Paso a Paso o Steeper.**
 
 ### Para entender el HW del motor
 
+Enlace al [datasheet 28BYJ-48](./doc/28BYJ48-Stepper-Motor-datasheets.pdf)
+
 [Motores paso a paso &#8211; Prometec](https://www.prometec.net/motores-paso-a-paso/)
 
 Resumen : Un **motor paso a paso** es parecido a los motores de continua, pero en lugar de montar un sistema de asegurarnos de que siempre hay una bobina fuera del equilibrio, en un **motor paso a paso** montamos un sistema de varias bobinas que garantizan que solo se mueve la distancia (O paso) entre las bobinas contiguas.
@@ -20,7 +22,7 @@ Resumen : Un **motor paso a paso** es parecido a los motores de continua, pero
 
 [In-Depth: Control 28BYJ-48 Stepper Motor with ULN2003 Driver &amp; Arduino](https://lastminuteengineers.com/28byj48-stepper-motor-arduino-tutorial/?utm_content=cmp-true)
 
-Es un tutorial excelente, con explicaciones detalladas de como funciona tanto el motor como el controlador (leer solo ahsta codigo Arduino)
+Es un tutorial excelente, con explicaciones detalladas de como funciona tanto el motor como el controlador (leer solo hasta codigo Arduino)
 
 #### Entendiendo el numero de pasos por giro
 
@@ -58,12 +60,15 @@ Lo que se suele vender como driver ULN2003, añade algo de circuitería y simpli
 
 ### Tabla resumen de programas
 
-| Programa                                                         | HW                                            | Funcionalidad                                                             |
-| ---------------------------------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------- |
-| [pico_stepM_simple.py](pico_stepM_simple.py)                     | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters                 |
-| [pico_stepM_simple_2_0.py](pico_stepM_simple_2_0.py)             | idem                                          | Stepper simple - check ALL modes and delays by manual input               |
-| [pico_stepM_1giro__3_0.py](pico_stepM_1giro__3_0.py)             | idem                                          | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap |
-| [pico_stepM_FspinGrade_ex1_0.py](pico_stepM_FspinGrade_ex1_0.py) | idem                                          | Stepper Motor managed by a function with all parameters- Example          |
+| Programa                                                         | HW                                            | Funcionalidad                                                                |
+| ---------------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------- |
+| [pico_stepM_simple.py](pico_stepM_simple.py)                     | ULN2003   IN1-GPIO10 ...           IN4-GPIO13 | Stepper simple - check motor with conservative parameters / HALF stepp  mode |
+| [pico_stepM_simple_2_0.py](pico_stepM_simple_2_0.py)             | idem                                          | Stepper simple - check ALL modes and delays by manual input                  |
+| [pico_stepM_1giro__3_0.py](pico_stepM_1giro__3_0.py)             | idem                                          | Stepper 1 x 360 º in 3 param -> meassure lap time & number stepps per lap    |
+| [pico_stepM_FspinGrade_ex1_0.py](pico_stepM_FspinGrade_ex1_0.py) | idem                                          | Stepper Motor managed by a function with all parameters- Example             |
+| pico_stepM_simplePIO_h_1_0.py                                    | idem                                          | Stepper simple - PIO simple approach / HALF stepp  mode                      |
+| pico_stepM_simplePIO_f1_1_0.py                                   | idem                                          | Stepper simple - PIO simple approach / FULL 1 SPEPP  mode                    |
+| pico_stepM_simplePIO_f2_1_0.py                                   | idem                                          | Stepper simple - PIO simple approach / FULL 2 STEPPS  mode                   |
 
 ### Alimentación y Consumo
 
@@ -117,34 +122,51 @@ half_step_sequence = [
 
 Vamos a ver como funcionan todos los modos posibles Clockwise y Counter Clock Wise, con diferentes parámetros de Delay.
 
-| Mode    | Tipo modo           | Delay minimo        |
-| ------- | --------------------| ------------------- |
-| FULL1S  | 1 Paso 1 bobina CW  | 500 micro segundos  |
-| FULL1Sr | 1 Paso 1 bobina CCW | 500  usec           |
-| FULL2S  | 1 Paso 2 bobinas CW | 450  usec           |
-| FULL2Sr | 1 Paso 2 bobina CCW | 450  usec           |
-| HALF    | Medio paso CW       | 180 usec-> usar 200 |
-| HALFr   | Medio paso CCW      | 180 usec-> usar 200 |
+| Mode    | Tipo modo           | Delay minimo              |
+| ------- | ------------------- | ------------------------- |
+| FULL1S  | 1 Paso 1 bobina CW  | 500 micro segundos (usec) |
+| FULL1Sr | 1 Paso 1 bobina CCW | 500  usec                 |
+| FULL2S  | 1 Paso 2 bobinas CW | 450  usec                 |
+| FULL2Sr | 1 Paso 2 bobina CCW | 450  usec                 |
+| HALF    | Medio paso CW       | 180 usec-> usar 200       |
+| HALFr   | Medio paso CCW      | 180 usec-> usar 200       |
 
 ### Programa 3 - pico_stepM_1giro_3_0.py
 
 Desencriptando los tutoriales, se ve que el numero de secuencias completas para un giro de 360º es de 64 * 8 => 64 viene de la reductora y los 8 debe ser por que cada una de las 4 bobinas esta 'clonada' 8 veces a lo largo del circulo del motor.
 
-El programa 'pico_stepM_1giro_3_0.py' hace estas asunciones y debe dar un giro completo. Si no es vuestro caso, vuestro motor tendrá diferencias construcctivas a estudiar.
+El programa 'pico_stepM_1giro_3_0.py' hace estas asunciones y debe dar un giro completo. Si no es vuestro caso, vuestro motor tendrá diferencias constructivas a estudiar.
 
-Se pueden estudiar en los 6 modos posibles las velocidades que da el usar diferentes 'delays'. La velocidad maxima esta alrededor de los 16 RPM
+Se pueden estudiar en los 6 modos posibles las velocidades que se obtiene al usar diferentes 'delays'. La velocidad máxima esta alrededor de los 16 RPM
 
-
+| Mode    | Tipo modo           | Delay minimo              | Stepps x vuelta | Velocidad Maxima |
+| ------- | ------------------- | ------------------------- | --------------- | ---------------- |
+| FULL1S  | 1 Paso 1 bobina CW  | 500 micro segundos (usec) | 2048            | 13.29 RPM        |
+| FULL1Sr | 1 Paso 1 bobina CCW | 500 usec                  | 2048            | 13.29 RPM        |
+| FULL2S  | 1 Paso 2 bobinas CW | 450 usec                  | 2048            | 14.62 RPM        |
+| FULL2Sr | 1 Paso 2 bobina CCW | 450 usec                  | 2048            | 14.62 RPM        |
+| HALF    | Medio paso CW       | 180 usec-> usar 200       | 4096            | 15.88 RPM        |
+| HALFr   | Medio paso CCW      | 180 usec-> usar 200       | 4096            | 15.88 RPM        |
 
 ### Programa 4 - pico_stepM_FspinGrade_ex1_0.py
 
 Aqui la idea es definir una función para mover el motor que incluya todos los parámetros : 
+
 - pinlist : lista de los 4 pines usado por las 4 fases del motor ( no tienen que ir seguidos, pero es visual)
 - grad : giro deseado en grados  0- 360 (int)
 - modStep : modo FULL1S, FULL2S, HALF (str) 
 - vel : velocidad 100 = minimo retardo entre pasos (int)
 - CCW : direccion de giro como boolean True = counter clock wise, 
 - Debug : muestra info de debug (boolean)
+
+### Programas 5 - pico_stepM_simplePIO_h_1_0.py / ...f1_1_0.py  / f2_1_0.py
+
+Aqui la idea es mostrar como se puede en viar la secuencia de bits a las bobinas con el hw PIO. El codigo es el mas simple posible ver 
+
+[Video]([Raspberry Pi Pico Stepper Motors via PIO - YouTube](https://www.youtube.com/watch?v=UJ4JjeCLuaI))
+
+[Github](ttps://github.com/tinkertechtrove/pico-pi-playing/tree/main/pio-steppers)
+
 ---
 
 TO DO :  Hacer una libreria con una clase StepperMotor, ver [otro ejemplo de upython](https://github.com/raupulus/rpi-pico-stepper-28byj-48/tree/main) para ver funciones típicas

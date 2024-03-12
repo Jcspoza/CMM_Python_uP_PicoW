@@ -65,7 +65,7 @@ mode = modesList[m]
 print(f"Stepper Sequence Mode : {mode}")
 
 # 2.2 Input delay beetwen secuences
-delayseq = int(input("Delay beetwen steep (400 min)= "))
+delayseq = int(input("Delay beetwen steep (micro sec)= "))
 print(f"Delay in each steep in sequence : {delayseq}")
 
 # 2.3 Input CC or CCW
@@ -75,7 +75,7 @@ if wmode == 'CCW':
     seqStepp.reverse()
     print(f"Spin in Counter Clock Wise direction")
 else:
-    print(f"Spin in Clok Wise direction")
+    print(f"Spin in Clock Wise direction")
     # else is CW mode
 
 counter = 0
