@@ -2,15 +2,15 @@
 
 ## Objetivo
 
-En esta clase, vamos a estudiar 3 temas que necesitamos para "armar" la visualización de una consulta con API´s en python o micropython
+En esta clase, vamos a estudiar 2 temas que necesitamos para "armar" la visualización de una consulta con API´s en python o micropython
 
 1. **Aprender a trabajar con JSON en Python**
 
-2. **Explotar los datos open source por medio de API´s** del Ayuntamiento de Madrid y/ o AEMT
+2. **Explotar los datos open source por medio de API´s** del Ayuntamiento de Madrid y/ o AEMT - primeros pasos
 
-3. **Crear GUI´s con guizero - básico**
+Quedaría por estudiar como '**Crear GUI´s con guizero'**, pero lo dejaremos para otra clase
 
-## <u>Aprender a trabajar con JSON en Python (fin)</u>
+## <u>1-Aprender a trabajar con JSON en Python (fin)</u>
 
 ### Tutoriales que vamos a Seguir
 
@@ -43,7 +43,7 @@ En esta clase, vamos a estudiar 3 temas que necesitamos para "armar" la visualiz
 
 ### **Leer y hacer el tutorial 1**
 
-Los programas siguen el tutorial y no son complicados de entender. Recomiendo hacerlso y ejecutarlos de uno en uno junto ala lectura del tutorial
+Los programas siguen el tutorial y no son complicados de entender. Recomiendo hacerlos y ejecutarlos de uno en uno junto a la lectura del tutorial
 
 | Programa                      | Tutorial 1 o 2 | Objetivo de Aprendizaje                                                                                         |
 | ----------------------------- | -------------- | --------------------------------------------------------------------------------------------------------------- |
@@ -92,7 +92,7 @@ Hay que hacer un par de ejemplos de este tutorial, para entender la ordenación 
 
 4. Muestra el fichero resultado
 
-## <u>Entendiendo las API´s de AEMET y Ayuntamiento de Madrid (en progreso)</u>
+## <u>2-Entendiendo las API´s de AEMET y Ayuntamiento de Madrid - Primeros pasos (en progreso)</u>
 
 ### Enlaces mas genéricos
 
@@ -100,25 +100,36 @@ Hay que hacer un par de ejemplos de este tutorial, para entender la ordenación 
 
 Hay un video explicativo asi como un "visualizador" para publico en general y luego hay un acceso a datos por API´s
 
-
-
 [AEMET OpenData - Agencia Estatal de Meteorología - AEMET. Gobierno de España](https://www.aemet.es/es/datos_abiertos/AEMET_OpenData)
 
 De nuevo hay un visualizador para publico en general y luego hay un acceso a datos por API´s
 
-
-
 ### Enlaces específicos
-
-
 
 [Open data AEMET- Documentacion y Prueba](https://opendata.aemet.es/dist/index.html?)
 
-
-
 [Madrid Datos Abiertos API - Documentacion y Prueba - API - Portal de datos abiertos del Ayuntamiento de Madrid](https://datos.madrid.es/portal/site/egob/menuitem.214413fe61bdd68a53318ba0a8a409a0/?vgnextoid=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextchannel=b07e0f7c5ff9e510VgnVCM1000008a4a900aRCRD&vgnextfmt=default)
 
+### ¿ Como estudiar estas API´s?
 
+Ambas fuentes de información ( AEMET y Ayuntamiento MAD)  son muy amplias y solo queremos en esta clase acceder y dar unos primeros pasos básicos.
+
+Asi que vamos a fijar una **estrategia progresiva de estudio**:
+
+1. Curiosear por la documentación y elegir 1 información objetivo en cada web
+
+2. Acceder y ver si hay que dar 1 paso o 2 para la información objetivo
+
+3. Ver estructura de la información objetivo en cada caso
+
+4. Extraer (parte de ) la información objetivo y presentarla
+
+Vamos a usar estos 2 programas, y hay que ejecutarlos, tapando como comentarios la parte final de los progrmas e irla desvelando poco a poco
+
+| Programa                                                               | Fuente                 | Objetivo de Aprendizaje   |
+| ---------------------------------------------------------------------- | ---------------------- | ------------------------- |
+| [BMMP_CL29_APImad_CMM_1_0.py](BMMP_CL29_APImad_CMM_1_0.py)             | Ayuntamiento de Madrid |                           |
+| [BMMP_CL29_APIaemet_predMad_1_0.py](BMMP_CL29_APIaemet_predMad_1_0.py) | AEMET                  | Predicción Madrid capital |
 
 ---
 
