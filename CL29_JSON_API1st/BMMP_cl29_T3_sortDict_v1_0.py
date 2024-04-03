@@ -7,7 +7,7 @@
 # Version 2.0 more comments & names more clear
 
 # Informative block - start
-p_topic = "Ordenar diccionarios"
+p_topic = "T3-Ordenar diccionarios"
 p_project = "- Sub parte de - A Real World Example (sort of)"
 p_ref = "https://realpython.com/sort-python-dictionary/"
 p_version = "1.0"
@@ -20,13 +20,13 @@ print("============================")
 
 # Ir comentando y des-comentado para ver mejor los ejemplos
 
-# 1- Ejemplo 1 funcion sorted() : ordena objetos itelables como listas y diccionarios
-print('EJ 1- Ordenamos una lista de numeros')
-numbers = [5, 3, 4, 3, 6, 7, 3, 2, 3, 4, 1]
-print('Lista sin ordenar')
-print(numbers)
-print('Lista ORDENADA')
-print(sorted(numbers))
+# # 1- Ejemplo 1 funcion sorted() : ordena objetos itelables como listas y diccionarios
+# print('EJ 1- Ordenamos una lista de numeros')
+# numbers = [5, 3, 4, 3, 6, 7, 3, 2, 3, 4, 1]
+# print('Lista sin ordenar')
+# print(numbers)
+# print('Lista ORDENADA')
+# print(sorted(numbers))
 
 # # Ejemplo 2- ordenamos lista de palabras - orden normal
 # print('EJ 2- Ordenamos una lista de palabras - orden normal')
@@ -80,8 +80,8 @@ print(sorted(numbers))
 # print(sorted(people.items()))
 # print('Ordena las tuplas lexicograficamente = ordena el diccionario por claves')
 
-# # Ejemplo 5 - Ordenar vistas de diccionario por valor (no por clave)
-# # print('EJ 5- Ordenar vistas de diccionario por valor (no por clave)')
+# # Ejemplo 5 - Ordenar vistas de diccionario por valor (no por clave) -> salida lista
+# print('EJ 5- Ordenar vistas de diccionario por valor (no por clave)-> salida lista')
 # people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
 # def obtener_valor(cosa): # tomara el 2do elemento de 'cosa'
 #     return cosa[1]
@@ -92,6 +92,7 @@ print(sorted(numbers))
 # print('usando una funcion definida con anterioridad para la funcion "callback" de ordenacion')
 # print(sorted(people.items(),key=obtener_valor))
 # 
+# 
 # # The 'key' parameter accepts a callback function.
 # # The function can be a normal function identifier or a lambda function.
 # # Lambda functions are also known as anonymous functions because they don’t have a name.
@@ -100,6 +101,33 @@ print(sorted(numbers))
 # 
 # print('Ahora ordenamos por el SEGUNDO elemento = valor, pero con funcion lambda')
 # print(sorted(people.items(),key=lambda cosa: cosa[1]))
-# 
 # print('Ahora ordenamos por el SEGUNDO elemento = valor, pero con funcion lambda y orden INVERSO')
 # print(sorted(people.items(),key=lambda cosa: cosa[1], reverse=True))
+# print('PERO aun no tenemos un dicionario de vuelta, sino una lista')
+
+# Ejemplo 6 - Ordenar vistas de diccionario por valor (no por clave) -> salida Diccionario
+print('EJ 6- Ordenar vistas de diccionario por valor (no por clave)-> salida Diccionario')
+people = {3: "Jim", 2: "Jack", 4: "Jane", 1: "Jill"}
+print('Ordenamos por el SEGUNDO elemento = valor, con funcion lambda -> salida Lista')
+sorted_people_List = sorted(people.items(),key=lambda cosa: cosa[1])
+print(sorted_people_List)
+print('Ahora convertimos de lista a Diccionario de forma directa con el constructor de diccionario')
+sorted_people_Dict = dict(sorted_people_List)
+print(sorted_people_Dict)
+print('Esto valdrá en la mayoria de los casos, la salida es el diccionario ordenado sin cambios')
+print('------')
+print('Si queremos cambiar el diccionario de salida-> usar bucles for o "dictionary comprehension"')
+print('Ejemplo 6.2 intercambiar en la salida claves y valores - bucle for')
+sorted_people_Dict_swap = {}
+for k, v in sorted_people_List:
+    sorted_people_Dict_swap[v] = k
+    
+print(sorted_people_Dict_swap)
+
+print('Ejemplo 6.3 intercambiar en la salida claves y valores - bucle dictionary comprehension')
+sorted_people_Dict_swap_DC = {
+    v : k
+    for k, v in sorted(people.items(), key=lambda cosa: cosa[1])    
+    }
+
+print(sorted_people_Dict_swap_DC)
