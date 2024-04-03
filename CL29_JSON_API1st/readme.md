@@ -18,7 +18,7 @@ Quedaría por estudiar como '**Crear GUI´s con guizero'**, pero lo dejaremos pa
 
 [Tutorial 2 + Completo - Working With JSON Data in Python – Real Python](https://realpython.com/python-json/)
 
-[Tutorial 3 - Ordenar Listas y Diccionarios en Python]([Sorting a Python Dictionary: Values, Keys, and More – Real Python](https://realpython.com/sort-python-dictionary/))
+[Tutorial 3 - Ordenar Listas y Diccionarios en Python](https://realpython.com/sort-python-dictionary/))
 
 ### Tabla resumen de programas
 
