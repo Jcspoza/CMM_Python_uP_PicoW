@@ -1,4 +1,4 @@
-# Trabajar con JSON -> Visualizar API´s Spanish (wip)
+# Trabajar con JSON -> Visualizar API´s Spanish
 
 ## Objetivo
 
@@ -18,6 +18,8 @@ Quedaría por estudiar como '**Crear GUI´s con guizero'**, pero lo dejaremos pa
 
 [Tutorial 2 + Completo - Working With JSON Data in Python – Real Python](https://realpython.com/python-json/)
 
+[Tutorial 3 - Ordenar Listas y Diccionarios en Python]([Sorting a Python Dictionary: Values, Keys, and More – Real Python](https://realpython.com/sort-python-dictionary/))
+
 ### Tabla resumen de programas
 
 | Programa                                                       | Tutorial 1 o 2 | Objetivo de Aprendizaje                                                                                                                 |
@@ -27,6 +29,7 @@ Quedaría por estudiar como '**Crear GUI´s con guizero'**, pero lo dejaremos pa
 | [BMMP_cl29_T1_filejson2dict.py](BMMP_cl29_T1_filejson2dict.py) | T1- Ejemplo 3  | Ver como se convierte un fichero JSON  a diccionario                                                                                    |
 | [BMMP_cl29_T1_dict2filejson.py](BMMP_cl29_T1_dict2filejson.py) | T1 - Ejemplo 4 | Ver como se convierte un Diccionario ( obtenido de fichero JSON y luego manipulado) a fichero JSON (modificado)                         |
 | [BMMP_cl29_T2_tSimple2JSON.py](BMMP_cl29_T2_tSimple2JSON.py)   | T1 y T2        | Ejemplos de cambio de tipos de datos simple de Python a JSON y de nuevo a Python                                                        |
+| [BMMP_cl29_T3_sortDict_v1_0.py](BMMP_cl29_T3_sortDict_v1_0.py) | T3             | Ejemplos de ordenación de Listas y Diccionarios                                                                                         |
 | [BMMP_cl29_T2_APItodos_v2_0.py](BMMP_cl29_T2_APItodos_v2_0.py) | T2- real world | Como obtener información con API´s bajada como JSON, luego manipularla y volcar el resultado de la manipulación a un nuevo fichero JSON |
 
 ### Recomendaciones de estudio con los 2 tutoriales
@@ -37,9 +40,11 @@ Quedaría por estudiar como '**Crear GUI´s con guizero'**, pero lo dejaremos pa
 
 3. **Estudiar como se vuelca a JSON cada tipo `simple'**
 
-4. **Leer y hacer la parte de "A Real World Example (sort of)"**. Hay varios conceptos de python que serán nuevos, asi que servirá como aprendizaje de manipular diccionarios y listas
+4. **Leer y hacer el Tutorial 3 Ordenar Listas y Diccionarios.** Ejecutar el programa de ejemplo en ejemplo,  volviendo comentarios el resto de ejemplos.
 
-5. No es necesario leer el resto de Tutorial 2 , es excesivamente técnico
+5. **Leer y hacer la parte de "A Real World Example (sort of)"**. Hay varios conceptos de Python que serán nuevos, asi que servirá como aprendizaje de manipular diccionarios y listas
+
+6. No es necesario leer el resto de Tutorial 2 , es excesivamente técnico
 
 ### **Leer y hacer el tutorial 1**
 
@@ -61,6 +66,14 @@ Desde "*A (Very) Brief History of JSON" -> "Deserializing JSON", y aunque no hay
 En los ejemplos del Tutorial 1 habremos comprendido que la serialización y deserialización son parecidos a traducir y volver al idioma original: el resultado será muy parecido, pero no idéntico: **Ver el caso de las Tuplas**
 
 **Con los tipos de datos complejos o los tipos de datos "creados por nosotros" la traducción a JSON es un proceso complejo**. Si tienes interes, lee la ultima parte del Tutorial 2
+
+### Leer y hacer Tutorial 3 Ejemplos de ordenación de Listas y Diccionarios
+
+Ir haciendo los ejemplos en Python de ordenación de Listas y Diccionarios del programa:
+
+[BMMP_cl29_T3_sortDict_v1_0.py](BMMP_cl29_T3_sortDict_v1_0.py)
+
+Aqui se explicara la funcion **sorted()** en detalle y el uso de **funciones lambda** ( solo lo necesario para el ejemplo)
 
 ### Leer y hacer la parte de *A Real World Example (sort of)*
 
@@ -126,10 +139,10 @@ Asi que vamos a fijar una **estrategia progresiva de estudio**:
 
 Vamos a usar estos 2 programas, y hay que ejecutarlos, tapando como comentarios la parte final de los progrmas e irla desvelando poco a poco
 
-| Programa                                                               | Fuente                 | Objetivo de Aprendizaje   |
-| ---------------------------------------------------------------------- | ---------------------- | ------------------------- |
-| [BMMP_CL29_APImad_CMM_1_0.py](BMMP_CL29_APImad_CMM_1_0.py)             | Ayuntamiento de Madrid |  Informacion Centros de Mayores Centro                         |
-| [BMMP_CL29_APIaemet_predMad_1_0.py](BMMP_CL29_APIaemet_predMad_1_0.py) | AEMET                  | Predicción Madrid capital |
+| Programa                                                               | Fuente                 | Objetivo de Aprendizaje               |
+| ---------------------------------------------------------------------- | ---------------------- | ------------------------------------- |
+| [BMMP_CL29_APImad_CMM_1_0.py](BMMP_CL29_APImad_CMM_1_0.py)             | Ayuntamiento de Madrid | Informacion Centros de Mayores Centro |
+| [BMMP_CL29_APIaemet_predMad_1_0.py](BMMP_CL29_APIaemet_predMad_1_0.py) | AEMET                  | Predicción Madrid capital             |
 
 ---
 
