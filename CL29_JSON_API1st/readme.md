@@ -77,7 +77,11 @@ Aqui se explicara la funcion **sorted()** en detalle y el uso de **funciones lam
 
 ### Leer y hacer la parte de *A Real World Example (sort of)*
 
-Es la parte mas interesante del tutorial, veamso el seudocodigo
+Es la parte mas interesante del tutorial. Se recomienda ir siguiendo los apartados del seudocódigo junto con el programa:
+
+[BMMP_cl29_T2_APItodos_v2_0.py](BMMP_cl29_T2_APItodos_v2_0.py), 
+
+pasando el codigo python a comentarios, e ir des-comentando lo a medida que se va entendiendo cada parte. Veamos el seudocódigo
 
 1- Consultar una API de ejemplos aplicación de tareas y extraer una lista de todos
 
