@@ -55,9 +55,9 @@ Normalmente se hará un programa por capitulo incluyendo todas las partes que a 
 
 Instalar la libreria con Thonny es lo mas sencillo, aparte de las opciones que da el libro o las que indica en la documentación en [guizero- installation](https://lawsie.github.io/guizero/#installation)
 
-![](\doc\install1.png)
+![](./doc/install1.png)
 
-![](\doc\install2.png)
+![](./doc/install2.png)
 
 
 
