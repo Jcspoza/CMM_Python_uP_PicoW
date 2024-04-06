@@ -111,6 +111,8 @@ aplicacion.bg = "#1CE0D6"
 
 - Es obligatorio incluir un paramento con el "master" = el contenedor al que el widget pertenece : el nombre de la app creada con `App`
 
+- La alineación por defecto = None = "top"
+
 - A posteriori de la adicion del widget Text, se puede cambiar cualquier valor de los parámetros de creación , que ahora serán propiedades , ejemplo
 
 ```
@@ -119,8 +121,6 @@ wanted_text.font = "Bodoni MT"
 ```
 
 Nota: el tamaño del texto como parámetro es 'size', pero como propiedad es 'text_size'
-
-
 
 4- Recomiendo profundizar un poco en el **widget Picture** [Picture - guizero](https://lawsie.github.io/guizero/picture/)
 
