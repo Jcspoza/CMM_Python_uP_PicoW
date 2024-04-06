@@ -24,6 +24,6 @@ print(f"Program: {p_project} - Version: {p_version}")
 # Informative block - end
 
 # 1 - Una ventana de hola mundo
-app = App(title="Hola Mundo JCSP")
-message = Text(app, text="Bienvenido a la app")
-app.display()
+aplicacion = App(title="Hola Mundo JCSP")
+message = Text(aplicacion, text="Bienvenido a la app")
+aplicacion.display()

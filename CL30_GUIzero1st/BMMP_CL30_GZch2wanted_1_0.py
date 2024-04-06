@@ -24,12 +24,15 @@ print(f"Program: {p_project} - Version: {p_version}")
 # Informative block - end
 
 # 1 - Una ventana para wanted
-app = App(title="Wanted")
-app.bg = "#1CE0D6"
-wanted_text = Text(app, "WANTED")
+aplicacion = App(title="Wanted")
+aplicacion.bg = "#1CE0D6"
+
+# 2 - Añado widget Text
+wanted_text = Text(aplicacion, "WANTED")
 wanted_text.text_size = 50
 wanted_text.font = "Bodoni MT"
 
-cat = Picture(app, image="tabitha.png")
+# 3 - Añado widget Picture
+cat = Picture(aplicacion, image="tabitha.png")
 
-app.display()
+aplicacion.display()

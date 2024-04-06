@@ -29,15 +29,15 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa | Capitulo del libro | Objetivo de Aprendizaje |
-| -------- |:------------------:| ----------------------- |
-|          |                    |                         |
-|          |                    |                         |
-|          |                    |                         |
-|          |                    |                         |
-|          |                    |                         |
-|          |                    |                         |
-|          |                    |                         |
+| Programa                   | Capitulo del libro | Objetivo de Aprendizaje           |
+| -------------------------- |:------------------:| --------------------------------- |
+| BMMP_CL30_GZch1hola_1_0.py | ch1                | primeros paso - crear una ventana |
+|                            |                    |                                   |
+|                            |                    |                                   |
+|                            |                    |                                   |
+|                            |                    |                                   |
+|                            |                    |                                   |
+|                            |                    |                                   |
 
 ### Recomendaciones de estudio
 
@@ -59,11 +59,78 @@ Instalar la libreria con Thonny es lo mas sencillo, aparte de las opciones que d
 
 ![](./doc/install2.png)
 
-
-
 ### **Capitulo 1 - Hola mundo**
 
-xxxx
+1- Haz el programa del capitulo 1 o ejecuta el programa
+
+[BMMP_CL30_GZch1hola_1_0.py](BMMP_CL30_GZch1hola_1_0.py)
+
+2- Recomiendo leer el principio de  [Using Widgets - guizero](https://lawsie.github.io/guizero/usingwidgets/). Resumen:
+
+- Cada app de guizero necesita una [App](https://lawsie.github.io/guizero/app/) widget => será la ventana principal
+
+- Cada widget que se añada ha de referenciarse a la app
+
+- Importa solo los widgets que necesites
+
+```
+from guizero import App, Text, PushButton, Slider
+```
+
+- Al final debe haber una instrucción para mostrar la app, como en el ejemplo ch1 : **`aplicacion.display()`**
+
+```
+aplicacion = App(title="Hola Mundo JCSP")
+message = Text(aplicacion, text="Bienvenido a la app")
+aplicacion.display()
+```
+
+- Todo lo que aparece en la GUI son widget : text boxes, buttons, sliders ...
+
+- **Todos los widgets**  van entre la línea que crea la app y la linea `app.display()` 
+
+### Capitulo 2
+
+1- Haz el programa del capitulo 2 o ejecuta el programa
+
+[BMMP_CL30_GZch2wanted_1_0.py](BMMP_CL30_GZch2wanted_1_0.py)
+
+2- Recomiendo **profundizar un poco en el widget 'App'** leyendo la documentación [App - guizero](https://lawsie.github.io/guizero/app/). Para este programa ch2 resumo algunas informaciones :
+
+- La ventana que se crea por defecto con  `aplicacion = App()` es de 500 x 500
+
+- Ningún parámetro en la creación de App es obligatorio
+
+- A posteriori de la creación se puede cambia cualquier valor de los parámetros de creación , que ahora serán propiedades , ejemplo para cambiar a posteriori el color de fondo
+
+```
+aplicacion.bg = "#1CE0D6"
+```
+
+3- Recomiendo profundizar un poco en el **widget Text** [Text - guizero](https://lawsie.github.io/guizero/text/) . Resumen:
+
+- Es obligatorio incluir un paramento con el "master" = el contenedor al que el widget pertenece : el nombre de la app creada con `App`
+
+- A posteriori de la adicion del widget Text, se puede cambiar cualquier valor de los parámetros de creación , que ahora serán propiedades , ejemplo
+
+```
+wanted_text.text_size = 50
+wanted_text.font = "Bodoni MT"
+```
+
+Nota: el tamaño del texto como parámetro es 'size', pero como propiedad es 'text_size'
+
+
+
+4- Recomiendo profundizar un poco en el **widget Picture** [Picture - guizero](https://lawsie.github.io/guizero/picture/)
+
+- Es obligatorio incluir un paramento con el "master" = el contenedor al que el widget pertenece : el nombre de la app creada con `App`
+
+- El nombre del fichero debe incluir el path
+
+`picture = Picture(app, image="images/test.gif")`
+
+- Se soportan imágenes GIF y PNG por defecto. Otros tipos de imagen requieren instalar un paquete adicional
 
 ### Capitulo 5 - ....
 
