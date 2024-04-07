@@ -29,15 +29,15 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa                   | Capitulo del libro | Objetivo de Aprendizaje           |
-| -------------------------- |:------------------:| --------------------------------- |
-| BMMP_CL30_GZch1hola_1_0.py | ch1                | primeros paso - crear una ventana |
-|                            |                    |                                   |
-|                            |                    |                                   |
-|                            |                    |                                   |
-|                            |                    |                                   |
-|                            |                    |                                   |
-|                            |                    |                                   |
+| Programa                     | Capitulo del libro | Objetivo de Aprendizaje           |
+| ---------------------------- |:------------------:| --------------------------------- |
+| BMMP_CL30_GZch1hola_1_0.py   | ch1                | primeros paso - crear una ventana |
+| BMMP_CL30_GZch2wanted_1_0.py | ch2                |                                   |
+| BMMP_CL30_GZch3spy_1_0.py    | ch3                |                                   |
+| BMMP_CL30_GZch4meme_1_0.py   | ch4                |                                   |
+|                              |                    |                                   |
+|                              |                    |                                   |
+|                              |                    |                                   |
 
 ### Recomendaciones de estudio
 
@@ -59,7 +59,9 @@ Instalar la libreria con Thonny es lo mas sencillo, aparte de las opciones que d
 
 ![](./doc/install2.png)
 
-### **Capitulo 1 - Hola mundo**
+### **Capitulo 1 - Hola mundo / widget = App**
+
+Nota: widget no tiene una traducción directa, se podría decir que es una mini-aplicación, dentro de una aplicación mas grande
 
 1- Haz el programa del capitulo 1 o ejecuta el programa
 
@@ -132,7 +134,41 @@ Nota: el tamaño del texto como parámetro es 'size', pero como propiedad es 'te
 
 - Se soportan imágenes GIF y PNG por defecto. Otros tipos de imagen requieren instalar un paquete adicional
 
-### Capitulo 5 - ....
+### Capitulo 3 - Sugerir nombre de espía / widgets = PushButton
+
+1- Haz el programa del capitulo 3 o ejecuta el programa
+
+[BMMP_CL30_GZch3spy_1_0.py](BMMP_CL30_GZch3spy_1_0.py)
+
+2- Recomiendo **profundizar un poco en el widget 'PushButton'** leyendo la documentación [PushButton - guizero](https://lawsie.github.io/guizero/pushbutton/) . Para este programa ch3 resumo algunas informaciones :
+
+- El widget  `PushButton` muestra un boton con texto o una imagen dentro, y al ser presionado llama a una función.
+
+- Es obligatorio incluir un paramento con el "master" = el contenedor al que el widget pertenece : el nombre de la app creada con `App`
+
+- El parámetro de función a llamar es como la llamada de una función de interrupción
+
+- **NO ENTIENDO** porque para devolver el valor a un widget Text, no se declara la variable como global al final de la función
+
+```
+def choose_name():
+    print("Button was pressed")
+    first_names = ["Rafa", "Fernando", "Begoña", "Jose", "Carlos", "Gema"]
+    last_names = ["Garcia", "Perez", "Sanchez", "Gomez", "Anton", "Martin"]
+    spy_name = choice(first_names) + " " + choice(last_names)
+    print(spy_name)
+    name.value = spy_name # no entiendo porque no hay que definirla como Global !!!
+```
+
+- Se soportan imágenes GIF y PNG por defecto. Otros tipos de imagen requieren instalar un paquete adicional
+
+### Capitulo 4 - Crear memes / widgets = TextBox, Drawing, Combo, Slider
+
+1- Haz el programa del capitulo 4 o ejecuta el programa
+
+[BMMP_CL30_GZch4meme_1_0.py](BMMP_CL30_GZch4meme_1_0.py)
+
+El programa tiene 1 App master y 6 widgets = 2 TextBox + 2 Combo + 1 Slider + 1 Drawing
 
 ---
 

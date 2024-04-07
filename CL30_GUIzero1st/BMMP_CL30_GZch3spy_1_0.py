@@ -35,16 +35,17 @@ def choose_name():
     name.value = spy_name # no entiendo porque no hay que definirla como Global !!!
 
 # 1 - Una ventana para TOP SECRET + TEXTO + BOTON
-app = App("TOP SECRET")
+apl = App("TOP SECRET")
 
-title = Text(app, "Push the red button to find out your spy name")
+# 2- añado un widget Text
+title = Text(apl, "Push the red button to find out your spy name")
 
-button = PushButton(app, choose_name, text="Tell me!")
+# 3- añado un widget PushButton
+button = PushButton(apl, choose_name, text="Tell me!")
 button.bg = "red"
 button.text_size = 30
-name = Text(app, text="")
 
-# 
-# cat = Picture(app, image="tabitha.png")
+# 4- añado un widget Text nuevo que se visualizara debajo del boton
+name = Text(apl, text="") # se inicaliza con un texto vacio para la primera vez que se muestra
 
-app.display()
+apl.display()
