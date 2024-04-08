@@ -34,7 +34,7 @@ def draw_meme():
         size=size.value, 
         font=font.value)
     meme.text(
-        20, 320, bottom_text.value,
+        20, 300, bottom_text.value,
         color=color.value,
         size=size.value,
         font=font.value,
@@ -43,21 +43,27 @@ def draw_meme():
 # 1 - App 
 app = App("meme")
 
-top_text = TextBox(app, "top text", command=draw_meme) # llama adraw_meme si cambia
-bottom_text = TextBox(app, "bottom text", command=draw_meme) # llama adraw_meme si cambia
+# 2- wg#1 - Añade un TextBox
+top_text = TextBox(app, "top text", command=draw_meme) # llama a draw_meme si cambia
+# 3- wg#2 - Añade un TextBox
+bottom_text = TextBox(app, "bottom text", command=draw_meme) # llama a draw_meme si cambia
 
+# 4- wg#3 - Añade un Combo
 color = Combo(app,
               options=["black", "white", "red", "green", "blue", "orange"],
-              command=draw_meme, selected="blue") # crea una drop-down list para elegir color
+              command=draw_meme, selected="blue") # crea un drop-down list para elegir color
 
+# 5- wg#4 - Añade otro Combo
 font = Combo(app,
              options=["times new roman", "verdana", "courier", "impact"],
-             command=draw_meme) # crea una drop-down list para elegir fuente
+             command=draw_meme) # crea un drop-down list para elegir fuente
 
-size = Slider(app, start=20, end=50, command=draw_meme) # crea slider para elegir tamaño
+# 6- wg#5 - Añade un slider
+size = Slider(app, start=20, end=50, command=draw_meme) # crea un slider para elegir tamaño
 
+# 7- wg#6 - Añade un Drawing
 meme = Drawing(app, width="fill", height="fill")
-
 draw_meme()
 
+# 8- Fin App display
 app.display()
