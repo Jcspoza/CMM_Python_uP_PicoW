@@ -29,15 +29,15 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa                     | Capitulo del libro | Objetivo de Aprendizaje           |
-| ---------------------------- |:------------------:| --------------------------------- |
-| BMMP_CL30_GZch1hola_1_0.py   | ch1                | primeros paso - crear una ventana |
-| BMMP_CL30_GZch2wanted_1_0.py | ch2                |                                   |
-| BMMP_CL30_GZch3spy_1_0.py    | ch3                |                                   |
-| BMMP_CL30_GZch4meme_1_0.py   | ch4                |                                   |
-|                              |                    |                                   |
-|                              |                    |                                   |
-|                              |                    |                                   |
+| Programa                     | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
+| ---------------------------- | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
+| BMMP_CL30_GZch1hola_1_0.py   | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
+| BMMP_CL30_GZch2wanted_1_0.py | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
+| BMMP_CL30_GZch3spy_1_0.py    | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
+| BMMP_CL30_GZch4meme_1_0.py   | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
+|                              |                                 |                    |                                                                                                                                        |
+|                              |                                 |                    |                                                                                                                                        |
+|                              |                                 |                    |                                                                                                                                        |
 
 ### Recomendaciones de estudio
 
@@ -91,7 +91,7 @@ aplicacion.display()
 
 - **Todos los widgets**  van entre la línea que crea la app y la linea `app.display()` 
 
-### Capitulo 2
+### Capitulo 2 / widget = Text, Picture
 
 1- Haz el programa del capitulo 2 o ejecuta el programa
 
@@ -115,7 +115,7 @@ aplicacion.bg = "#1CE0D6"
 
 - La alineación por defecto = None = "top"
 
-- A posteriori de la adicion del widget Text, se puede cambiar cualquier valor de los parámetros de creación , que ahora serán propiedades , ejemplo
+- A posteriori de la adición del widget Text, se puede cambiar cualquier valor de los parámetros de creación , que ahora serán propiedades , ejemplo
 
 ```
 wanted_text.text_size = 50
@@ -169,6 +169,56 @@ def choose_name():
 [BMMP_CL30_GZch4meme_1_0.py](BMMP_CL30_GZch4meme_1_0.py)
 
 El programa tiene 1 App master y 6 widgets = 2 TextBox + 2 Combo + 1 Slider + 1 Drawing
+
+Cada cambio en los widgets : 2 TextBox + 2 Combo + 1 Slider, llama a una función de re-pintado del meme, todos a al misma por simplicidad
+
+Cambio en TextBox = escribir otro texto el la caja de texto
+
+Cambio en Como = seleccionar color o tipo de letra en una lista drop-down
+
+Cambio en el slider = mover el valor de tamaño de texto
+
+2- Recomiendo **profundizar un poco en el widget 'TextBox'** leyendo la documentación [TextBox - guizero](https://lawsie.github.io/guizero/textbox/)   . Resumo:
+
+- Crea una caja de texto donde el usuario puede escribir, seria como un `input` de Python
+
+- Se puede poner un texto inicial en la caja
+
+- Si se añade una función en `command` se ejecuta en los cambios = escribir otro texto el la caja de texto
+
+- Si se añade una función a ejecutar NO DEBE tener argumentos o solo 1. >La documentacion parece decir que el argumento lo tomo de lo introducido en la text box
+
+3- Recomiendo **profundizar un poco en el widget 'Combo'** leyendo la documentación [Combo - guizero](https://lawsie.github.io/guizero/combo/). Resumo:
+
+- Crea un 'drop-down-box' para seleccionar 1 SOLA opción
+
+- Las opciones se proporcionan como Lista entre ' [ ] '. Se puede poner una opcion por defecto
+
+- Si se añade una función en `command` se ejecuta en los cambios = seleccionar otra opción en la lista drop-down
+
+- Si se añade una función a ejecutar NO DEBE tener argumentos o solo 1.  Si tiene 1 argumento se toma la selección actual como argumento
+
+4- Recomiendo **profundizar un poco en el widget 'Slider'** leyendo la documentación [Slider - guizero](https://lawsie.github.io/guizero/slider/). Resumo:
+
+- Muestra una barra horizontal con un dial que se puede desplazar para dar un valor entero entre dos limites
+
+- Si se añade una función en `command` se ejecuta en los cambios = mover el dial
+
+- Argumentos de la función en `command` , la documentación dice que ha de tener un argumento, pero en el ejemplo no tiene y funciona.
+
+5- Recomiendo **profundizar un poco en el widget 'Drawing'** leyendo la documentación [Drawing - guizero](https://lawsie.github.io/guizero/drawing/). Resumo:
+
+- Es como un cajón de sastre para crear figuras geométricas dentro de una ventana: líneas, rectángulos, círculos, polígonos, etc.
+
+- También vuelca imágenes ( como en el ejemplo del capitulo) 
+
+- NO llama a ninguna función, porque la lógica es mas bien diferente :
+  
+  - Crear el widget Drawing
+  
+  - Dibijar cosas : lineas, imagenes , etc.
+  
+  - llamar al master.display()
 
 ---
 
