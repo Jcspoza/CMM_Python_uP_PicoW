@@ -174,7 +174,7 @@ Cada cambio en los widgets : 2 TextBox + 2 Combo + 1 Slider, llama a una funció
 
 Cambio en TextBox = escribir otro texto el la caja de texto
 
-Cambio en Como = seleccionar color o tipo de letra en una lista drop-down
+Cambio en Combo = seleccionar color o tipo de letra en una lista drop-down
 
 Cambio en el slider = mover el valor de tamaño de texto
 
