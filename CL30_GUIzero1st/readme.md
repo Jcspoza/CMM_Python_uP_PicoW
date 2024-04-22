@@ -29,15 +29,15 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa                     | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
-| ---------------------------- | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
-| BMMP_CL30_GZch1hola_1_0.py   | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
-| BMMP_CL30_GZch2wanted_1_0.py | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
-| BMMP_CL30_GZch3spy_1_0.py    | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
-| BMMP_CL30_GZch4meme_1_0.py   | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
-|                              |                                 |                    |                                                                                                                                        |
-|                              |                                 |                    |                                                                                                                                        |
-|                              |                                 |                    |                                                                                                                                        |
+| Programa                       | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
+| ------------------------------ | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
+| BMMP_CL30_GZch1hola_1_0.py     | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
+| BMMP_CL30_GZch2wanted_1_0.py   | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
+| BMMP_CL30_GZch3spy_1_0.py      | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
+| BMMP_CL30_GZch4meme_1_0.py     | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
+|                                |                                 |                    |                                                                                                                                        |
+|                                |                                 |                    |                                                                                                                                        |
+| BMMP_CL30_GZch7_mataPun_1_0.py | Waffle                          | ch7                |                                                                                                                                        |
 
 ### Recomendaciones de estudio
 
@@ -219,6 +219,50 @@ Cambio en el slider = mover el valor de tamaño de texto
   - Dibijar cosas : lineas, imagenes , etc.
   
   - llamar al master.display()
+
+### Capitulo 7 - Matar puntos rojos / widgets = Waffle
+
+1- Haz el programa del **capitulo 7** o ejecuta el programa
+
+[BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)
+
+OBJETIVO: en una retícula de 5 x 5 ( se puede cambiar), se van cambiando aleatoriamente cuadrados blancos por puntos rojos. Hay que ir matando los puntos clicando, para retornarlos a cuadrado. Cada retorno suma 1 punto. Se pierde cuando todos los 5 x5 cuadrados son puntos rojos.
+
+**¿Cómo esta construido el programa y la dinámica del juego?**
+
+Crea un App y 3 widgets : 2 Text y un Waffle, en este ultimo se ejecuta el juego. El waffle es el 'board' con funcion de callback:
+
+-  para destruir los cirulos rojos
+
+- sumar puntos
+
+Se lanza el bucle de juego con 
+
+```
+board.after(1000, add_dot)
+```
+
+El método .after() programa una llamada UNICA a la función de callback indicada despues de un tiempo dado en milisegundos (Para repetir las llamadas se debería usar el método repeat() ) 
+
+`add_dot()` lleva la dinámica de añadir puntos aleatorios. Y luego en `add_dot()` se vuelve a hacer una llamada recursiva SI no estamos al final de juego, SI estamos al FINAL del juego :
+
+- muestra un mensaje de que se ha perdido y los puntos finales
+
+- **MEJORA respecto al libro**: debe deshabilitar el `board` porque si no una vez acabado el juego aun funcionaria el `destroy_dot`
+
+2- Recomiendo **profundizar un poco en el widget 'Waffle'** leyendo la documentación  [Waffle - guizero](https://lawsie.github.io/guizero/waffle/). Resumo:
+
+- Muestra una retícula de n x n cuadrados o puntos. en este programa el uso es muy básico, es como un waffle de los de comer
+
+- Es obligatorio incluir un paramento con el "master" = el contenedor al que el widget pertenece : el nombre de la app creada con `App`
+
+- Convertir una zona de la retícula en cuadrado o circulo (dot) se controla con la propiedad `dotty` a True o a False
+
+```
+board[x, y].dotty = True # Convierte en dot
+```
+
+- La función de callback ha de tener o 0 o 2 argumentos que son las coordenadas x e y, de la retícula tocada
 
 ---
 
