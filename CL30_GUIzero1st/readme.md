@@ -29,15 +29,15 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa                       | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
-| ------------------------------ | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
-| BMMP_CL30_GZch1hola_1_0.py     | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
-| BMMP_CL30_GZch2wanted_1_0.py   | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
-| BMMP_CL30_GZch3spy_1_0.py      | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
-| BMMP_CL30_GZch4meme_1_0.py     | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
-|                                |                                 |                    |                                                                                                                                        |
-|                                |                                 |                    |                                                                                                                                        |
-| BMMP_CL30_GZch7_mataPun_1_0.py | Waffle                          | ch7                |                                                                                                                                        |
+| Programa                                                         | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
+| ---------------------------------------------------------------- | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
+| [BMMP_CL30_GZch1hola_1_0.py](BMMP_CL30_GZch1hola_1_0.py)         | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
+| BMMP_CL30_GZch2wanted_1_0.py                                     | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
+| BMMP_CL30_GZch3spy_1_0.py                                        | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
+| BMMP_CL30_GZch4meme_1_0.py                                       | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
+|                                                                  | me´todo .repeat(..)             | ch5                | Solo ejemplos de lo que No se debe hacer                                                                                               |
+| [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)         | Box                             | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
+| [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py) | Waffle                          | ch7                |                                                                                                                                        |
 
 ### Recomendaciones de estudio
 
@@ -219,6 +219,30 @@ Cambio en el slider = mover el valor de tamaño de texto
   - Dibijar cosas : lineas, imagenes , etc.
   
   - llamar al master.display()
+
+### Capitulo 5 / metodos .after(), .cancel() y .repeat()
+
+1- El capitulo 5 es un conjunto de programas MAL hechos para aprender. Baja los programas del repositorio y ejecuta 1 a 1 con la explicación del libro
+
+
+
+**El programa mas interesante es el ch5-2**, que usa el método repeat()
+
+2- Recomiendo profundizar un poco en los métodos .after(), .cancel() y .repeat() de App  en la documentación [App - guizero](https://lawsie.github.io/guizero/app/). Resumo algunas informaciones :
+
+- Hay un 'scheduler' que se puede programar para que llame a una función
+  - A intervalos fijos **.repeat()**
+  - Solo una vez despues de un tiempo **.after()**
+  - para cancelar la funcion que se llama con **.cancel()**
+- El programa ch5-2 tiene problemas según como se salga de el en Thonny. Si se ejecuta en cmd NO hay estos problemas. Esta la opción de incluir 
+
+```
+app.when_closed = app.cancel(flash_text)
+```
+
+Para cancelar la función que se llama con el 'scheduler'
+
+- Se puede simular repeat() con after() haciendo llamadas recursivas - ver ch 7 programa mataPun
 
 ### Capitulo 7 - Matar puntos rojos / widgets = Waffle
 
