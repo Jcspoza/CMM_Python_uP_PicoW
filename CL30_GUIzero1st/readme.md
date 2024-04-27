@@ -29,15 +29,20 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa                                                         | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
-| ---------------------------------------------------------------- | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
-| [BMMP_CL30_GZch1hola_1_0.py](BMMP_CL30_GZch1hola_1_0.py)         | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
-| BMMP_CL30_GZch2wanted_1_0.py                                     | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
-| BMMP_CL30_GZch3spy_1_0.py                                        | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
-| BMMP_CL30_GZch4meme_1_0.py                                       | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
-|                                                                  | me´todo .repeat(..)             | ch5                | Solo ejemplos de lo que No se debe hacer                                                                                               |
-| [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)         | Box                             | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
-| [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py) | Waffle                          | ch7                |                                                                                                                                        |
+| Programa                                                                                                                              | Widget                                                    | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
+| [ch1-1.py](ch1-1.py)                                                                                                                  | App                                                       | ch1                | El programa mas básico posible                                                                                                         |
+| [BMMP_CL30_GZch1hola_1_0.py](BMMP_CL30_GZch1hola_1_0.py)                                                                              | App                                                       | ch1                | primeros paso - crear una ventana                                                                                                      |
+| BMMP_CL30_GZch2wanted_1_0.py                                                                                                          | Text, Picture                                             | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
+| BMMP_CL30_GZch3spy_1_0.py                                                                                                             | PushButton                                                | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
+| BMMP_CL30_GZch4meme_1_0.py                                                                                                            | TextBox, Drawing, Combo, Slider                           | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
+| ch5-1.py ch5-3.py ch5-4.py ch5-5.py                                                                                                   |                                                           | ch5                | Los programas 1, 3, 4, y 5 son ejemplos de lo que No se debe hacer.                                                                    |
+| [ch5-2.py](ch5-2.py) [ch5-2B.py](ch5-2B.py) ch5-3.py ch5-4.py ch5-5.py [ch5-6.py](ch5-6.py) [ch5-7.py](ch5-7.py) [ch5-8.py](ch5-8.py) | 2-método .repeat(..), 6-Segunda ventana 7-método i.info() | ch5                | Interesa el ejemplo 2, 6 7 y el 8                                                                                                      |
+| [ch5-6.py](ch5-6.py)                                                                                                                  | 6-Segunda ventana                                         | ch5                | Ejemplo simple de tener una 2da ventana                                                                                                |
+| [ch5-7.py](ch5-7.py)                                                                                                                  | 7-método i.info()                                         | ch5                |                                                                                                                                        |
+| [ch5-8.py](ch5-8.py)                                                                                                                  | 8- metodos yesno, info , error                            | ch5                |                                                                                                                                        |
+| [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)                                                                              | Box                                                       | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
+| [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)                                                                      | Waffle                                                    | ch7                |                                                                                                                                        |
 
 ### Recomendaciones de estudio
 
@@ -53,11 +58,31 @@ Normalmente se hará un programa por capitulo incluyendo todas las partes que a 
 
 ### **Capitulo 1.1 - Instalación**
 
+#### Instalación Windows - Thonny
+
 Instalar la libreria con Thonny es lo mas sencillo, aparte de las opciones que da el libro o las que indica en la documentación en [guizero- installation](https://lawsie.github.io/guizero/#installation)
 
 ![](./doc/install1.png)
 
 ![](./doc/install2.png)
+
+#### Instalación Raspberry Pi - App-get install
+
+Se instala sin problemas siguiendo la instrucciones de [guizero install raspberry-pi](https://lawsie.github.io/guizero/#raspberry-pi) , probado el 25Abril 2024 en Raspberry pi 3B.
+
+##### Instalacion y actualizacion
+
+IMPORTANTE : con apt-get install me instalo la version 1.1 de guizero. Luego ejecute 
+
+```
+pip3 install guizero --upgrade
+```
+
+y se actualizo a versión 1.5 ( que es la ultima en este momento)
+
+##### Prueba en RPI 3b
+
+Probé varios programas hechos en esta guía y todo fue Ok . Los probé con el IDE de Thonny de la RPI
 
 ### **Capitulo 1 - Hola mundo / widget = App**
 
@@ -223,8 +248,6 @@ Cambio en el slider = mover el valor de tamaño de texto
 ### Capitulo 5 / metodos .after(), .cancel() y .repeat()
 
 1- El capitulo 5 es un conjunto de programas MAL hechos para aprender. Baja los programas del repositorio y ejecuta 1 a 1 con la explicación del libro
-
-
 
 **El programa mas interesante es el ch5-2**, que usa el método repeat()
 
