@@ -29,20 +29,20 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 
 ### Tabla resumen de programas
 
-| Programa                                                                                                                              | Widget                                                    | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
-| [ch1-1.py](ch1-1.py)                                                                                                                  | App                                                       | ch1                | El programa mas básico posible                                                                                                         |
-| [BMMP_CL30_GZch1hola_1_0.py](BMMP_CL30_GZch1hola_1_0.py)                                                                              | App                                                       | ch1                | primeros paso - crear una ventana                                                                                                      |
-| BMMP_CL30_GZch2wanted_1_0.py                                                                                                          | Text, Picture                                             | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
-| BMMP_CL30_GZch3spy_1_0.py                                                                                                             | PushButton                                                | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
-| BMMP_CL30_GZch4meme_1_0.py                                                                                                            | TextBox, Drawing, Combo, Slider                           | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
-| ch5-1.py ch5-3.py ch5-4.py ch5-5.py                                                                                                   |                                                           | ch5                | Los programas 1, 3, 4, y 5 son ejemplos de lo que No se debe hacer.                                                                    |
-| [ch5-2.py](ch5-2.py) [ch5-2B.py](ch5-2B.py) ch5-3.py ch5-4.py ch5-5.py [ch5-6.py](ch5-6.py) [ch5-7.py](ch5-7.py) [ch5-8.py](ch5-8.py) | 2-método .repeat(..), 6-Segunda ventana 7-método i.info() | ch5                | Interesa el ejemplo 2, 6 7 y el 8                                                                                                      |
-| [ch5-6.py](ch5-6.py)                                                                                                                  | 6-Segunda ventana                                         | ch5                | Ejemplo simple de tener una 2da ventana                                                                                                |
-| [ch5-7.py](ch5-7.py)                                                                                                                  | 7-método i.info()                                         | ch5                |                                                                                                                                        |
-| [ch5-8.py](ch5-8.py)                                                                                                                  | 8- metodos yesno, info , error                            | ch5                |                                                                                                                                        |
-| [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)                                                                              | Box                                                       | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
-| [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)                                                                      | Waffle                                                    | ch7                |                                                                                                                                        |
+| Programa                                                                            | Widget                          | Capitulo del libro | Objetivo de Aprendizaje                                                                                                                |
+| ----------------------------------------------------------------------------------- | ------------------------------- |:------------------:| -------------------------------------------------------------------------------------------------------------------------------------- |
+| [ch1-1.py](ch1-1.py)                                                                | App                             | ch1                | El programa mas básico posible                                                                                                         |
+| [BMMP_CL30_GZch1hola_1_0.py](BMMP_CL30_GZch1hola_1_0.py)                            | App                             | ch1                | primeros paso - crear una ventana                                                                                                      |
+| [BMMP_CL30_GZch2wanted_1_0.py](BMMP_CL30_GZch2wanted_1_0.py)                        | Text, Picture                   | ch2                | Reproduce un cartel típico de 'se busca'                                                                                               |
+| [BMMP_CL30_GZch3spy_1_0.py](BMMP_CL30_GZch3spy_1_0.py)                              | PushButton                      | ch3                | Genera nombres de espía al pulsar un botón en la ventana                                                                               |
+| [BMMP_CL30_GZch4meme_1_0.py](BMMP_CL30_GZch4meme_1_0.py)                            | TextBox, Drawing, Combo, Slider | ch4                | Crea dibujos de memes con texto a escribir por el usuario , arriba y abajo , asi como elegir entre diferentes colores y tipos de letra |
+| [ch5-1.py](ch5-1.py) [ch5-3.py](ch5-3.py) [ch5-4.py](ch5-4.py) [ch5-5.py](ch5-5.py) |                                 | ch5                | Los programas 1, 3, 4, y 5 son ejemplos de lo que No se debe hacer.                                                                    |
+| [ch5-2.py](ch5-2.py)                                                                | 2-método .repeat(..)            | ch5                | Interesa el ejemplo 2,                                                                                                                 |
+| [ch5-6.py](ch5-6.py)                                                                | 6-Segunda ventana               | ch5                | Ejemplo simple de tener una 2da ventana                                                                                                |
+| [ch5-7.py](ch5-7.py)                                                                | 7-método i.info()               | ch5                |                                                                                                                                        |
+| [ch5-8.py](ch5-8.py)                                                                | 8- metodos yesno, info , error  | ch5                |                                                                                                                                        |
+| [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)                            | Box                             | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
+| [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)                    | Waffle                          | ch7                |                                                                                                                                        |
 
 ### Recomendaciones de estudio
 
@@ -87,6 +87,16 @@ Probé varios programas hechos en esta guía y todo fue Ok . Los probé con el I
 ### **Capitulo 1 - Hola mundo / widget = App**
 
 Nota: widget no tiene una traducción directa, se podría decir que es una mini-aplicación, dentro de una aplicación mas grande
+
+0- El programa mas simple posible
+
+[ch1-1.py](ch1-1.py)
+
+```
+from guizero import App
+app = App()
+app.display()
+```
 
 1- Haz el programa del capitulo 1 o ejecuta el programa
 
@@ -267,6 +277,44 @@ Para cancelar la función que se llama con el 'scheduler'
 
 - Se puede simular repeat() con after() haciendo llamadas recursivas - ver ch 7 programa mataPun
 
+### Capitulo 6 - Panel de juego 3 en raya / widgets = Box y Grid layout
+
+1- Haz el programa del **capitulo 6** o ejecuta el programa
+
+[BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)
+
+Es un panel para jugar a las 3 en raya, pero SIN inteligencia: solo detecta el final el juego.
+
+El programa esta construido de una forma algo criptica
+
+1. La parte de INICIALIZACION DE JUEGO seria la parte de programa principal ( sin las funciones) , especialmente la función `clear_board() # Crea el Tablero`
+
+2. El BUCLE DE JUEGO esta en realidad en `def choose_square(x, y): # Es el bucle de juego` que es la funcion de callback que se llama cada vez qeu se clica en uno de los 9 cuadrados tipo PushButton, creados en clear_board(). 
+
+3. El FINAL DE JUEGO se comprueba en `check_win()` que es el ultimo proceso del bucle de juego. Si es final de juego por ganar o empatar  o por completar 9 movimientos, se muestra un mensaje adecuado. ERROR : no cancela los Pushbutton y se puede seguir usándolos despues de ganar
+
+2- Recomiendo **profundizar un poco en el widget 'Box'** leyendo la documentación  [Box - guizero](https://lawsie.github.io/guizero/box/) Resumo:
+
+- Es como una caja invisible para contener otros widgets => es un 'master' junto  `App` y  `windows` , normalmente para hacer un layout especial
+- En el programa 6 se usa con Grid layout , ver abajo
+- Box es muy versátil, y permite hacer cualquier diseño que se quiera, por ejemplo un formulario. Ver ejemplos de uso en [Layouts - guizero](https://lawsie.github.io/guizero/layout/#boxes)
+
+3- Recomiendo **profundizar un poco en el tema de Grid layout** leyendo la documentación [Layouts Grid - guizero](https://lawsie.github.io/guizero/layout/#grid-layout) Resumo:
+
+- Un layout es como se posicionan los widgets en una ventana
+- Hay dos layouts posibles :
+  - Auto : por defecto se van colocado a medida que se crean de arriba a abajo y alienados al centro.  Esto se puede modificar con parámetros, ver [Layouts - guizero](https://lawsie.github.io/guizero/layout/#layouts)
+  - Grid : posiciona los widgets en una cuadricula virtual. 
+- En el layout Grid, cuando se crean los widgets hay que especificar en que cuadricula van, ejemplo
+
+```
+app = App(layout="grid")
+text = Text(app, text="Hello world", grid=[0,1])
+```
+
+- Resulta raro, pero NO hay que especificar el tamaño del grid, el gestor de ventanas se encarga de colocar los objetos
+- Se puede hacer que un widget en el Box ocupe mas de 1 casilla, indicándolo con los sub-parámetros xspan  e yspan en el paramentro grid
+
 ### Capitulo 7 - Matar puntos rojos / widgets = Waffle
 
 1- Haz el programa del **capitulo 7** o ejecuta el programa
@@ -299,7 +347,7 @@ El método .after() programa una llamada UNICA a la función de callback indicad
 
 2- Recomiendo **profundizar un poco en el widget 'Waffle'** leyendo la documentación  [Waffle - guizero](https://lawsie.github.io/guizero/waffle/). Resumo:
 
-- Muestra una retícula de n x n cuadrados o puntos. en este programa el uso es muy básico, es como un waffle de los de comer
+- Muestra una retícula de n x n cuadrados o puntos. en este programa el uso es muy básico, es como un gofre de los de comer
 
 - Es obligatorio incluir un paramento con el "master" = el contenedor al que el widget pertenece : el nombre de la app creada con `App`
 
@@ -313,4 +361,6 @@ board[x, y].dotty = True # Convierte en dot
 
 ---
 
+```
 TO DO : 
+```
