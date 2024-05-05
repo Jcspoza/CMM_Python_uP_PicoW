@@ -282,6 +282,7 @@ Para cancelar la función que se llama con el 'scheduler'
 1- Haz el programa del **capitulo 6** o ejecuta el programa
 
 [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)
+[BMMP_CL30_GZch6_3nr_2_0.py](BMMP_CL30_GZch6_3nr_2_0.py)
 
 Es un panel para jugar a las 3 en raya, pero SIN inteligencia: solo detecta el final el juego.
 
@@ -291,7 +292,7 @@ El programa esta construido de una forma algo criptica
 
 2. El BUCLE DE JUEGO esta en realidad en `def choose_square(x, y): # Es el bucle de juego` que es la funcion de callback que se llama cada vez qeu se clica en uno de los 9 cuadrados tipo PushButton, creados en clear_board(). 
 
-3. El FINAL DE JUEGO se comprueba en `check_win()` que es el ultimo proceso del bucle de juego. Si es final de juego por ganar o empatar  o por completar 9 movimientos, se muestra un mensaje adecuado. ERROR : no cancela los Pushbutton y se puede seguir usándolos despues de ganar
+3. El FINAL DE JUEGO se comprueba en `check_win()` que es el ultimo proceso del bucle de juego. Si es final de juego por ganar o empatar  o por completar 9 movimientos, se muestra un mensaje adecuado. ERROR : no cancela los Pushbutton y se puede seguir usándolos despues de ganar. CORREGIDO  en version 2.0 [BMMP_CL30_GZch6_3nr_2_0.py](BMMP_CL30_GZch6_3nr_2_0.py)
 
 2- Recomiendo **profundizar un poco en el widget 'Box'** leyendo la documentación  [Box - guizero](https://lawsie.github.io/guizero/box/) Resumo:
 
