@@ -35,7 +35,7 @@ def toggle_player():
 
 def choose_square(x, y): # Es el bucle de juego
     board_squares[x][y].text = turno
-    board_squares[x][y].disable()
+    board_squares[x][y].disable() # este cuadradoya NO se puede volver a usar
     toggle_player()
     check_win()
     
