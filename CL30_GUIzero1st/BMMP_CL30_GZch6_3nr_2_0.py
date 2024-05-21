@@ -24,7 +24,7 @@ print(f"Program: {p_project} - Version: {p_version}")
 # Informative block - end
 
 # F- Functions
-# F.1
+# F.1 CAMBIA LA VARIABLE QUE LLEVA EL CARACTER QUE CORRESPONDE AL TURNO
 def toggle_player():
     global turno
     if turno == "X":
@@ -32,13 +32,16 @@ def toggle_player():
     else:
         turno = "X"
     message.value = "Es tu turno, " + turno
-
-def choose_square(x, y): # Es el bucle de juego
-    board_squares[x][y].text = turno
-    board_squares[x][y].disable() # este cuadradoya NO se puede volver a usar
-    toggle_player()
-    check_win()
     
+def moves_taken():
+    """ Cuenta las X o las O """
+    moves = 0
+    for row in board_squares:
+        for col in row:
+            if col.text == "X" or col.text == "O":
+                moves = moves + 1
+    return moves
+   
 def check_win():
     winner = None
     # Vertical lines
@@ -86,15 +89,6 @@ def check_win():
         board.disable()
         message.value = "Es un Empate"        
         
-def moves_taken():
-    """ Cuenta las X o las O """
-    moves = 0
-    for row in board_squares:
-        for col in row:
-            if col.text == "X" or col.text == "O":
-                moves = moves + 1
-    return moves
-
 def clear_board():
     new_board = [[None, None, None], [None, None, None], [None, None, None]]
     for x in range(3):
@@ -103,6 +97,13 @@ def clear_board():
             new_board[x][y] = button
             
     return new_board
+
+# F- BUCLE DE JUEGO
+def choose_square(x, y):
+    board_squares[x][y].text = turno
+    board_squares[x][y].disable() # este cuadrado ya NO se puede volver a usar
+    toggle_player()
+    check_win() # CHECK DE SI HAY GANADOR O FIN, 
 
 
 # 0 - Variables y constantes
