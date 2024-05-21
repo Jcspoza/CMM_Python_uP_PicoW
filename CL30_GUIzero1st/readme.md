@@ -43,6 +43,7 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 | [ch5-8.py](ch5-8.py)                                                                | 8- metodos yesno, info , error  | ch5                |                                                                                                                                        |
 | [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)                            | Box                             | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
 | [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)                    | Waffle                          | ch7                |                                                                                                                                        |
+| [BMMP_CL30_GZch8_inundalo_2_0.py](BMMP_CL30_GZch8_inundalo_2_0.py)                  | Waffle                          | ch8                | Juego visual de inundar un tablero de colores                                                                                          |
 
 ### Recomendaciones de estudio
 
@@ -322,11 +323,11 @@ text = Text(app, text="Hello world", grid=[0,1])
 
 [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)
 
-OBJETIVO: en una retícula de 5 x 5 ( se puede cambiar), se van cambiando aleatoriamente cuadrados blancos por puntos rojos. Hay que ir matando los puntos clicando, para retornarlos a cuadrado. Cada retorno suma 1 punto. Se pierde cuando todos los 5 x5 cuadrados son puntos rojos.
+<u>**OBJETIVO:**</u> en una retícula de 5 x 5 (se puede cambiar), se van cambiando aleatoriamente cuadrados blancos por puntos rojos. Hay que ir matando los puntos clicando, para retornarlos a cuadrado. Cada retorno suma 1 punto. Se pierde cuando todos los 5 x5 cuadrados son puntos rojos.
 
 **¿Cómo esta construido el programa y la dinámica del juego?**
 
-Crea un App y 3 widgets : 2 Text y un Waffle, en este ultimo se ejecuta el juego. El waffle es el 'board' con funcion de callback:
+Crea un App y 3 widgets : 2 Text y **un Waffle, en este ultimo se ejecuta el juego.** El waffle es el 'board' con funcion de callback:
 
 -  para destruir los cirulos rojos
 
@@ -340,10 +341,17 @@ board.after(1000, add_dot)
 
 El método .after() programa una llamada UNICA a la función de callback indicada despues de un tiempo dado en milisegundos (Para repetir las llamadas se debería usar el método repeat() ) 
 
-`add_dot()` lleva la dinámica de añadir puntos aleatorios. Y luego en `add_dot()` se vuelve a hacer una llamada recursiva SI no estamos al final de juego, SI estamos al FINAL del juego :
+`add_dot()` lleva la dinámica de añadir puntos aleatorios. Y luego en `add_dot()` 
 
-- muestra un mensaje de que se ha perdido y los puntos finales
+1. SI no estamos al final de juego, se vuelve a hacer una llamada recursiva
 
+```
+board.after(VELOCIDAD, add_dot)
+```
+
+Para hacer el juego mas divertido, se baja el valor de 'velociad' y cuanto mas bajo mas veloz va el juego
+
+2. SI estamos al FINAL del juego : muestra un mensaje de que se ha perdido y los puntos finales
 - **MEJORA respecto al libro**: debe deshabilitar el `board` porque si no una vez acabado el juego aun funcionaria el `destroy_dot`
 
 2- Recomiendo **profundizar un poco en el widget 'Waffle'** leyendo la documentación  [Waffle - guizero](https://lawsie.github.io/guizero/waffle/). Resumo:
@@ -359,6 +367,74 @@ board[x, y].dotty = True # Convierte en dot
 ```
 
 - La función de callback ha de tener o 0 o 2 argumentos que son las coordenadas x e y, de la retícula tocada
+
+### Capitulo 8 - Inundar de un color / widgets = Waffle +
+
+#### ¿Cómo esta construido el programa y la dinámica del juego?
+
+1- Haz el programa del **capitulo 8** o ejecuta el programa
+
+[BMMP_CL30_GZch8_inundalo_2_0.py](BMMP_CL30_GZch8_inundalo_2_0.py)
+
+<u><strong>OBJETIVO:</strong></u> Juego visual de inundar un tablero de colores. 
+
+Usa 2 tableros :
+
+- 14 x 14 para mostrar el tablero de juego
+
+- 1 x 6 para elegir color : **Aqui esta la función de comando de clicar**
+
+1- INICIALIZACION
+
+Crea los 2 tableros
+
+Inicializa aleatoriamente el tablero de colores con la función `llena_tablero()`
+
+Inicializa la paleta de los 6 colores con al función `init_paleta()`
+
+Inicializa el mensaje de ganar con un mensaje vacio
+
+Muestra las instrucciones con `apl.info("Instrucciones", "Clica en la Paleta de 6 colores el color elegido")`
+
+2- BUCLE DE JUEGO
+
+El juego arranca clicando el un color de la paleta que lanza la función `comienza_inunda`
+
+```
+def comienza_inunda(x, y):
+    inunda_color = paleta.get_pixel(x,y)
+    target = tablero.get_pixel(0,0)
+    inunda(0, 0, target, inunda_color) # funcion recursiva
+    gana_check()
+```
+
+[Explicación de la Función recursiva de inundación]([Flood fill - Wikipedia](https://en.wikipedia.org/wiki/Flood_fill))
+
+
+
+3- FIN DE JUEGO
+
+La función `gana_check()` hace el chequeo de fin de juego.
+
+A destacar en la función  `todos_cuadrados_iguales()` el uso de la función estándar de pyhton
+
+ `all`: retorna True si todos los ítems de un iterable son True
+
+```
+ F.2 - Check whether all squares are the same to [0,0] 
+def todos_cuadrados_iguales():
+    cuadrados = tablero.get_all()
+    if all(color == cuadrados[0] for color in cuadrados):
+        return True
+    else:
+        return False
+```
+
+2- Recomiendo **profundizar un poco MAS en el widget 'Waffle'** leyendo la documentación [Waffle - guizero](https://lawsie.github.io/guizero/waffle/). Novedades:
+
+- get_pixel : retorna el valor de color de un pixel [x, y]
+- get_all : retorna un alista con todos los valores de color de los pixeles del grid
+- set_pixel : da un valor de color al pixel [x, y]
 
 ---
 
