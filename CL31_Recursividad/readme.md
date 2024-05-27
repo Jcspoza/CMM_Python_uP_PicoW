@@ -10,7 +10,7 @@ En realidad en la mayoría de los casos, el mismo algoritmo que se implementa co
 
 ### Tutoriales que vamos a seguir
 
-1. [El tutorial mas básico es le de "El libro de Python"](https://ellibrodepython.com/recursividad) : que es una web básica de aprendizaje de python => NO LO VAMOS A SEGUIR . ES SOLO PAR AUNA 1RA LECTURA
+1. [El tutorial mas básico es el de "El libro de Python"](https://ellibrodepython.com/recursividad) : que es una web básica de aprendizaje de python => NO LO VAMOS A SEGUIR . ES SOLO PAR AUNA 1RA LECTURA
 
 2. En castellano un buen tutorial para entender como funcionan las llamadas sucesivas es [90 - Recursividad: Conceptos básicos](https://www.tutorialesprogramacionya.com/pythonya/detalleconcepto.php?punto=90&codigo=91&inicio=75)
 
@@ -18,15 +18,17 @@ En realidad en la mayoría de los casos, el mismo algoritmo que se implementa co
 
 ### Tabla resumen de programas
 
-| Programa                                                                     | Tutorial-parte | Objetivo de Aprendizaje |
-| ---------------------------------------------------------------------------- |:--------------:| ----------------------- |
-| [BMMP_CLFR_T2_312print_rec_MAL_1_0.py](BMMP_CLFR_T2_312print_rec_MAL_1_0.py) | T2             |                         |
-| [BMMP_CLFR_T2_312print_rec_MAL_1_0.py](BMMP_CLFR_T2_312print_rec_MAL_1_0.py) | T2             |                         |
-|                                                                              |                |                         |
-|                                                                              |                |                         |
-|                                                                              |                |                         |
-|                                                                              |                |                         |
-|                                                                              |                |                         |
+| Programa                                                                           | Tutorial-parte | Objetivo de Aprendizaje                                                                                                        |
+| ---------------------------------------------------------------------------------- |:--------------:| ------------------------------------------------------------------------------------------------------------------------------ |
+| [BMMP_CLFR_T2_312print_rec_MAL_1_0.py](BMMP_CLFR_T2_312print_rec_MAL_1_0.py)       | T2             | Programa de recursividad mal hecho -> NO para nunca                                                                            |
+| [BMMP_CLFR_T2_313print_rec_OK_1_0.py](BMMP_CLFR_T2_313print_rec_OK_1_0.py)         | T2             | Imprime una cuenta de números descendente- Algoritmo recursivo                                                                 |
+| [BMMP_CLFR_T2_314print_rec_OK_inv_1_0.py](BMMP_CLFR_T2_314print_rec_OK_inv_1_0.py) | T2             | Imprime una cuenta de números ASCENDENTE- Algoritmo recursivo -> Ver la importancia de la salida del algoritmo RECURSIVO       |
+| [BMMP_CLFR_T3_printDn_bucleInv_1_0.py](BMMP_CLFR_T3_printDn_bucleInv_1_0.py)       | T3             | Imprime una cuenta de números DESCENDENTE- Algoritmo ITERATIVO                                                                 |
+| [BMMP_CLFR_T3_printUp_bucle_1_0.py](BMMP_CLFR_T3_printUp_bucle_1_0.py)             | T3             | Imprime una cuenta de números ASCENDENTE - Algoritmo ITERATIVO                                                                 |
+| [BMMP_CLFR_T3_Factorial_Rec_1_0.py](BMMP_CLFR_T3_Factorial_Rec_1_0.py)             | T3             | Cálculo de Factorial de un número - algoritmo RECURSIVO                                                                        |
+| [BMMP_CLFR_T3_Factorial_Bucle_1_0.py](BMMP_CLFR_T3_Factorial_Bucle_1_0.py)         | T3             | Cálculo de Factorial de un número - algoritmo ITERATIVO (BUCLE)                                                                |
+| [BMMP_CLFR_T3_Factorial_reduce_1_0.py](BMMP_CLFR_T3_Factorial_reduce_1_0.py)       | T3             | Cálculo de Factorial de un número - algoritmo FUNCION REDUCE                                                                   |
+| [BMMP_CLFR_T3_Factor_ComparTm_1_0.py](BMMP_CLFR_T3_Factor_ComparTm_1_0.py)         | T3             | Compara los tiempos de ejecución de cuatro implementaciones de la función Factorial: Iterativa, Recursiva, Reducción e Interna |
 
 ### Recomendaciones de estudio
 
@@ -44,7 +46,7 @@ El primer programa 312, esta MAL para ver como si no se tiene cuidado la recursi
 
 [BMMP_CLFR_T2_312print_rec_MAL_1_0.py](BMMP_CLFR_T2_312print_rec_MAL_1_0.py)
 
-Los programas 313 y 314 imprimen los numeros comprendidos entre el valor de la llamada y 0: es decir `imprimir(5)` producirá con el programa [BMMP_CLFR_T2_313print_rec_OK_1_0.py](BMMP_CLFR_T2_313print_rec_OK_1_0.py)
+Los programas 313 y 314 imprimen los números comprendidos entre el valor de la llamada y 0: es decir `imprimir(5)` producirá con el programa [BMMP_CLFR_T2_313print_rec_OK_1_0.py](BMMP_CLFR_T2_313print_rec_OK_1_0.py)
 
 ```
 Topic : Funciones Recursivas - Ref : T2. 90 - Recursividad: Conceptos básicos
@@ -110,7 +112,9 @@ y con **iteración (bucle)**  [BMMP_CLFR_T3_printUp_bucle_1_0.py](BMMP_CLFR_T3_p
 
 Es el ejemplo clásico de los tutoriales de recursividad. Seguiremos el Tutorial T3
 
-**Recursivo** [BMMP_CLFR_T3_Factorial_Rec_1_0.py](BMMP_CLFR_T3_Factorial_Rec_1_0.py)
+### **Algoritmo Recursivo**
+
+[BMMP_CLFR_T3_Factorial_Rec_1_0.py](BMMP_CLFR_T3_Factorial_Rec_1_0.py)
 
 ```
 def factorialRec(n):
@@ -139,7 +143,9 @@ factorial() called with n = 1
 Algoritmo Recursivo -> factorial(5) = 120
 ```
 
-Con **un bucle** [BMMP_CLFR_T3_Factorial_Bucle_1_0.py](BMMP_CLFR_T3_Factorial_Bucle_1_0.py)
+### Algoritmo Iterativo (con **un bucle**)
+
+ [BMMP_CLFR_T3_Factorial_Bucle_1_0.py](BMMP_CLFR_T3_Factorial_Bucle_1_0.py)
 
 ```
 def factorialBucle(n):
@@ -150,7 +156,43 @@ def factorialBucle(n):
     return return_value
 ```
 
-Vemos en el tutorial como es mas costoso en tiempo el método Recursivo, pero vamos a comprobarlo con un programa propio
+### Algoritmo Funcional - meta función Reduce
+
+Hay otra manera de hacer estos cálculos y es con la meta-función `reduce` ( meta-función es un concepto propio).
+
+La la meta-función `reduce` 
+
+**reduce todos los elementos de un iterable( una lista por ejemplo) a un único valor** aplicando una función a sus 2 primeros elementos, y con ese valor se aplica de nuevo la función al 3er elemento , etc. 
+
+```
+from functools import reduce
+
+# Funcion - Factorial con Reduce
+def factorialReduce(n):
+    """ Reduce aplica una funcion a un iterable empezando con los 2 primeros items, el resultado lo toma como
+    1er argumento junto con el 3er elemento iterable y el resultado lo tomo como 1er argumento junto al
+    4to elemento , etc. . Puede incluir un elemento de inicializacion
+    """
+    # multiplica todos los numeros consecutivos hasta n incluido. Si n=0
+    # range(1,1) = > [] , asi que usamos un 'or' para tener [1]
+    return reduce(lambda x, y: x * y, range(1, n + 1) or [1])
+```
+
+### ¿ Cual es mejor?
+
+Hay que atender a 2 criterios :
+
+- **Legibilidad** -> menor probabilidad de errores & Mejor mantenibilidad
+
+- **Rapidez**
+
+<u>Legibilidad</u> => Recursivo vs Iterativo : son mas o menos igual de legibles, **quizá mas elegante el recursivo**
+
+<u>Rapidez</u> => Recursivo vs Iterativo : son mas o menos igual de legibles, **mas rápido el Iterativo**
+
+Veamos como comprobar la rapidez con un programa propio:
+
+( explicación ver Tuto 3)
 
 [BMMP_CLFR_T3_Factor_ComparTm_1_0.py](BMMP_CLFR_T3_Factor_ComparTm_1_0.py)
 
@@ -168,4 +210,4 @@ Los algoritmos iterativos y recursivos son muy parecidos
 
 ---
 
-TO DO :  Lista anidada / Palindromes / Quciksort
+TO DO :  del Tutorial 3 : Lista anidada / Palíndromos / Quciksort

@@ -22,14 +22,14 @@ print(f"Libreria: {p_keyLib}")
 print(f"Program: {p_project} - Version: {p_version}")
 # Informative block - end
 
-# Funcion - Recursiva Factorial
+# Funcion - Factorial con Reduce
 def factorialReduce(n):
-    """ Reduce aplica una funcion a un iterable empezando con los 2 primero items, el resultado lo toma como
+    """ Reduce aplica una funcion a un iterable empezando con los 2 primeros items, el resultado lo toma como
     1er argumento junto con el 3er elemento iterable y el resultado lo tomo como 1er argumento junto al
     4to elemento , etc. . Puede incluir un elemento de inicializacion
     """
-    # multiplica todos los numeros consecutivos ahsta n incluido. Si n=0
-    # range(1,1) = > [] , asi que usamso un 'or' para tener [1]
+    # multiplica todos los numeros consecutivos hasta n incluido. Si n=0
+    # range(1,1) = > [] , asi que usamos un 'or' para tener [1]
     return reduce(lambda x, y: x * y, range(1, n + 1) or [1])
         
 # 1 - ejecuto la funcion
