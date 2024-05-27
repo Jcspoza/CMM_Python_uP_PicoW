@@ -503,7 +503,7 @@ Veamos un ejemplo. Para seguirlo hay que ver la celda sobre la que "pivota"
 
 TURNO 0
 
-<img src="file:///C:/Users/josec/AppData/Roaming/marktext/images/2024-05-27-17-52-44-image.png" title="" alt="" width="258">
+![Imagen Inicio](./doc/2024-05-27-17-52-44-image.png)
 
 Elijo color azul
 
@@ -511,7 +511,7 @@ Elijo color azul
 Recorrido  [(0, 0), (0, 1), (1, 0)]
 Sustituciones  [('blue', 0, 0), ('SALGO', 0, 1), ('SALGO', 1, 0)]
 
-![](C:\Users\josec\AppData\Roaming\marktext\images\2024-05-27-17-54-59-image.png)
+![Imagen J0](./doc/2024-05-27-17-54-59-image.png)
 
 <u>Explicación</u>: ha pivotado sobre la (0,0) únicamente
 
@@ -523,7 +523,7 @@ Ahora elijo Pink
 Recorrido  [(0, 0), (0, 1), (0, 2), (0, 0), (1, 1), (1, 0), (1, 1), (2, 0), (0, 0)]
 Sustituciones  [('magenta', 0, 0), ('magenta', 0, 1), ('SALGO', 0, 2), ('SALGO', 0, 0), ('SALGO', 1, 1), ('magenta', 1, 0), ('SALGO', 1, 1), ('SALGO', 2, 0), ('SALGO', 0, 0)]
 
-![](C:\Users\josec\AppData\Roaming\marktext\images\2024-05-27-17-57-50-image.png)
+![Imagen J1](./doc/2024-05-27-17-57-50-image.png)
 
 <u>Explicación</u>: ha pivotado sobre la (0,0) bajando al sur / luego pivota sobre (0,1): sur, norte, este/ vuelve a pivotar a (0,0) y va al este: ('magenta', 1, 0)/ pivota en (1,0) va al sur, al este (2,0), al oeste (0,0)/ vuelve a pivotar al (0,0) y no hay mas recorridos
 
@@ -535,7 +535,7 @@ Ahora elijo Rojo
 Recorrido  [(0, 0), (0, 1), (0, 2), (0, 0), (1, 1), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2), (2, 0), (3, 1), (1, 1), (3, 0), (1, 0), (0, 0)]
 Sustituciones  [('red', 0, 0), ('red', 0, 1), ('SALGO', 0, 2), ('SALGO', 0, 0), ('SALGO', 1, 1), ('red', 1, 0), ('SALGO', 1, 1), ('red', 2, 0), ('red', 2, 1), ('SALGO', 2, 2), ('SALGO', 2, 0), ('SALGO', 3, 1), ('SALGO', 1, 1), ('SALGO', 3, 0), ('SALGO', 1, 0), ('SALGO', 0, 0)]
 
-![](./doc/2024-05-27-17-59-10-image.png)
+![Imagen J2](./doc/2024-05-27-17-59-10-image.png)
 
 ---
 
