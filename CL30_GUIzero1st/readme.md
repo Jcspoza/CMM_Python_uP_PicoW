@@ -44,6 +44,7 @@ Una **extensa documentación sobre el uso de GUIzero** esta disponible en este r
 | [BMMP_CL30_GZch6_3nr_1_0.py](BMMP_CL30_GZch6_3nr_1_0.py)                            | Box                             | ch6                | Crea un panel para jugar a 3 en Raya, no tiene inteligencia de juego salvo detectar ganador                                            |
 | [BMMP_CL30_GZch7_mataPun_1_0.py](BMMP_CL30_GZch7_mataPun_1_0.py)                    | Waffle                          | ch7                |                                                                                                                                        |
 | [BMMP_CL30_GZch8_inundalo_2_0.py](BMMP_CL30_GZch8_inundalo_2_0.py)                  | Waffle                          | ch8                | Juego visual de inundar un tablero de colores                                                                                          |
+| [BMMP_CL30_GZch8_inundalo_2_t2.py](BMMP_CL30_GZch8_inundalo_2_t2.py)                | Recursividad                    | ch8                | Mismo juego, pero con trazas para ver recorrido recursivo                                                                              |
 
 ### Recomendaciones de estudio
 
@@ -408,10 +409,6 @@ def comienza_inunda(x, y):
     gana_check()
 ```
 
-[Explicación de la Función recursiva de inundación]([Flood fill - Wikipedia](https://en.wikipedia.org/wiki/Flood_fill))
-
-
-
 3- FIN DE JUEGO
 
 La función `gana_check()` hace el chequeo de fin de juego.
@@ -436,8 +433,116 @@ def todos_cuadrados_iguales():
 - get_all : retorna un alista con todos los valores de color de los pixeles del grid
 - set_pixel : da un valor de color al pixel [x, y]
 
+#### Trazar al función recursiva del Juego
+
+La recursividad es un concepto complejo. Recomiendo saltar a [CL31 Recursividad ]([CMM_Python_uP_PicoW/CL31_Recursividad at main · Jcspoza/CMM_Python_uP_PicoW · GitHub](https://github.com/Jcspoza/CMM_Python_uP_PicoW/tree/main/CL31_Recursividad)) dentro de este mismo paquete de lecciones.
+
+La función recursiva del juego es mas compleja de lo normal, dado que llama ala función recursiva pro 4 vías : Sur, Norte, Esta y Oeste, asi que para hacerse una idea lo mejor es ver un caso de inicio de juego ( poco complejidad) y añadir instrucciones de trazado. 
+
+**Debug de Thonny NO Funciona**
+
+Solo podemos añadir instrucciones de trazado "manuales":
+
+1. Las instrucciones de print en cada paso ==> Son confusas y no se ve claro
+
+2. Dejar rastro de las celdas visitadas y en las que se ha sustituido el color ==> MEJOR método. Veamos como añadir estas instrucciones de trazado
+
+ver programa [BMMP_CL30_GZch8_inundalo_2_t2.py](BMMP_CL30_GZch8_inundalo_2_t2.py)
+
+```
+# 0- Constantes y Variables globales
+.....
+recorrido = [] # Lista para guardar las tuplas (x,y) del recorrido, se inicializa en cada llamada turno
+# Lista para guardar celdas sustituidas y las que ha llegado a un limite
+#  de zona, se inicializa en cada llamada turno
+sustituciones = []
+......
+def inunda(x, y, target, reemplazo):     # Algorithm from https://en.wikipedia.org/wiki/Flood_fill
+    # traza 
+    global recorrido, sustituciones
+    recorrido.append((x, y))
+    # para el caso en que el color de reemplazo sea = 0,0. Evita errores
+    if target == reemplazo: 
+        return False
+    # Check de fin de zona YA conquistada
+    if tablero.get_pixel(x, y) != target: 
+        sustituciones.append(("SALGO" , x, y))
+        return False
+
+    tablero.set_pixel(x, y, reemplazo)
+    sustituciones.append(( reemplazo , x, y))
+
+    if y+1 <= tablero_lado-1:   # South
+        inunda(x, y+1, target, reemplazo)
+    if y-1 >= 0:            # North
+        inunda(x, y-1, target, reemplazo)
+    if x+1 <= tablero_lado-1:    # East
+        inunda(x+1, y, target, reemplazo)
+    if x-1 >= 0:            # West
+        inunda(x-1, y, target, reemplazo)
+
+def comienza_inunda(x, y):
+    global recorrido, sustituciones # traza
+
+    inunda_color = paleta.get_pixel(x,y)
+    target = tablero.get_pixel(0,0)
+
+    print(f'================ JUGADA #{moves_hechos} ================') # traza
+
+    inunda(0, 0, target, inunda_color) # funcion recursiva
+    # traza
+    print("Recorrido ", recorrido)
+    recorrido = []
+    print("Sustituciones ", sustituciones)
+    sustituciones = []
+    # traza
+    gana_check() # check de fin de juego
+```
+
+Veamos un ejemplo. Para seguirlo hay que ver la celda sobre la que "pivota"
+
+TURNO 0
+
+<img src="file:///C:/Users/josec/AppData/Roaming/marktext/images/2024-05-27-17-52-44-image.png" title="" alt="" width="258">
+
+Elijo color azul
+
+================ JUGADA #0 ================
+Recorrido  [(0, 0), (0, 1), (1, 0)]
+Sustituciones  [('blue', 0, 0), ('SALGO', 0, 1), ('SALGO', 1, 0)]
+
+![](C:\Users\josec\AppData\Roaming\marktext\images\2024-05-27-17-54-59-image.png)
+
+<u>Explicación</u>: ha pivotado sobre la (0,0) únicamente
+
+----
+
+Ahora elijo Pink
+
+================ JUGADA #1 ================
+Recorrido  [(0, 0), (0, 1), (0, 2), (0, 0), (1, 1), (1, 0), (1, 1), (2, 0), (0, 0)]
+Sustituciones  [('magenta', 0, 0), ('magenta', 0, 1), ('SALGO', 0, 2), ('SALGO', 0, 0), ('SALGO', 1, 1), ('magenta', 1, 0), ('SALGO', 1, 1), ('SALGO', 2, 0), ('SALGO', 0, 0)]
+
+![](C:\Users\josec\AppData\Roaming\marktext\images\2024-05-27-17-57-50-image.png)
+
+<u>Explicación</u>: ha pivotado sobre la (0,0) bajando al sur / luego pivota sobre (0,1): sur, norte, este/ vuelve a pivotar a (0,0) y va al este: ('magenta', 1, 0)/ pivota en (1,0) va al sur, al este (2,0), al oeste (0,0)/ vuelve a pivotar al (0,0) y no hay mas recorridos
+
+---
+
+Ahora elijo Rojo
+
+================ JUGADA #2 ================
+Recorrido  [(0, 0), (0, 1), (0, 2), (0, 0), (1, 1), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2), (2, 0), (3, 1), (1, 1), (3, 0), (1, 0), (0, 0)]
+Sustituciones  [('red', 0, 0), ('red', 0, 1), ('SALGO', 0, 2), ('SALGO', 0, 0), ('SALGO', 1, 1), ('red', 1, 0), ('SALGO', 1, 1), ('red', 2, 0), ('red', 2, 1), ('SALGO', 2, 2), ('SALGO', 2, 0), ('SALGO', 3, 1), ('SALGO', 1, 1), ('SALGO', 3, 0), ('SALGO', 1, 0), ('SALGO', 0, 0)]
+
+![](C:\Users\josec\AppData\Roaming\marktext\images\2024-05-27-17-59-10-image.png)
+
 ---
 
 ```
 TO DO : 
+* Chapter 9: Emoji Match - Make a fun picture-matching game
+* Chapter 10: Paint - Create a simple drawing application
+* Chapter 11: Stop-frame Animation - Build your own stop-frame animated GIF creator
+
 ```
