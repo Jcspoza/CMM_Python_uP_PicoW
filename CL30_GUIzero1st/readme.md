@@ -435,7 +435,7 @@ def todos_cuadrados_iguales():
 
 #### Trazar al función recursiva del Juego
 
-La recursividad es un concepto complejo. Recomiendo saltar a [CL31 Recursividad ]([CMM_Python_uP_PicoW/CL31_Recursividad at main · Jcspoza/CMM_Python_uP_PicoW · GitHub](https://github.com/Jcspoza/CMM_Python_uP_PicoW/tree/main/CL31_Recursividad)) dentro de este mismo paquete de lecciones.
+La recursividad es un concepto complejo. Recomiendo saltar a [CL31 Recursividad ](https://github.com/Jcspoza/CMM_Python_uP_PicoW/tree/main/CL31_Recursividad) dentro de este mismo paquete de lecciones.
 
 La función recursiva del juego es mas compleja de lo normal, dado que llama ala función recursiva pro 4 vías : Sur, Norte, Esta y Oeste, asi que para hacerse una idea lo mejor es ver un caso de inicio de juego ( poco complejidad) y añadir instrucciones de trazado. 
 
