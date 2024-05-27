@@ -535,7 +535,7 @@ Ahora elijo Rojo
 Recorrido  [(0, 0), (0, 1), (0, 2), (0, 0), (1, 1), (1, 0), (1, 1), (2, 0), (2, 1), (2, 2), (2, 0), (3, 1), (1, 1), (3, 0), (1, 0), (0, 0)]
 Sustituciones  [('red', 0, 0), ('red', 0, 1), ('SALGO', 0, 2), ('SALGO', 0, 0), ('SALGO', 1, 1), ('red', 1, 0), ('SALGO', 1, 1), ('red', 2, 0), ('red', 2, 1), ('SALGO', 2, 2), ('SALGO', 2, 0), ('SALGO', 3, 1), ('SALGO', 1, 1), ('SALGO', 3, 0), ('SALGO', 1, 0), ('SALGO', 0, 0)]
 
-![](C:\Users\josec\AppData\Roaming\marktext\images\2024-05-27-17-59-10-image.png)
+![](./doc/2024-05-27-17-59-10-image.png)
 
 ---
 
