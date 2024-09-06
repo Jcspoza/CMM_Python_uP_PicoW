@@ -54,6 +54,8 @@ Programación como Robótica.
 | Rápidamente se avanza a programas más complejos y más “inteligentes”                                                                                          | Los programas que se cargan en el microcontrolador son relativamente simples, aunque poco a poco se van complicando |
 | No se necesita hardware para empezar (microcontrolador y materiales de robótica), salvo un PC o similar                                                       | Se NECESITA hardware para empezar: materiales de robótica y microcontrolador                                        |
 
+<img src="./doc/Python-logo-notext.svg.png" alt="" width="140">
+
 En <u>programación</u>, **Python** es sin duda el lenguaje mas adecuado para aprender (en edad adulta) porque es :
 
 - **Gratis** (al igual que su código fuente y sus bibliotecas).
