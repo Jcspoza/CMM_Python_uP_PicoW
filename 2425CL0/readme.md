@@ -13,8 +13,7 @@
   - Micropython : ‘Blink’ led
 
 - Presentación alumnos -20 mins
-
-- Taller personalizado para alumnos según sus intereses y formación previa => puesta en común – 20 mins
+(Taller personalizado para alumnos según sus intereses y formación previa => puesta en común)
 
 - ¿Qué vamos a necesitar (minimo)?
 
