@@ -41,7 +41,7 @@ Leer capitulo 2 de libro "Invent with python"" [Chapter 2 - Writing Programs](ht
 
 ## Presentación curso y profesor – 10 minutos
 
-Currículo de Voluntario tecnológico del profesor [CV](./doc/CV JCSP Voluntario 20240906.pdf)
+Currículo de Voluntario tecnológico del profesor [CV](./doc/CV_JCSP_Voluntario_20240906.pdf)
 
 ## Enfoque: ¿Por qué Programación y Robotica simultáneamente? – 10 min
 
