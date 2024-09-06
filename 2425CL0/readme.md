@@ -26,8 +26,8 @@
 
 | Programa   | Lenguaje                    | HW si Robotica y Notas                                  | Objetivo de Aprendizaje     |
 | ---------- | --------------------------- | ------------------------------------------------------- | --------------------------- |
-| Blink      | micropython (uPython, o uP) | GPIO16 -> R220 ohm -> LED1 cátodo  y R220 -> LED2 ánodo | Primer programa de robotica |
-| Hola mundo | Python                      | Input()no funciona con algunos IDE python on line       | Primer programa de Python   |
+| ‘[Blink’ led](./R_2425CL0_Exblink_v1_2.py)  | micropython (uPython, o uP) | GPIO16 -> R220 ohm -> LED1 cátodo  y R220 -> LED2 ánodo | Primer programa de robotica |
+| [Hola mundo](./P_2425CL0_hola.py) | Python                      | Input()no funciona con algunos IDE python on line       | Primer programa de Python   |
 
 ### Recomendaciones de estudio despues de la clase
 
