@@ -1,6 +1,6 @@
 # CL0 - Presentación Taller PyR 2024 y 2025 en CMM Benito Martin Lozano
 
-## Clase 0 - Indice
+## Clase 0 - Indice - 90 minutos
 
 - Presentación curso y profesor – 10 minutos
 
