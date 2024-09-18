@@ -118,7 +118,7 @@ Es el momento de conocernos un poco, porque este es un taller personalizado para
 
 **<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador <u>Raspberry Pi Pico W</u>** 
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\CL0_2525\doc\CMM_BML_Taller_P_R2023_compara_micros.png)
+![Tabla comparcion](.\doc\CMM_BML_Taller_P_R2023_compara_micros.png)
 
 Seguiremos con él el curso 2024 - 2025, porque las razones no han cambiado y el precio es aproximadamente el mismo. Comentaremos este tema en próximas clases
 
