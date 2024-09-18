@@ -13,7 +13,7 @@
   - Micropython : ‘Blink’ led
 
 - Presentación alumnos -20 mins
-(Taller personalizado para alumnos según sus intereses y formación previa => puesta en común)
+  (Taller personalizado para alumnos según sus intereses y formación previa => puesta en común)
 
 - ¿Qué vamos a necesitar (minimo)?
 
@@ -23,16 +23,22 @@
 
 ### Tabla resumen de programas
 
-| Programa   | Lenguaje                    | HW si Robotica y Notas                                  | Objetivo de Aprendizaje     |
-| ---------- | --------------------------- | ------------------------------------------------------- | --------------------------- |
-| ‘[Blink’ led](./R_2425CL0_Exblink_v1_2.py)  | micropython (uPython, o uP) | GPIO16 -> R220 ohm -> LED1 cátodo  y R220 -> LED2 ánodo | Primer programa de robotica |
-| [Hola mundo](./P_2425CL0_hola.py) | Python                      | Input()no funciona con algunos IDE python on line       | Primer programa de Python   |
+| Programa                                   | Lenguaje                    | HW si Robotica y Notas                                  | Objetivo de Aprendizaje     |
+| ------------------------------------------ | --------------------------- | ------------------------------------------------------- | --------------------------- |
+| ‘[Blink’ led](./R_2425CL0_Exblink_v1_2.py) | micropython (uPython, o uP) | GPIO16 -> R220 ohm -> LED1 cátodo  y R220 -> LED2 ánodo | Primer programa de robotica |
+| [Hola mundo](./P_2425CL0_hola.py)          | Python                      | Input()no funciona con algunos IDE python on line       | Primer programa de Python   |
 
 ### Recomendaciones de estudio despues de la clase
 
-Ejecutar "hola mundo" en un IDE de Python como
+Ejecutar "hola mundo" en un IDE de Python, opciones:
 
-[https://www.online-python.com/](https://www.online-python.com/)
+- web como : [https://www.online-python.com/](https://www.online-python.com/)
+
+- O si tienes instalado el IDE [Thonny ](https://thonny.org/)
+
+- u otro IDE mas complejo como Visual Studio Code
+
+**+**
 
 Leer capitulo 2 de libro "Invent with python"" [Chapter 2 - Writing Programs](https://inventwithpython.com/invent4thed/chapter2.html)
 
@@ -74,6 +80,14 @@ En <u>programación</u>, **Python** es sin duda el lenguaje mas adecuado para ap
 
 - Funciona en los principales sistemas operativos y plataformas informáticas
 
+Mas razones en los siguientes videos
+
+[Video corto en castellano 1 ](https://www.tiktok.com/@edteam/video/7410916311821323526?is_from_webapp=1&web_id=7343715684931307040)
+
+[Video corto en castellano 2](https://www.tiktok.com/@edteam/video/7410916311821323526?is_from_webapp=1&web_id=7343715684931307040)
+
+[3 Reasons to Learn Python - AI and LLMs is One of Them, but There are MORE!](https://www.youtube.com/watch?v=EHsLuHbE_9s)
+
 En <u>Robotica</u>, hasta hace poco tiempo había que usar para programar los microcontroladores , que son el cerebro de los proyectos de robotica, lenguajes relativamente oscuros como "C" o derivadas de C ( IDE Arduino) . Afortunadamente, en 2013 el físico Australiano Damien George, desarrollo junto a otros personas **micropython** para el microcontrolador PyBoard, y rápidamente se "porto" a otros microcontroladores como ESP32 o RPI Pico.
 
 <img src="./doc/MicroPython_new_logo.jpg" title="" alt="" width="140">
@@ -88,13 +102,9 @@ Vamos a ver como demostración los mas clásico que en programación consiste qu
 
 Python : [Hola mundo](./P_2425CL0_hola.py)
 
-
-
 y en robotica es un programa que hace que un led se encienda y se apague. En nuestro caso van a ser 2 leds
 
 Micropython : ‘[Blink’ led](./R_2425CL0_Exblink_v1_2.py)
-
-
 
 ## Presentación alumnos -20 mins
 
@@ -106,11 +116,7 @@ Es el momento de conocernos un poco, porque este es un taller personalizado para
 
 <u>**IDE:**</u> Para programar **tanto en Python como en micropython** vamos usar **<u>Thonny</u>** que es un IDE: Entorno integrado de Desarrollo. Es gratis y solo necesitamos instalarlo en un PC o en un pendrive : lo contaremos en la clase 1.
 
-
-
 **<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador Raspberry Pi Pico W** seguiremos con él. Lo ideal es comprar un kit, pero se puede empezar solo con el microcontrolador + una protoboard y algunas cosas ( muy baratas) mas.
-
-
 
 ## Programa del curso 24 - 25
 
@@ -119,8 +125,6 @@ El programa se adaptará a los alumnos como se hizo los dos cursos anteriores. S
 Robotica : dispositivos de entrada que no se ha dado de forma completa
 
 Programación: reforzar conceptos repasando "Invent with Python " y otros libros y guías
-
-
 
 ---
 
