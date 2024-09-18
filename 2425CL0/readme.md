@@ -116,7 +116,15 @@ Es el momento de conocernos un poco, porque este es un taller personalizado para
 
 <u>**IDE:**</u> Para programar **tanto en Python como en micropython** vamos usar **<u>Thonny</u>** que es un IDE: Entorno integrado de Desarrollo. Es gratis y solo necesitamos instalarlo en un PC o en un pendrive : lo contaremos en la clase 1.
 
-**<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador Raspberry Pi Pico W** seguiremos con él. Lo ideal es comprar un kit, pero se puede empezar solo con el microcontrolador + una protoboard y algunas cosas ( muy baratas) mas.
+**<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador <u>Raspberry Pi Pico W</u>** 
+
+![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\CL0_2525\doc\CMM_BML_Taller_P_R2023_compara_micros.png)
+
+Seguiremos con él el curso 2024 - 2025, porque las razones no han cambiado y el precio es aproximadamente el mismo. Comentaremos este tema en próximas clases
+
+**Novedad:** Recientemente, agosto 2024, ha aparecido una versión muy mejorada de la Raspberry Pico -> [**Raspberry Pi Pico 2**: A Powerful New Addition to the Microcontroller Family | Elektor Magazine](https://www.elektormagazine.com/news/raspberry-pi-pico-2-a-powerful-new-addition-to-the-microcontroller-family)) muy interesante, pero de momento sin wifi asi que nos quedaremos con el Pico W
+
+Lo ideal es comprar un kit, pero se puede empezar solo con el microcontrolador + una protoboard y algunas cosas ( muy baratas) mas.
 
 ## Programa del curso 24 - 25
 
