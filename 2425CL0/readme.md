@@ -106,6 +106,10 @@ y en robotica es un programa que hace que un led se encienda y se apague. En nue
 
 Micropython : ‘[Blink’ led](./R_2425CL0_Exblink_v1_2.py)
 
+![Esquema de conexiones](./doc/pico_2led_blink_bb.png)
+
+[Simulacion con Wokwi](https://wokwi.com/projects/409472721388251137)
+
 ## Presentación alumnos -20 mins
 
 Es el momento de conocernos un poco, porque este es un taller personalizado para alumnos según sus intereses y formación previa 
@@ -118,7 +122,7 @@ Es el momento de conocernos un poco, porque este es un taller personalizado para
 
 **<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador <u>Raspberry Pi Pico W</u>** 
 
-<img src="./doc/CMM_BML_Taller_P_R2023_compara_micros.png" title="Tabla micr5os" alt="" width="1000">
+<img src="./doc/CMM_BML_Taller_P_R2023_compara_micros.png" title="Tabla micros" alt="" width="1000">
 
 Seguiremos con él el curso 2024 - 2025, porque las razones no han cambiado y el precio es aproximadamente el mismo. Comentaremos este tema en próximas clases
 
