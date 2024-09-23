@@ -30,7 +30,8 @@
 
 | Programa                       | Lenguaje | HW si Robotica y Notas                            | Objetivo de Aprendizaje   |
 | ------------------------------ | -------- | ------------------------------------------------- | ------------------------- |
-| [Hola mundo](./P_holamundo.py) | Python   | Input()no funciona con algunos IDE python on line | Primer programa de Python |
+| [Hola mundo](./P_holamundo.py) | Python   | El progrma mas sencillo posible                   | Primer programa de Python |
+| [Blink 2 leds](./R_2425CL0_Exblink_v1_2.py) | Python   | Blink con 2 leds | Primer programa de microPython |
 
 ### Recomendaciones de estudio despues de la clase
 
