@@ -104,11 +104,7 @@ Vamos a hacer **la instalación simple** que incluye un interprete Python.
 **Portable variant with 64-bit Python 3.10**  
 [thonny-4.1.6-windows-portable.zip (31 MB)](https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6-windows-portable.zip)
 
-
-
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL1_Entorno\doc\instalar_thonny.png)
-
-
+![](./doc/instalar_thonny.png)
 
 ## Probar que Python+Thony esta OK - 20 mins
 
@@ -120,7 +116,7 @@ Ejhecutamos Thonny y probamso:
 
 2. Con un programa pequeño
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL1_Entorno\doc\prueba_hola.png)
+![](./doc/prueba_hola.png)
 
 ### Probar micropython : solo profesor - 5'
 
@@ -136,7 +132,7 @@ Se muestra como programar con Pico + micropython:
 
 5. Ejecutar en la Pico
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL1_Entorno\doc\prueba_blink.png)
+![](./doc/prueba_blink.png)
 
 ## Preguntas sobre la Clase 1 - 10 minutos
 
