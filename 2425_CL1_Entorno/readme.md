@@ -111,7 +111,7 @@ Vamos a hacer **la instalación simple** que incluye un interprete Python.
 
 ### Probar cada alumno - 15'
 
-Ejhecutamos Thonny y probamso:
+Ejecutamos Thonny y probamos:
 
 1. La consola de comandos con operaciones tipo calculadora, y 
 
