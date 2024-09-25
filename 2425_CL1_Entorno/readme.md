@@ -108,7 +108,7 @@ Vamos a hacer **la instalación simple** que incluye un interprete Python.
 **Portable variant with 64-bit Python 3.10**  
 [thonny-4.1.6-windows-portable.zip (31 MB)](https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6-windows-portable.zip)
 
-NOTA: en un PW con windows, si queremos ejecutar programas en python fuera de Thonny y desde cualquier directorio, habra que añadir la localizacion de python.exe a PATH
+NOTA: en un PC con windows, si queremos ejecutar programas en python fuera de Thonny y desde cualquier directorio, habra que añadir la localizacion de python.exe a PATH
 
 ![](./doc/instalar_thonny.png)
 
