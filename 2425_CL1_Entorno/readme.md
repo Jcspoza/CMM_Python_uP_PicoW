@@ -98,15 +98,17 @@ Vamos a hacer **la instalación simple** que incluye un interprete Python.
 
 => Si tenemos un portátil propio que podamos traer a clase elegiremos la instalación 
 
-**Installer with 64-bit Python 3.10****, requires 64-bit Windows 8.1 / 10 / 11  
+**Installer with 64-bit Python 3.10**, requires 64-bit Windows 8.1 / 10 / 11  
 [thonny-4.1.6.exe (21 MB)](https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6.exe)
 
 
 
-=> Si tenemos un PC fijo, elegimos la opcion de instalacion portail con pendrive USB:
+=> Si tenemos un PC fijo, que no podamos traer al CMM BML, elegimos la opcion de instalacion portail con pendrive USB:
 
 **Portable variant with 64-bit Python 3.10**  
 [thonny-4.1.6-windows-portable.zip (31 MB)](https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6-windows-portable.zip)
+
+NOTA: en un PW con windows, si queremos ejecutar programas en python fuera de Thonny y desde cualquier directorio, habra que añadir la localizacion de python.exe a PATH
 
 ![](./doc/instalar_thonny.png)
 
