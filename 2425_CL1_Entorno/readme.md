@@ -24,7 +24,10 @@
 
 - Preguntas sobre la Clase 1 - 10 minutos
 
-## Tutoriales que vamos a seguir
+## Tutoriales y Programas que vamos a seguir
+
+### Tutoriales resumen
+[Introducing Thonny - YouTube](https://youtu.be/nwIgxrXP-X4?si=eb19qXyd4cJWSYng)
 
 ### Tabla resumen de programas
 
@@ -35,7 +38,7 @@
 
 ### Recomendaciones de estudio despues de la clase
 
-Ayuda de Thony y
+Ayuda de Thonny y
 
 **+**
 
