@@ -58,7 +58,7 @@ Se muestra en la clase como usar la web del libro en ingles y el libro en castel
 
 
 
-### Conceptos cubiertos en este capitulo - 5'
+## Conceptos cubiertos en este capitulo - 5'
 
 En esta clase hemso cubierto los siguientes conceptos: 
 
