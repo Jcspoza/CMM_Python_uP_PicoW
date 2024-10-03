@@ -29,7 +29,7 @@
 
 * [Invent with Python](https://inventwithpython.com/invent4thed/) en ingles , web gratuita con el libro completo + programas en python
 
-    Se puede descargar una [versión en Castellano en pdf aqui](./doc/Inventa Juegos con Python 4ed.pdf)
+    Se puede descargar una [versión en Castellano en pdf aqui](./doc/Inventa_Juegos_con_Python_4ed.pdf)
 
 * [web de referencia de Python en castellano](https://ellibrodepython.com/)
 
