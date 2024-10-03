@@ -2,6 +2,8 @@
 
 ## Clase 0 - Indice - 90 minutos
 
+- Referencias : Libros de referencia, programas , estudio posterior
+
 - Presentación curso y profesor – 10 minutos
 
 - Enfoque: ¿Por qué Programación y Robotica simultáneamente? – 10 min
@@ -19,7 +21,27 @@
 
 - Programa del curso 24 - 25
 
-## Tutoriales que vamos a seguir
+## Referencias : Libros de referencia, programas , estudio posterior
+
+### Libros y webs de referencia de referencia - TODO EL CURSO
+
+#### Libros Python
+
+* [Invent with Python](https://inventwithpython.com/invent4thed/) en ingles , web gratuita con el libro completo + programas en python
+
+    Se puede descargar una [versión en Castellano en pdf aqui](./doc/Inventa Juegos con Python 4ed.pdf)
+
+* [web de referencia de Python en castellano](https://ellibrodepython.com/)
+
+#### Tutoriales Pico W en micropython
+
+* [Oficial-Introduction to Raspberry Pi Pico guide](https://projects.raspberrypi.org/en/projects/introduction-to-the-pico/0)
+
+* [Oficial- Getting started with your Raspberry Pi Pico W](https://projects.raspberrypi.org/en/projects/get-started-pico-w/0)
+
+* [Buena web de tutoriales -Sunfounder](https://docs.sunfounder.com/projects/kepler-kit/en/latest/pyproject/for_micropython_user.html)
+
+* [Otra buena web de tutoriales - Freenove ¡El tutorial incluye el nuevo Pico 2!](https://github.com/Freenove/Freenove_Super_Starter_Kit_for_Raspberry_Pi_Pico/tree/main/Python)
 
 ### Tabla resumen de programas
 
@@ -116,11 +138,11 @@ Es el momento de conocernos un poco, porque este es un taller personalizado para
 
 --> Hagamos una puesta en común de 20 mins
 
-## ¿Qué vamos a necesitar (minimo)?
+## ¿Qué herramientas vamos a necesitar (minimo)?
 
-<u>**IDE:**</u> Para programar **tanto en Python como en micropython** vamos usar **<u>Thonny</u>** que es un IDE: Entorno integrado de Desarrollo. Es gratis y solo necesitamos instalarlo en un PC o en un pendrive : lo contaremos en la clase 1.
+*Herramientas SW* : <u>**IDE:**</u> Para programar **tanto en Python como en micropython** vamos usar **<u>Thonny</u>** que es un IDE: Entorno integrado de Desarrollo. Es gratis y solo necesitamos instalarlo en un PC o en un pendrive : lo contaremos en la clase 1.
 
-**<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador <u>Raspberry Pi Pico W</u>** 
+*Herramientas HW*: **<u>Microcontrolador</u>**: ya hemso comentado que es como el cerebro de todos los proyectos de robotica, es también donde se conectan todos los sensores, displays, etc. El **año pasado decidimos usar el microcontrolador <u>Raspberry Pi Pico W</u>** 
 
 <img src="./doc/CMM_BML_Taller_P_R2023_compara_micros.png" title="Tabla micros" alt="" width="1000">
 
@@ -140,4 +162,4 @@ Programación: reforzar conceptos repasando "Invent with Python " y otros libros
 
 ---
 
-TO DO :
+TO DO :HW: 
