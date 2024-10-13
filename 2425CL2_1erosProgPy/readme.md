@@ -8,7 +8,9 @@
   
   - 2 programas en Secuencia
   
-  - 1 programa con con bucle
+  - 1 programa con con bucle **while**
+  
+  - 1 programa con Seleccion con** if**
 
 - Conceptos cubiertos en este capitulo
 
@@ -26,7 +28,8 @@
 | -------------------------------------------------------------- | -------- | --------------------------- | -------------------------------- |
 | [P2425CL2_holaplus.py](./P2425CL2_holaplus.py)                 | Python   |                             | **Flujo en secuencia**           |
 | [P2425CL2_multiplicasimple.py](./P2425CL2_multiplicasimple.py) | Python   |                             | **Tipos numéricos**, 2 variables |
-| [P2425CL2_cuentaAtras.py](./P2425CL2_cuentaAtras.py)           | Python   | Tiene un error intencionado | **bucles for** Flujo en bucles   |
+| [P2425CL2_cuentaAtras.py](./P2425CL2_cuentaAtras.py)           | Python   | Tiene un error intencionado | **bucles while** Flujo en bucles |
+| [P2425CL2_parimpar.py](P2425CL2_parimpar.py)                   | pyrhon   |                             | **Selección** con **if**         |
 
 ### Recomendaciones de estudio despues de la clase
 
@@ -46,28 +49,51 @@ Se muestra en la clase como usar la web del libro en ingles y el libro en castel
 
 ### Holaplus.py
 
-
-
-
-
 ### P2425CL2_multiplicasimple.py
-
-
 
 ### P2425CL2_cuentaAtras.py
 
+### P2425CL2_parimpar.py
 
+### Debuger en Thonny
+
+Un buen video introductorio es 
+
+[Ejemplo Python: Encuentra los errores de tus programas usando el debugger de Thonny - YouTube](https://youtu.be/NYYT0J8nf3o?si=UcN4g8975rK0qkV8)
+
+Lo vamos a hacer en vivo siguiendo un ejemplo casi igual la del video, pero antes veamos los 3 tipos de error ( cap 6 invent with python..)
+
+#### **Types of Bugs**
+
+There are three types of bugs that can happen in your program:
+
+- **Syntax errors** This type of bug comes from typos. When the Python interpreter sees a syntax error, it’s because your code isn’t written in proper Python language. A Python program with even a single syntax error won’t run.
+
+- **Runtime errors** These are bugs that happen while the program is running. The program will work up until it reaches the line of code with the error, and then the program will terminate with an error message (this is called *crashing*). The Python interpreter will display a *traceback*: an error message showing the line containing the problem.
+
+- **Semantic errors** These bugs—which are the trickiest to fix—don’t crash the program, but they prevent the program from doing what the programmer intended it to do. For example, if the programmer wants the variable total to be the *sum* of the values in variables a, b, and c but writes total = a * b * c, then the value in total will be wrong. This could crash the program later on, but it won’t be immediately obvious where the semantic bug happened.
+
+| Programa                                                 | 1er Error                           | Tipo de Error |
+| -------------------------------------------------------- | ----------------------------------- | ------------- |
+| [P2425CL2_debugPcafeMAL1.py](P2425CL2_debugPcafeMAL1.py) | Sintaxis indentación print          | Sintáctico    |
+| [P2425CL2_debugPcafeMAL2.py](P2425CL2_debugPcafeMAL2.py) | Sintaxis indentación else           | Sintáctico    |
+| [P2425CL2_debugPcafeMAL3.py](P2425CL2_debugPcafeMAL3.py) | Division por cero                   | Run time      |
+| [P2425CL2_debugPcafeMAL4.py](P2425CL2_debugPcafeMAL4.py) | Concicion 2do if : and en vez de or | Semántico     |
+| [P2425CL2_debugPcafeBIEN.py](P2425CL2_debugPcafeBIEN.py) | SIN ERRORES                         |               |
+
+Nota : Para aprender a usar debug, se puede consultar también [el capitulo 6 del llibro invent con ....](https://inventwithpython.com/invent4thed/chapter6.html)  pero emplea un IDE diferente a Thonny y quizá os lie
 
 ## Conceptos cubiertos en este capitulo - 5'
 
 En esta clase hemso cubierto los siguientes conceptos: 
 
 - Cadenas de caracteres + unir cadenas
+
 - Tipos de datos:
+  
   * Enteros, decimales (float)
   
   * Cadenas
-
 * Usar editor de Thonny
 
 * Salvar los programas en Thonny
@@ -80,9 +106,13 @@ En esta clase hemso cubierto los siguientes conceptos:
 
 * Funcion input()
 
-* Bucle for
+* Bucle while
+
+* Selección con if
 
 * NO es lo mismo mayusculas que minusculas
+
+* **Debug con Thonny ( básico)**
 
 ## Preguntas sobre la Clase 2 - 10 minutos
 
