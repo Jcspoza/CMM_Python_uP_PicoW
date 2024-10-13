@@ -1,6 +1,6 @@
 # Taller Programación y Robótica CMM BML – 2024 -2025 - Clase 2
 # Nombre de programa : P2425CL2_debugPcafeMAL
-# Resumen: para aprender a usar debug en Thonny EL PROGRMA ESTA MAL 
+# Resumen: para aprender a usar debug en Thonny - TODO CORREGIDO
 # Creditos : Yolanda Martinez Treviño
 # Ref https://youtu.be/NYYT0J8nf3o?si=dAjnwOAnt-LRXv_i
 # Fecha JCSP 2024 10 13
