@@ -8,7 +8,10 @@
 
 cuentaMax = int(input('Número de pasos de la cuentatras?'))
 
-for cuenta in range(cuentaMax, 0, -1): # esta mal, porque acaba en 1
+cuenta = cuentaMax
+
+while cuenta  >= 0:
     print(cuenta, '!')
+    cuenta = cuenta - 1
     
 print('¡Corre, Forrest, Corre!')
