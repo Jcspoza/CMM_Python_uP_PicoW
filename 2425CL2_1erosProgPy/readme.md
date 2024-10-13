@@ -4,13 +4,15 @@
 
 - ¿ Como usar el libro ***Invent with Python ...***?
 
-- Escribimos y ejecutamos programas incluyendo Debug de Thonny:
+- Escribimos y ejecutamos programas
   
   - 2 programas en Secuencia
   
   - 1 programa con con bucle **while**
   
-  - 1 programa con Seleccion con** if**
+  - 1 programa con Seleccion con **if**
+
+- Uso de Debug de Thonny, con un ejemplo de programa mal escrito
 
 - Conceptos cubiertos en este capitulo
 
@@ -24,12 +26,13 @@
 
 ### Tabla resumen de programas
 
-| Programa                                                       | Lenguaje | HW si Robotica y Notas      | Objetivo de Aprendizaje          |
-| -------------------------------------------------------------- | -------- | --------------------------- | -------------------------------- |
-| [P2425CL2_holaplus.py](./P2425CL2_holaplus.py)                 | Python   |                             | **Flujo en secuencia**           |
-| [P2425CL2_multiplicasimple.py](./P2425CL2_multiplicasimple.py) | Python   |                             | **Tipos numéricos**, 2 variables |
-| [P2425CL2_cuentaAtras.py](./P2425CL2_cuentaAtras.py)           | Python   | Tiene un error intencionado | **bucles while** Flujo en bucles |
-| [P2425CL2_parimpar.py](P2425CL2_parimpar.py)                   | pyrhon   |                             | **Selección** con **if**         |
+| Programa                                                       | Lenguaje | HW si Robotica y Notas                                                 | Objetivo de Aprendizaje                             |
+| -------------------------------------------------------------- | -------- | ---------------------------------------------------------------------- | --------------------------------------------------- |
+| [P2425CL2_holaplus.py](./P2425CL2_holaplus.py)                 | Python   |                                                                        | **Flujo en secuencia**                              |
+| [P2425CL2_multiplicasimple.py](./P2425CL2_multiplicasimple.py) | Python   |                                                                        | **Tipos numéricos**, 2 variables                    |
+| [P2425CL2_cuentaAtras.py](./P2425CL2_cuentaAtras.py)           | Python   | Se podía haber hecho con for                                           | **bucles while** Flujo en bucles                    |
+| [P2425CL2_parimpar.py](P2425CL2_parimpar.py)                   | Python   |                                                                        | **Selección** con **if**                            |
+| [P2425CL2_debugPcafeBIEN.py](P2425CL2_debugPcafeBIEN.py)       | Python   | Varios programas mal escritos para ir corrigiéndolos hasta el correcto | uso básico de Debug, basico por no usar brealpoints |
 
 ### Recomendaciones de estudio despues de la clase
 
