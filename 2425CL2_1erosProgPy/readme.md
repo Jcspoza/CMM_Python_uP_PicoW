@@ -32,7 +32,7 @@
 | [P2425CL2_multiplicasimple.py](./P2425CL2_multiplicasimple.py) | Python   |                                                                        | **Tipos numéricos**, 2 variables                    |
 | [P2425CL2_cuentaAtras.py](./P2425CL2_cuentaAtras.py)           | Python   | Se podía haber hecho con for                                           | **bucles while** Flujo en bucles                    |
 | [P2425CL2_parimpar.py](P2425CL2_parimpar.py)                   | Python   |                                                                        | **Selección** con **if**                            |
-| [P2425CL2_debugPcafeBIEN.py](P2425CL2_debugPcafeBIEN.py)       | Python   | Varios programas mal escritos para ir corrigiéndolos hasta el correcto | uso básico de Debug, basico por no usar brealpoints |
+| [P2425CL2_debugPcafeBIEN.py](P2425CL2_debugPcafeBIEN.py)       | Python   | Varios programas mal escritos para ir corrigiéndolos hasta el correcto | uso básico de Debug, basico por no usar breakpoints |
 
 ### Recomendaciones de estudio despues de la clase
 
