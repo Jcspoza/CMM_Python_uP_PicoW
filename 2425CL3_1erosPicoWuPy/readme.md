@@ -33,15 +33,15 @@
 | Programa                           | Leng. | HW si Robotica y/o Notas          | Objetivo de Aprendizaje                                                                |
 | ---------------------------------- | ----- | --------------------------------- | -------------------------------------------------------------------------------------- |
 | [R_2425CL3_blinkNude.py](R_2425CL3_blinkNude.py)            | uPy   |                                   | 1er programa uP                                                                        |
-| R_2425CL3_blinkSimple_v1_0.py      | uPy   |                                   | igual que blinkNude pero copn comentario sy bloque informativo                         |
-| R_2425CL3_blinkTry_v1_0.py         | uPy   |                                   | Incluye Try-Except para manejar la excepción de interrupción de teclado                |
-| R_2425CL3_blinkTimer_v1_0.py       | uPy   |                                   | Usa un timer para cambiar el estado del led y asi el programa puede hacer otras cosas  |
-| R_2425CL3_blinkTimer_v2_0.py       | uPy   |                                   | Añadimos un asalida con Try-Except + hacemos otras cosas mientras esta activo el timer |
-| R_2425CL3_blinkExled_v1_2.py       |       | in GPIO16 -> R220ohm -> LED anodo |                                                                                        |
-| R_2425CLXX_blinkExledTimer_v1_0.py |       |                                   |                                                                                        |
-| R_2425CL3_ExtLedPWMupdown_v1_0.py  |       |                                   |                                                                                        |
-| R_2425CL3_ADCSimple_v1_0.py        |       |                                   |                                                                                        |
-| R_2425CL3_ExtLedPWMadcpot_v1_0.py  |       |                                   |                                                                                        |
+| [R_2425CL3_blinkSimple_v1_0.py](R_2425CL3_blinkSimple_v1_0.py)      | uPy   |                                   | igual que blinkNude pero copn comentario sy bloque informativo                         |
+| [R_2425CL3_blinkTry_v1_0.py](R_2425CL3_blinkTry_v1_0.py)         | uPy   |                                   | Incluye Try-Except para manejar la excepción de interrupción de teclado                |
+| [R_2425CL3_blinkTimer_v1_0.py](R_2425CL3_blinkTimer_v1_0.py)      | uPy   |                                   | Usa un timer para cambiar el estado del led y asi el programa puede hacer otras cosas  |
+| [R_2425CL3_blinkTimer_v2_0.py](R_2425CL3_blinkTimer_v2_0.py)       | uPy   |                                   | Añadimos un asalida con Try-Except + hacemos otras cosas mientras esta activo el timer |
+| [R_2425CL3_blinkExled_v1_2.py](R_2425CL3_blinkExled_v1_2.py)       |       | in GPIO16 -> R220ohm -> LED anodo |                                                                                        |
+| [R_2425CLXX_blinkExledTimer_v1_0.py](R_2425CLXX_blinkExledTimer_v1_0.py) |       |                                   |                                                                                        |
+| [R_2425CL3_ExtLedPWMupdown_v1_0.py](R_2425CL3_ExtLedPWMupdown_v1_0.py)  |       |                                   |                                                                                        |
+| [R_2425CL3_ADCSimple_v1_0.py](R_2425CL3_ADCSimple_v1_0.py)        |       |                                   |                                                                                        |
+| [R_2425CL3_ExtLedPWMadcpot_v1_0.py](R_2425CL3_ExtLedPWMadcpot_v1_0.py)  |       |                                   |                                                                                        |
 
 ### Recomendaciones de estudio despues de la clase
 
