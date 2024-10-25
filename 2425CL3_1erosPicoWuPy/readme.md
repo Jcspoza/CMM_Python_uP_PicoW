@@ -1,26 +1,25 @@
 # CL3 - Pico y Pico W primeros pasos - PyR 2024_25 CMM BML
 
-## Clase 3 - Indice - 90 minutos
+## Clase 3 - Indice - 180 minutos ( 2 dias de clase )
 
-- Consideraciones Generales sobre el Tutorial de Raspbery Pi Foundation 
+- Consideraciones Generales sobre el Tutorial de Raspbery Pi Foundation - 15 min
   
   - [Getting started with Raspberry Pi Pico](https://projects.raspberrypi.org/en/projects/getting-started-with-the-pico)
 
-- Hacer el tutorial paso a paso - 60 minutos
+- Hacer el tutorial paso a paso - 155 minutos
   
-  - Led Interno
+  - Led Interno - 60 min
+  - Como ejecutar programas 'dentro' de  Pico y Pico W sin conexión a PC - 15 min
+    
   
-  - Led externo con pulsador / interruptor
-  
+  - Led externo - 80 minutos ( los 3 puntos siguientes)
   - Led externo con intensidad pulsante
-  
   - Led controlado con potenciómetro
   
-  - Como ejecutar programas 'dentro' de  Pico y Pico W sin conexión a PC
+  
+- Conceptos cubiertos en esta clase de 2 dias - 10 min
 
-- Conceptos cubiertos en este capitulo
-
-- Preguntas sobre la Clase 1 - 10 minutos
+- Preguntas sobre la Clase 3 - 10 minutos
 
 ## Tutoriales y Programas que vamos a seguir
 
@@ -241,7 +240,7 @@ Como hacer que una salida digital varíe de intensidad eficaz  ==> MULTIMETRO + 
 
 
 
-## Conceptos cubiertos en este clase - 5'
+## Conceptos cubiertos en este clase de 2 dias - 10'
 
 En esta clase hemos cubierto los siguientes conceptos: 
 
