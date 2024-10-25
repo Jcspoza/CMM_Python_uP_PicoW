@@ -32,7 +32,7 @@
 
 | Programa                           | Leng. | HW si Robotica y/o Notas          | Objetivo de Aprendizaje                                                                |
 | ---------------------------------- | ----- | --------------------------------- | -------------------------------------------------------------------------------------- |
-| R_2425CL3_blinkNude.py             | uPy   |                                   | 1er programa uP                                                                        |
+| [R_2425CL3_blinkNude.py](R_2425CL3_blinkNude.py)            | uPy   |                                   | 1er programa uP                                                                        |
 | R_2425CL3_blinkSimple_v1_0.py      | uPy   |                                   | igual que blinkNude pero copn comentario sy bloque informativo                         |
 | R_2425CL3_blinkTry_v1_0.py         | uPy   |                                   | Incluye Try-Except para manejar la excepción de interrupción de teclado                |
 | R_2425CL3_blinkTimer_v1_0.py       | uPy   |                                   | Usa un timer para cambiar el estado del led y asi el programa puede hacer otras cosas  |
@@ -77,11 +77,11 @@ Entrando en detalles, la diferencia está en que en el Pico W  los **pines inter
 
 <u>Diagrama de pines de Pico</u>
 
-![pico-pinout.svg](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL3_Pico1rospasos\doc\pico-pinout.svg)
+![pico-pinout.svg](./doc/pico-pinout.svg)
 
 <u>Diagrama de pines de Pico W</u>
 
-![picow-pinout.svg](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL3_Pico1rospasos\doc\picow-pinout.svg)
+![picow-pinout.svg](./doc/picow-pinout.svg)
 
 3- ¿ Por que en este curso **se ha decidido programar los Pico/ Pico W con micropython**? 
 
