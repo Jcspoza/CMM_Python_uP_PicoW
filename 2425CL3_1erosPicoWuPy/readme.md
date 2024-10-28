@@ -12,7 +12,9 @@
   - Como ejecutar programas 'dentro' de  Pico y Pico W sin conexión a PC - 15 min
 
 - Led externo - 80 minutos ( los 3 puntos siguientes)
+
 - Led externo con intensidad pulsante
+
 - Led controlado con potenciómetro
 
 - Conceptos cubiertos en esta clase de 2 dias - 10 min
@@ -27,18 +29,18 @@
 
 ### Tabla resumen de programas
 
-| Programa                                                               | Leng. | HW si Robotica y/o Notas          | Objetivo de Aprendizaje                                                                                                                                                       |
-| ---------------------------------------------------------------------- | ----- | --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [R_2425CL3_blinkNude.py](R_2425CL3_blinkNude.py)                       | uPy   |                                   | 1er programa uP                                                                                                                                                               |
-| [R_2425CL3_blinkSimple_v1_0.py](R_2425CL3_blinkSimple_v1_0.py)         | uPy   |                                   | igual que blinkNude pero con comentarios y bloque informativo                                                                                                                 |
-| [R_2425CL3_blinkTry_v1_0.py](R_2425CL3_blinkTry_v1_0.py)               | uPy   |                                   | Incluye Try-Except para manejar la excepción de interrupción de teclado                                                                                                       |
-| [R_2425CL3_blinkTimer_v2_0.py](R_2425CL3_blinkTimer_v2_0.py)           | uPy   |                                   | Usa un timer para cambiar el estado del led INTERNO y asi el programa puede hacer otras cosas + un Try-Except para salir "bien"  desactivando timer                           |
-|                                                                        |       |                                   |                                                                                                                                                                               |
-| [R_2425CL3_blinkExled_v1_2.py](R_2425CL3_blinkExled_v1_2.py)           |       | in GPIO16 -> R220ohm -> LED anodo |                                                                                                                                                                               |
-| [R_2425CL3_blinkExtTimer_v2_0.py](R_2425CL3_blinkExtTimer_v2_0.py)     | uPy   | in GPIO16 -> R220ohm -> LED anodo | Usa un timer para cambiar el estado del led EXTERNO y asi el programa puede hacer otras cosas + un Try-Except para salir "bien"  desactivando timer y apagando el LED externo |
-| [R_2425CL3_ExtLedPWMupdown_v1_0.py](R_2425CL3_ExtLedPWMupdown_v1_0.py) | uPy   |                                   |                                                                                                                                                                               |
-| [R_2425CL3_ADCSimple_v1_0.py](R_2425CL3_ADCSimple_v1_0.py)             | uPy   |                                   |                                                                                                                                                                               |
-| [R_2425CL3_ExtLedPWMadcpot_v1_0.py](R_2425CL3_ExtLedPWMadcpot_v1_0.py) | uP    |                                   |                                                                                                                                                                               |
+| Programa                                                               | Leng. | HW si Robotica y/o Notas                                                                                  | Objetivo de Aprendizaje                                                                                                                                                       |
+| ---------------------------------------------------------------------- | ----- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [R_2425CL3_blinkNude.py](R_2425CL3_blinkNude.py)                       | uPy   |                                                                                                           | 1er programa uP                                                                                                                                                               |
+| [R_2425CL3_blinkSimple_v1_0.py](R_2425CL3_blinkSimple_v1_0.py)         | uPy   |                                                                                                           | igual que blinkNude pero con comentarios y bloque informativo                                                                                                                 |
+| [R_2425CL3_blinkTry_v1_0.py](R_2425CL3_blinkTry_v1_0.py)               | uPy   |                                                                                                           | Incluye Try-Except para manejar la excepción de interrupción de teclado                                                                                                       |
+| [R_2425CL3_blinkTimer_v1_0.py](R_2425CL3_blinkTimer_v1_0.py)           | uPy   |                                                                                                           | Usa un timer para cambiar el estado del led INTERNO. MAL programa, esta incompleto                                                                                            |
+| [R_2425CL3_blinkTimer_v2_0.py](R_2425CL3_blinkTimer_v2_0.py)           | uPy   |                                                                                                           | Usa un timer para cambiar el estado del led INTERNO y asi el programa puede hacer otras cosas + un Try-Except para salir "bien"  desactivando timer                           |
+| [R_2425CL3_blinkExled_v1_2.py](R_2425CL3_blinkExled_v1_2.py)           |       | in GPIO16 -> R220ohm -> LED anodo                                                                         |                                                                                                                                                                               |
+| [R_2425CL3_blinkExtTimer_v2_0.py](R_2425CL3_blinkExtTimer_v2_0.py)     | uPy   | in GPIO16 -> R220ohm -> LED anodo                                                                         | Usa un timer para cambiar el estado del led EXTERNO y asi el programa puede hacer otras cosas + un Try-Except para salir "bien"  desactivando timer y apagando el LED externo |
+| [R_2425CL3_ExtLedPWMupdown_v1_0.py](R_2425CL3_ExtLedPWMupdown_v1_0.py) | uPy   | in GPIO16 -> R220ohm -> LED anodo                                                                         | Led Externo sube y baja de intensidad periódicamente usando PWM PARA VARIAR EL VOTAJE                                                                                         |
+| [R_2425CL3_ADCSimple_v1_0.py](R_2425CL3_ADCSimple_v1_0.py)             | uPy   | Potenciómetro pin central a ADC0 o GPIO26 y resto pines a GMD y +3.3v                                     | Lee un valor ANALOGICO                                                                                                                                                        |
+| [R_2425CL3_ExtLedPWMadcpot_v1_0.py](R_2425CL3_ExtLedPWMadcpot_v1_0.py) | uP    | in GPIO16 -> R220ohm -> LED ánodo + Potenciómetro pin central a ADC0 o GPIO26 y resto pines a GMD y +3.3v | Led Externo sube y baja de intensidad en función de la lectura ANALOGICA de un potenciómetro  usando PWM                                                                      |
 
 ### Recomendaciones de estudio despues de la clase
 
@@ -157,6 +159,8 @@ Blink con Try-Excep == > HACER
 Hacer que una tarea se ejecute periódicamente ==> COMENTAR
 
 Blink con Timer v 1.0 == > HACER
+
+<u>MAL programa, esta incompleto: cuando salimos del programa el Timer NO se desactiva ni el led interno se apaga</u>
 
 #### Mejoremos el programa blink con Timer en v 2.0
 

@@ -6,8 +6,8 @@
 
 # Informative block - start
 p_ucontroler = "Pico _&W"
-p_keyOhw = "Led + resistor on GPIO16"
-p_project = "External LED toggle 2sec with TIMER"
+p_keyOhw = "Nothing"
+p_project = "Internal LED toggle 2sec with TIMER"
 p_version = "1.0"
 print(f"Microcontroler: {p_ucontroler} - Key other HW : {p_keyOhw}")
 print(f"Program: {p_project} - Version: {p_version}")
@@ -15,10 +15,10 @@ print(f"Program: {p_project} - Version: {p_version}")
 import machine
 from machine import Pin, Timer
 
-intled = machine.Pin(16, machine.Pin.OUT)
+intled = machine.Pin("LED", machine.Pin.OUT)
 tim = Timer()
 def tick(timer):
     intled.toggle()
-    print('External LED ',intled.value())
+    print('Internal LED ',intled.value())
     
 tim.init(freq=0.5, mode=Timer.PERIODIC, callback=tick)
