@@ -16,11 +16,11 @@ import machine
 from machine import Pin, Timer
 from utime import sleep
 
-intled = machine.Pin(16, machine.Pin.OUT)
+extled = machine.Pin(16, machine.Pin.OUT)
 tim = Timer()
 def tick(timer):
-    intled.toggle()
-    print('External LED ',intled.value())
+    extled.toggle()
+    print('External LED ',extled.value())
     
 tim.init(freq=0.5, mode=Timer.PERIODIC, callback=tick)
 
@@ -29,11 +29,11 @@ while True:
     try:
         print('Hago cosas #',cuenta)
         cuenta += 1
-        sleep(2) # sleep 1sec
+        sleep(1) # sleep 1sec
     except KeyboardInterrupt:
         break
 
 # Deshago el timer
 tim.deinit()
-intled.off()
+extled.off()
 print("Finished.")
