@@ -1,6 +1,6 @@
 # CL4 - Escribir Adivina Numero (seleccion y bucles) - PyR 2024_25 CMM BML
 
-## Clase 3 - Indice - 90 minutos
+## Clase 4 - Indice - 90 minutos
 
 - Vistazo a Capitulo 3 de ***Invent with Python ...***
   
@@ -107,7 +107,7 @@ En esta clase hemos cubierto los siguientes conceptos de lenguaje Python:
 
 - Expresiones lógicas compuesta y conversiones con el Teorema de Morgan
 
-## Preguntas sobre la Clase 3 - 10 minutos
+## Preguntas sobre la Clase 4 - 10 minutos
 
 Sección para que los alumnos pregunten sus dudas durante la clase
 
