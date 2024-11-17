@@ -1,4 +1,4 @@
-# CL3 - Escribir Adivina Numero (seleccion y bucles) - PyR 2024_25 CMM BML
+# CL4 - Escribir Adivina Numero (seleccion y bucles) - PyR 2024_25 CMM BML
 
 ## Clase 3 - Indice - 90 minutos
 
