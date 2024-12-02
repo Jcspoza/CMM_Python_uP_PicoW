@@ -155,7 +155,7 @@ si no aparece ningún dispositivo HAY QUE REVISARLO TODO
 > 
 > Decimal address: 63 , Hex address:  0x3f
 
-Es interesante hacer un  'I2C scan' con 2 dispositivos i2c conectados LCD e MPR121. Veamos la salida del scan con 2 dispositivos i2c
+Es interesante hacer un  'I2C scan' con 2 dispositivos i2c conectados, por ejemplo un LCD y un MPR121 (teclado tactil). Veamos la salida del scan con 2 dispositivos i2c
 
 > I2C(0, freq=399361, scl=5, sda=4, timeout=50000)
 > 
@@ -167,7 +167,7 @@ Es interesante hacer un  'I2C scan' con 2 dispositivos i2c conectados LCD e MPR1
 > 
 > Decimal address: 90 , Hex address:  0x5a
 
-- **Frecuencia del bus i2c**: I2C Pins have 3 speed modes: 
+- **Frecuencia del bus i2c**: I2C Pines en el uC tienen 3 modos de velocidad: 
   
   - Standard (0 to 100 Kb/s), 
   
@@ -176,6 +176,8 @@ Es interesante hacer un  'I2C scan' con 2 dispositivos i2c conectados LCD e MPR1
   - Fast Plus mode (<= 1000 Kb/s). 
     
     **Usaremos la velocidad de 400Khz y si da error 5 bajamos la velocidad**
+    
+    **Si vamos a tener 2 dispositivos i2c en el mimso bus "0", por ejemplo, hay que configurarlo a la velocidad del dispositivo que requiera menor velocidad.** Si queremso no penalizar al dispositivo rapido, habr aque usar el otro bus i2c (el "1" por ejemplo)
 
 ## Aprender a usar la Libreria seleccionada de T-622
 
@@ -265,7 +267,7 @@ Proporcionará una cadena de caracteres hexadecimales que pueden reemplazar los 
 
 ## Conceptos cubiertos en este capitulo - 5'
 
-1. En esta clase hemos cubierto los siguientes conceptos de Robotica / micropython: 
+En esta clase hemos cubierto los siguientes conceptos de Robotica / micropython: 
 - i2c sin entrar en tecnicismos
 - Display LCD con libreria T-622
 
