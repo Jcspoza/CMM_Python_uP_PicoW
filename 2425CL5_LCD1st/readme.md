@@ -1,6 +1,6 @@
-# CLx - LCD i2c 16x2 uso - PyR 2024_25 CMM BML
+# CL5 - LCD i2c 16x2 uso - PyR 2024_25 CMM BML
 
-## Clase x - Indice - 90 minutos
+## Clase 5 - Indice - 90 minutos
 
 - Previo: ¿Por qué esta vez sin teoría?
 
