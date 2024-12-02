@@ -155,7 +155,17 @@ si no aparece ningún dispositivo HAY QUE REVISARLO TODO
 > 
 > Decimal address: 63 , Hex address:  0x3f
 
-Es interesante hacer un  'I2C scan' con 2 dispositivos i2c conectados LCD e MPR121
+Es interesante hacer un  'I2C scan' con 2 dispositivos i2c conectados LCD e MPR121. Veamos la salida del scan con 2 dispositivos i2c
+
+> I2C(0, freq=399361, scl=5, sda=4, timeout=50000)
+> 
+> Scanning I2C bus.
+> 
+> 2 devices found.
+> 
+> Decimal address: 63 , Hex address:  0x3f
+> 
+> Decimal address: 90 , Hex address:  0x5a
 
 - **Frecuencia del bus i2c**: I2C Pins have 3 speed modes: 
   
