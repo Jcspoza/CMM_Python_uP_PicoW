@@ -148,6 +148,7 @@ Lo minimo que necesitamos saber es
 si no aparece ningún dispositivo HAY QUE REVISARLO TODO
 
 > I2C(0, freq=399361, scl=5, sda=4, timeout=50000)
+> 
 > Scanning I2C bus.
 > 1 devices found.
 > Decimal address: 63 , Hex address:  0x3f
