@@ -72,14 +72,15 @@ startRep = time.ticks_ms
 while True:
     value = mpr.get_all_states()
     if (len(value) != 0) and (prev_value != value):
-        print(value)
+        print(value, end='')
         if (lcd.cursor_x == 0) and (lcd.cursor_y == 0): # si sig pos 0,0 limpio
             lcd.clear()
         
         for tecla in value:
             lcd.putstr(JOYSTICK[tecla])
-            # print(JOYSTICK[tecla])
-                            
+            print(JOYSTICK[tecla],end='')
+           
+        print()
         prev_value = value
         startRep = time.ticks_ms()
     
