@@ -1,4 +1,7 @@
 # Taller Programación y Robótica en CMM BML – 2024 -2025 - Clase 6
+# Objetivo: Test hw basico de sensor tactil MPR121 i2c -> traduccion joystick
+# Version: 3
+# Nombre : Rbhwtmpr121v3.py
 # Programa: Test hw basico de sensor tactil MPR121
 # Hardware platform: Pico _ & W / funciona igual sin cambios
 # Librerias : Mike Causer
@@ -28,8 +31,8 @@ import time, os
 p_ucontroler = "Pico _ & W"
 p_keyOhw = "MPR121 on i2c0 GPIO04&05"
 p_keyLib = "MPR121 Mike Causer"
-p_project = "1st test MPR121- change in keys- No IRQ"
-p_version = "1.0"
+p_project = "Test MPR121- manages same key press - joystick view - No IRQ"
+p_version = "3.0"
 print(f"Microcontroler: {p_ucontroler} - Key other HW : {p_keyOhw}")
 print(f"Libreria: {p_keyLib}")
 print(f"Program: {p_project} - Version: {p_version}")

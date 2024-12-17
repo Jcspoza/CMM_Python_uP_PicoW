@@ -1,5 +1,7 @@
 # Taller Programación y Robótica en CMM BML – 2024 -2025 - Clase 6
-# Programa: Test hw basico de sensor tactil MPR121 + LCD i2c 16x2
+# Objetivo: Test hw basico de sensor tactil MPR121 + LCD i2c 16x2 -> visualizacion tecla touch
+# Version: 2
+# Nombre : Rbhwtmpr121v2LCD.py
 # Hardware platform: Pico _ & W / funciona igual sin cambios
 # Librerias : Mike Causer
 # Ref librerias: https://github.com/mcauser/micropython-mpr121/tree/master
@@ -31,8 +33,8 @@ import time, os
 p_ucontroler = "Pico _ & W"
 p_keyOhw = "MPR121 on i2c0 GPIO04&05"
 p_keyLib = "MPR121 Mike Causer"
-p_project = "1st test MPR121- change in keys- No IRQ"
-p_version = "1.0"
+p_project = "Test MPR121&LCD- manages same key press - raw code touch view - No IRQ"
+p_version = "2.0"
 print(f"Microcontroler: {p_ucontroler} - Key other HW : {p_keyOhw}")
 print(f"Libreria: {p_keyLib}")
 print(f"Program: {p_project} - Version: {p_version}")

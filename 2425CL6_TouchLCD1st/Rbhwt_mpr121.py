@@ -1,5 +1,7 @@
 # Taller Programación y Robótica en CMM BML – 2024 -2025 - Clase 6
-# Programa: Test hw basico de sensor tactil MPR121
+# Objetivo : Test hw basico de sensor tactil MPR121 - sin interrupcion
+# version : 1.0
+# Nombre : Rbhwt_mpr121.py
 # Hardware platform: Pico _ & W / funciona igual sin cambios
 # Librerias : Mike Causer
 # Ref librerias: https://github.com/mcauser/micropython-mpr121/tree/master
