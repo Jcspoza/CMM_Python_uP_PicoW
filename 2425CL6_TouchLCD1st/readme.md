@@ -93,19 +93,19 @@ Cableado y conexiones :
 | SDA    | GPIO 04 (SDA 0)                                     |
 | GND    | GND                                                 |
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL6_Touch&LCD\doc\pico_mpr121_lcd_bb.png)
+![montaje mpr&lcd](./doc/pico_mpr121_lcd_bb.png)
 
 ## 3 Demos con MPR121, <u>sin LCD</u> y sin interrupciones
 
 ### Demo 0 : scan del bus i2c
 
-[Rbhwt_I2Cscan.py]([Rbhwt_I2Cscan.py)
+[Rbhwt_I2Cscan.py](Rbhwt_I2Cscan.py)
 
 Es necesario asegurarse de que l MPR121 es visto por el bus i2c. Chequear que la direccion es la esperada 0x5A. 
 
 ### Demo 1 :  Basic HW test de MPR121
 
-[Rbhwt_mpr121.py]([Rbhwt_mpr121.py)
+[Rbhwt_mpr121.py](Rbhwt_mpr121.py)
 
 Ver si detecta pulsación en cualquiera de los 12 pines disponibles. No se chequea que las pulsaciones se repitan, ni intervalo con la misma tecla pulsada.
 
@@ -113,13 +113,13 @@ Cableado HW ver figura
 
 ### Demo v2 - Test de MPR121 no repitiendo tecla ya pulsada
 
-[Rbhwt_mpr121v2.py]([Rbhwt_mpr121v2.py)
+[Rbhwt_mpr121v2.py](Rbhwt_mpr121v2.py)
 
 Guarda el valor de los 12 sensores anterior y lo compara con el nuevo valor leído, para no repetir tecla salvo que sea intencionado. Hay que ajustar tiempo en que la repetición es OK
 
 ### Demo v3 - Test de MPR121 no repitiendo tecla ya pulsada y traduciendo a joystick
 
-[Rbhwt_mpr121v3.py](%5BRbhwt_mpr121v3.py)
+[Rbhwt_mpr121v3.py](BRbhwt_mpr121v3.py)
 
 - Guarda el valor de los 12 sensores anterior 
 
@@ -161,7 +161,7 @@ La única diferencia encontrada es la función `get_all_states`que "traduce" la 
 
 ### Instalación de la libreria
 
-Desgraciadamente esta libreria no esta en micropython-lib ni en PyP , que es donde busca Thonny, asi que Thonny no nos va a ayudar a hacer la instalación y **hay que hacer una instalación manual.** (Ver clase delLCD) 
+Desgraciadamente esta libreria no esta en micropython-lib ni en PyP , que es donde busca Thonny, asi que Thonny no nos va a ayudar a hacer la instalación y **hay que hacer una instalación manual.** (Ver clase 2425CL5 sobre los primero spasos con LCD) 
 
 ### Libreria detalle de funciones
 
@@ -201,7 +201,7 @@ PENDIENTE
 
 ### Revisitar Demos
 
-Ahora conociendo mejor la libreria, se pueden re examinar las demos y entender como usar el display en proyectos futuros.
+Ahora conociendo mejor la libreria, se pueden re examinar las demos y entender como usar el MPR121 solo o junto al display LCD  en proyectos futuros.
 
 ## Conceptos cubiertos en este capitulo - 5'
 
