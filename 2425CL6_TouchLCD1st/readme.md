@@ -119,7 +119,7 @@ Guarda el valor de los 12 sensores anterior y lo compara con el nuevo valor leí
 
 ### Demo v3 - Test de MPR121 no repitiendo tecla ya pulsada y traduciendo a joystick
 
-[Rbhwt_mpr121v3.py](BRbhwt_mpr121v3.py)
+[Rbhwt_mpr121v3.py](Rbhwt_mpr121v3.py)
 
 - Guarda el valor de los 12 sensores anterior 
 
@@ -131,19 +131,20 @@ Guarda el valor de los 12 sensores anterior y lo compara con el nuevo valor leí
 
 ### Demo 0 MPR121+LCD : scan del bus i2c
 
-[Rbhwt_I2Cscan.py](BRbhwt_I2Cscan.py)
+[Rbhwt_I2Cscan.py](Rbhwt_I2Cscan.py)
 
 Es necesario asegurarse de que el MPR121 + el LCD funcionan sin problemas con el MISMO bus i2c. Podría haber un problema de frecuencia.
 
 ### Demo v2 MPR121+LCD - Test de MPR121 no repitiendo tecla ya pulsada
 
-[Rbhwt_mpr121v2LCD.py](BRbhwt_mpr121v2LCD.py)
+[Rbhwt_mpr121v2LCD.py](Rbhwt_mpr121v2LCD.py)
 
 Guarda el valor de los 12 sensores anterior y lo compara con el nuevo valor leído, para no repetir tecla salvo que sea intencionado. Hay que ajustar tiempo en que la repetición es OK
 
 ### Demo v3 MPR121+LCD - Test de MPR121 + LCD no repitiendo tecla ya pulsada y traduciendo a joystick
 
-[Rbhwt_mpr121v3LCD.py](BRbhwt_mpr121v3LCD.py)
+[Rbhwt_mpr121v3LCD.py](Rbhwt_mpr121v3LCD.py)
+
 
 - Guarda el valor de los 12 sensores anterior
 
