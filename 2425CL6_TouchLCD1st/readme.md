@@ -204,6 +204,12 @@ PENDIENTE
 
 Ahora conociendo mejor la libreria, se pueden re examinar las demos y entender como usar el MPR121 solo o junto al display LCD  en proyectos futuros.
 
+Veamos el resultado de la ejecucion de v3 con LCD
+
+![](./doc/ejecucionv3LCD.jpg)
+
+![](./doc/Ejecucion_v3LCD.png)
+
 ## Conceptos cubiertos en este capitulo - 5'
 
 En esta clase hemos cubierto los siguientes conceptos de Robotica / micropython: 
