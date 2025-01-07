@@ -1,6 +1,6 @@
 # CL2b - Escribir los primeros programas en Python con Thonny - PyR 2024_25 CMM BML
 
-## Clase 2 - Indice - 90 minutos
+## Clase 2b - Indice - 180 minutos
 
 - ¿ Como usar el libro ***Invent with Python ...***?
 
