@@ -11,4 +11,4 @@ print('¡Hola clase! Dime 2 números y los dividire')
 a = float(input('Dime el dividendo (decimal): ')) # input da como salida literales, hay que convertir a numero
 b = int(input('Dime el divisor (entero): ')) # int convierte a entero / float a numero en coma flotante o decimal
 
-print('La multiplicación es = ', a / b)
+print('La division es = ', a / b)
