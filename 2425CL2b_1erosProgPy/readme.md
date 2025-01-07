@@ -153,11 +153,11 @@ La multiplicación es =  125.0
 
 También se pueden probar scripts con parámetros en Thony. Primero habilitamos la line de parámetros
 
-<img title="" src="file:///C:/Users/josec/OneDrive/Documentos/03_MAKER/MK_PROJECTS/CMM_MK_2410O_J25/2425_CL2_Escrib1rosProg/doc/habilitar_argumentos.png" alt="" width="250">
+<img title="" src="./doc/habilitar_argumentos.png" alt="" width="350">
 
 y ahora veamos como ejecutar
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425_CL2_Escrib1rosProg\doc\ejecucion_argumentos.png)
+![](./doc/ejecucion_argumentos.png)
 
 AVANZADO : Hay una forma mas elaborada de usar argumentos en scripts con [argparse]([argparse — Analizador sintáctico (Parser) para las opciones, argumentos y sub-comandos de la línea de comandos &#8212; documentación de Python - 3.10.16](https://docs.python.org/es/3.10/library/argparse.html)) — Analizador sintáctico (Parser) para las opciones, argumentos y sub-comandos de la línea de comandos¶
 
@@ -225,7 +225,7 @@ Lo veremos en cuanto usemos ficheros tanto en python como en micropython
 
 ## Facilidades de Thonny para escribir programas
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425_CL2_Escrib1rosProg\doc\facilidades_editorThonny.png)
+![facilidades editor](./doc/facilidades_editorThonny.png)
 
 Yo considero muy útiles:
 
