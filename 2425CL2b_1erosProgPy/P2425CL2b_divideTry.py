@@ -12,7 +12,7 @@ a = float(input('Dime el dividendo (decimal): ')) # input da como salida literal
 b = int(input('Dime el divisor (entero): ')) # int convierte a entero / float a numero en coma flotante o decimal
 
 try:
-    print('La multiplicación es = ', a / b)
+    print('La división es = ', a / b)
 except ZeroDivisionError:
     print('No se puede dividir por cero')
     
