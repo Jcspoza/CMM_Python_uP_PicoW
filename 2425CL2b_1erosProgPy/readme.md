@@ -1,4 +1,4 @@
-# CL2b - Escribir los primeros programas en Python con Thonny - PyR 2024_25 CMM BML
+# CL2b - Escribir los primeros programas en Python con Thonny - PyR 2024_25 CMM BML (re-edicion enero 2025)
 
 ## Clase 2b - Indice - 180 minutos
 
