@@ -110,6 +110,8 @@ Los tutoriales de los kits son normalmente el punto de partida para aprender, pe
 
 4. Modificamos el HW ligeramente: en nuestro caso no usamos resistencias de pull-down
 
+5. En algunos casos, el codigo es de mala calidad aunque funcional, solo sirve para demostrar que el HW implicado funciona. Mala calidfad = NO se puede usar en montajes combinados con otro HW o es ineficiente o lento
+
 ## Montaje SIN microcontrolador y Explicación de HW
 
 La explicación de como funciona el HW del teclado la encontramos en el wiki de sunfounder
