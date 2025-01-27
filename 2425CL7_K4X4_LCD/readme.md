@@ -1,4 +1,4 @@
-# CL7 HW de entrada para displays> Teclado 4x4-  PyR 2024_25 CMM BML
+# ~~BORRADOR~~ CL7 HW de entrada para displays> Teclado 4x4-  PyR 2024_25 CMM BML
 
 ## Objetivo de la serie de clases
 
