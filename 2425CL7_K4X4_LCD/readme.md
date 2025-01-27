@@ -30,9 +30,9 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 - Montaje SIN microcontrolador y Explicación de HW + Pull-up / down
   
-  - Entenderemos como funcionara el programa
+  - Entenderemos como funciona el algoritmo del programa
   
-  - 
+  - Entenderemos por que se emplean las resistencias de pull-up y pull-down
 
 - Montaje CON uC, Prototipos basados en la demo de Sunfounder
   
@@ -55,16 +55,16 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 ### Tabla resumen de programas
 
-| Programa              | Lenguaje | HW- Notas                                | Objetivo                        |
-| --------------------- | -------- | ---------------------------------------- | ------------------------------- |
-| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)     | uPy      | Original de sunfounder                   | NO funciona con nuestro montaje |
-| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py) | uPy      | Original SF con cambio pines y pull-down | Funcionar con nuestro montaje   |
-| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py) | uPy      | original SF limpio                       | Sin repetición                  |
-|  [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py)                     |          |                                          |    Mejoras 1 y 2                             |
-|  [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)                     |          |                                          |     Mejora 3                            |
-|  [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)                    |          |                                          |  Mejora 4                               |
-|   [R2425CL7_K4x4SF3.py](R2425CL7_K4x4SF3.py)                     |          |                                          |      Mejora 5                           |
-|  [R2425CL7_K4x4SF3_1.py](R2425CL7_K4x4SF3_1.py)                      |          |                                          |    Mejora 6                             |
+| Programa                                       | Lenguaje | HW- Notas                                | Objetivo                                          |
+| ---------------------------------------------- | -------- | ---------------------------------------- | ------------------------------------------------- |
+| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)         | uPy      | Original de sunfounder tal cual          | **NO funciona con nuestro montaje**               |
+| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py) | uPy      | Original SF con cambio pines y pull-down | Funcionará con nuestro montaje, cambian los GPIOs |
+| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py) | uPy      | original SF limpio                       | Sin repetición                                    |
+| [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py) |          |                                          | Mejoras 1 y 2                                     |
+| [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py) |          |                                          | Mejora 3                                          |
+| [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py) |          |                                          | Mejora 4                                          |
+| [R2425CL7_K4x4SF3.py](R2425CL7_K4x4SF3.py)     |          |                                          | Mejora 5                                          |
+| [R2425CL7_K4x4SF3_1.py](R2425CL7_K4x4SF3_1.py) |          |                                          | Mejora 6                                          |
 
 ### Donde ampliar / afianzar
 
@@ -278,23 +278,17 @@ Variable `actualteclas` de lista a string
 
 #### Foto
 
-
-
-![](./doc/foto_pico_4x4_LCDr.jpg)
-
-
+<img src="./doc/foto_pico_4x4_LCDr.jpg" title="" alt="" width="367">
 
 #### Montaje
 
 ![](./doc/pico_lcd_4x4_bb.png)
 
-
-
-#### **Mejora 5 :** [R2425CL7_K4x4SF3.py](R2425CL7_K4x4SF3.py)
+#### **Mejora 5 :** [R2425CL7_K4x4SF_LCD_3.py](R2425CL7_K4x4SF_LCD_3.py)
 
     Variable `actualteclas` de lista a string -> incorporar LCD
 
-#### **Mejora 6 :** [R2425CL7_K4x4SF3_1.py](R2425CL7_K4x4SF3_1.py)
+#### **Mejora 6 :** [R2425CL7_K4x4SF_LCD_3_1.py](R2425CL7_K4x4SF_LCD_3_1.py)
 
      incorporar LCD -> borra pantalla si llega al final
 
@@ -312,6 +306,12 @@ En esta clase hemos cubierto los siguientes conceptos de Robotica / micropython:
 
 ## Sección para que los alumnos pregunten sus dudas durante la clase
 
+
+
 ---
 
-TO DO : 
+TO DO :  Timer en vez de scaneo periódico 
+
+- con 1 solo pulsador scaneado en pasivo
+
+- con 4x4 pulsadores 
