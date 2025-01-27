@@ -60,11 +60,11 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 | [4.2_4x4_keypad.py](4.2_4x4_keypad.py)     | uPy      | Original de sunfounder                   | NO funciona con nuestro montaje |
 | [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py) | uPy      | Original SF con cambio pines y pull-down | Funcionar con nuestro montaje   |
 | [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py) | uPy      | original SF limpio                       | Sin repetición                  |
-|                       |          |                                          |                                 |
-|                       |          |                                          |                                 |
-|                       |          |                                          |                                 |
-|                       |          |                                          |                                 |
-|                       |          |                                          |                                 |
+|  [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py)                     |          |                                          |    Mejoras 1 y 2                             |
+|  [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)                     |          |                                          |     Mejora 3                            |
+|  [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)                    |          |                                          |  Mejora 4                               |
+|   [R2425CL7_K4x4SF3.py](R2425CL7_K4x4SF3.py)                     |          |                                          |      Mejora 5                           |
+|  [R2425CL7_K4x4SF3_1.py](R2425CL7_K4x4SF3_1.py)                      |          |                                          |    Mejora 6                             |
 
 ### Donde ampliar / afianzar
 
@@ -280,7 +280,7 @@ Variable `actualteclas` de lista a string
 
 
 
-<img src="file:///./doc/foto_pico_4x4_LCDr.jpg" title="" alt="" width="297">
+![](./doc/foto_pico_4x4_LCDr.jpg)
 
 
 
