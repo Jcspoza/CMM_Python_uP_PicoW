@@ -64,7 +64,7 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 | [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)     | uPy      |                                          | Mejora 3                                          |
 | [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)     | uPy      |                                          | Mejora 4                                          |
 | [R2425CL7_K4x4SF_LCD3.py](R2425CL7_K4x4SF_LCD3.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 5                                          |
-| [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF3_1.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 6                                          |
+| [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 6                                          |
 
 ### Donde ampliar / afianzar
 
