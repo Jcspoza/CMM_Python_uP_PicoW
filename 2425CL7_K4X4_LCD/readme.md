@@ -57,9 +57,9 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 | Programa              | Lenguaje | HW- Notas                                | Objetivo                        |
 | --------------------- | -------- | ---------------------------------------- | ------------------------------- |
-| 4.2_4x4_keypad.py     | uPy      | Original de sunfounder                   | NO funciona con nuestro montaje |
-| R2425CL7_K4x4SF0_0.py | uPy      | Original SF con cambio pines y pull-down | Funcionar con nuestro montaje   |
-| R2425CL7_K4x4SF1_0.py | uPy      | original SF limpio                       | Sin repetición                  |
+| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)     | uPy      | Original de sunfounder                   | NO funciona con nuestro montaje |
+| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py) | uPy      | Original SF con cambio pines y pull-down | Funcionar con nuestro montaje   |
+| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py) | uPy      | original SF limpio                       | Sin repetición                  |
 |                       |          |                                          |                                 |
 |                       |          |                                          |                                 |
 |                       |          |                                          |                                 |
@@ -116,7 +116,7 @@ La explicación de como funciona el HW del teclado la encontramos en el wiki de 
 
 https://docs.sunfounder.com/projects/kepler-kit/es/latest/component/component_keypad.html
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425_CLR7_4x4_LCD\doc\keypad314.webp)
+![](./doc/keypad314.webp)
 
 En el programa en uPy, usaremos un algoritmo pasivo de escaneo que funciona de la siguiente manera:
 
@@ -168,13 +168,13 @@ En el programa en uPy, usaremos un algoritmo pasivo de escaneo que funciona de l
 
 Vamos a probar este algoritmo con un montaje SIN microcontrolador, donde tendremos que ir modificando el cableado para inyectar los '1' en cada fila y la tecla pulsada de cada fila se vera en 1 de los 4 leds (que representan las 4 posiciones de columna)  El pulsador rojo es solo para testear que el led rojo esta Ok
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425_CLR7_4x4_LCD\doc\montaje_manual.jpg)
+![](./doc/montaje_manual.jpg)
 
 ### Pull-up y pull-down
 
 Queda por explicar el concepto de pull-up o pull-down. Veámoslo con un circuito con un pulsador
 
-![](.\doc\pullD_pullU.jpg)
+![](./doc/pullD_pullU.jpg)
 
 Fijémonos el el dibujo de pull-Down, e imagina que la resistencia de pull-down NO está: si se deja un Pin de entrada en el microcontrolador, sin conectar con el pulsador abierto, el Pin queda un estado de alta impedancia o flotante, en el que cualquier interferencia o perturbación puede modificar el estado del Pin.
 **Solución** : conectar una resistencia de pull-up o pull-down ver figuras
@@ -280,13 +280,13 @@ Variable `actualteclas` de lista a string
 
 
 
-<img src="file:///C:/Users/josec/OneDrive/Documentos/03_MAKER/MK_PROJECTS/CMM_MK_2410O_J25/2425_CLR7_4x4_LCD/doc/foto_pico_4x4_LCDr.jpg" title="" alt="" width="297">
+<img src="file:///./doc/foto_pico_4x4_LCDr.jpg" title="" alt="" width="297">
 
 
 
 #### Montaje
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425_CLR7_4x4_LCD\doc\pico_lcd_4x4_bb.png)
+![](./doc/pico_lcd_4x4_bb.png)
 
 
 
