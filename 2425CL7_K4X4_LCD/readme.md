@@ -208,11 +208,11 @@ y vemos su montaje HW
 
 **Solucion 1**: mover los pines del teclado 4x4
 
-+
+y añadimos
 
-**Problema 2:** usa pul-down externos que son innecesarios en los 4 pines para las columnas
+**Problema 2:** usa pull-down externos que son innecesarios en los 4 pines para las columnas
 
-**Solución 2**: modificar el codigo al inicializar los pines columna y usar pull-down de uC 
+**Solución 2**: modificar el codigo al inicializar los pines columna y usar pull-down internos del uC 
 
 Con esto obtenemos la version 0.0, porque no hemos cambiado nada sustancial
 
