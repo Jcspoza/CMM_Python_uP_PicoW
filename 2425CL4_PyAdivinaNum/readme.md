@@ -37,7 +37,7 @@ Leer capitulo 3 de libro "Invent with python" [Chapter 3 - GUESS THE NUMBER](htt
 
 ### Punto de situación en el Mapa de conceptos de Programación
 
-![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL4_AdiNum\mapaConceptos_prog.png) 
+![](./mapaConceptos_prog.png) 
 
 Abordaremos la zona azul clara de Flujo de operaciones. Seguimos usando únicamente tipos simples 
 
