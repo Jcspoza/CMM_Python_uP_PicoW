@@ -35,6 +35,12 @@ Leer capitulo 3 de libro "Invent with python" [Chapter 3 - GUESS THE NUMBER](htt
 
 ---
 
+### Punto de situación en el Mapa de conceptos de Programación
+
+![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL4_AdiNum\mapaConceptos_prog.png) 
+
+Abordaremos la zona azul clara de Flujo de operaciones. Seguimos usando únicamente tipos simples 
+
 ## Vistazo a Capitulo 3 de  ***Invent ...*** y cambios– 10'
 
 En el libro se usan los  <u> bucles **for** que son mas complejos que los **while** en Python.</u> **Por eso he optado por reescribir el programa con bucles while:**
