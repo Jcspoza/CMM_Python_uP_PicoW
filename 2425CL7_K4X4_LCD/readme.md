@@ -12,7 +12,7 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 - Mandos a distancia por IR ( el que viene en el kit de sunfounder y la mayoría de los kits)
 
-- **Teclado 4 x 4**
+- **Teclado 4 x 4 ( esta clase)**
 
 ## Clase 7: Teclado 4 x 4 - Indice - xx minutos
 
@@ -92,7 +92,9 @@ El problema de empezar con los pulsadores, es que se suelen usar con programas d
 
 - Interrupciones
 
-**Esto desanima a los principiantes** con complejidades no estrictamente necesarias, al principio
+- Hilos en 'cores' del uC : los microcontroladores Pico y Pico W, basados en RP2040 tienen 2 cores
+
+**Esto desanima a los principiantes** con complejidades no estrictamente necesarias, al principio => mostrar ejemplo del libro "Get started with MicroPython on Raspberry Pi Pico" cap 5
 
 He preferido un **comienzo más 'suave'** asi que en esta lección **usaremos el teclado 4x4, que es equivalente a 16 pulsadores, pero se manejará en este tutorial de manera PASIVA:**
 
