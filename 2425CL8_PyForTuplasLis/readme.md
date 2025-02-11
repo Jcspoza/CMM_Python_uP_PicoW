@@ -36,16 +36,16 @@ Abordaremos la zona azul clara de Flujo de operaciones: for y la zona naranja de
 
 
 ## Cadenas - ver pdf cadenas
+Sin progrmas solo ejemplos en interprete '>>>'
+
+
+## For y Tuplas - ver pdf for y tuplas
 
 
 
-### For y Tuplas - ver pdf for y tuplas
 
 
-
-
-
-### Listas - ver pdf Listas
+## Listas - ver pdf Listas
 
 
 
