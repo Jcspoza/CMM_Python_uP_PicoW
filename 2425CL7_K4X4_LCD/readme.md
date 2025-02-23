@@ -1,4 +1,4 @@
-# ~~BORRADOR~~ CL7 HW de entrada para displays> Teclado 4x4-  PyR 2024_25 CMM BML
+# CL7 HW de entrada para displays> Teclado 4x4-  PyR 2024_25 CMM BML
 
 ## Objetivo de la serie de clases
 
@@ -16,17 +16,13 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 ## Clase 7: Teclado 4 x 4 - Indice - xx minutos
 
-- Introducción y objetivos:
+- Resumen : Tutoriales, Programas y Donde ampliar / afianzar
+
+- Introducción y objetivos
   
   - ¿Por que empezar con 4x4 y no con pulsador?
   
-  - Aprender a adaptar los tutoriales de SF
-  
-  - Plan de estudio 
-    
-    - Montaje SIN microcontrolador
-    
-    - Seguiremos el tuto de Sunfounder, pero ampliamos y sumamos LCD
+  -   Aprender a adaptar los tutoriales de SF
 
 - Montaje SIN microcontrolador y Explicación de HW + Pull-up / down
   
@@ -36,8 +32,11 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 - Montaje CON uC, Prototipos basados en la demo de Sunfounder
   
-  - 0.0 : Tal cual -> cambios en pines y pull-down
-  - 
+  - 0.0 y 1.0 : Tal cual -> cambios en pines y pull-down
+  
+  - Versiones 2.0 , 2.1 y 2.2 : Mejoras 1,2,3 y 4
+  
+  - Versiones teclado 4x4 + LCD : 3.0 y 3.1
 
 - Conceptos cubiertos en este capitulo
 
@@ -55,16 +54,16 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 ### Tabla resumen de programas
 
-| Programa                                           | Lenguaje | HW- Notas                                | Objetivo                                          |
-| -------------------------------------------------- | -------- | ---------------------------------------- | ------------------------------------------------- |
-| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)             | uPy      | Original de sunfounder tal cual          | **NO funciona con nuestro montaje**               |
-| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py)     | uPy      | Original SF con cambio pines y pull-down | Funcionará con nuestro montaje, cambian los GPIOs |
-| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py)     | uPy      | original SF limpio                       | Sin repetición                                    |
-| [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py)     | uPy      |                                          | Mejoras 1 y 2                                     |
-| [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)     | uPy      |                                          | Mejora 3                                          |
-| [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)     | uPy      |                                          | Mejora 4                                          |
-| [R2425CL7_K4x4SF_LCD3.py](R2425CL7_K4x4SF_LCD3.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 5                                          |
-| [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 6                                          |
+| Programa                                               | Lenguaje | HW- Notas                                | Objetivo                                                                                 |
+| ------------------------------------------------------ | -------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)                 | uPy      | Original de sunfounder tal cual          | **NO funciona con nuestro montaje**                                                      |
+| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py)         | uPy      | Original SF con cambio pines y pull-down | Funcionará con nuestro montaje, cambian los GPIOs                                        |
+| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py)         | uPy      | original SF limpio                       | Sin repetición                                                                           |
+| [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py)         | uPy      |                                          | Mejoras 1 y 2: belleza de codigo + repeticion                                            |
+| [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)         | uPy      |                                          | Mejora 3: continue -> if else                                                            |
+| [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)         | uPy      |                                          | Mejora 4: Variable `actualteclas` de lista a string para print, y luego LCD              |
+| [R2425CL7_K4x4SF_LCD3.py](R2425CL7_K4x4SF_LCD3.py)     | uPy      | + LCD en GPIO 4&5                        | Mejora 5: incorporar LCD , salida por LCD de teclas pulsadas                             |
+| [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 6: incorporar LCD -> borra pantalla si llega al final escribiendo teclas pulsadas |
 
 ### Donde ampliar / afianzar
 
