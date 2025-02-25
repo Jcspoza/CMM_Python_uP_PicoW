@@ -92,6 +92,7 @@ while True:
         sleep(0.01)
     else:
         ultimasTeclas = actualTeclas
+        last_time = ticks_ms() # si tecla nueva re-inicio tiempo repeticion
         if actualTeclas != None:
             # print(actualTeclas)
             teclas = "".join(actualTeclas)

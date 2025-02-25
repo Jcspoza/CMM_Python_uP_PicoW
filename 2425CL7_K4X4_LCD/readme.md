@@ -32,7 +32,7 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 - Montaje CON uC, Prototipos basados en la demo de Sunfounder
   
-  - 0.0 y 1.0 : Tal cual -> cambios en pines y pull-down
+  - 0.0 y 1.0 : Tal cual -> cambios en pines y pull-down  -> Fin dia 2
   
   - Versiones 2.0 , 2.1 y 2.2 : Mejoras 1,2,3 y 4
   
@@ -64,6 +64,7 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 | [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)         | uPy      |                                          | Mejora 4: Variable `actualteclas` de lista a string para print, y luego LCD              |
 | [R2425CL7_K4x4SF_LCD3.py](R2425CL7_K4x4SF_LCD3.py)     | uPy      | + LCD en GPIO 4&5                        | Mejora 5: incorporar LCD , salida por LCD de teclas pulsadas                             |
 | [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 6: incorporar LCD -> borra pantalla si llega al final escribiendo teclas pulsadas |
+| [R2425CL7_K4x4Tim2_2.py](R2425CL7_K4x4Tim2_2.py)       | uPy      | solo 4x4keyboard                         | Mejora 7: uso de timers , para accione speriodicas                                       |
 
 ### Donde ampliar / afianzar
 
@@ -294,6 +295,26 @@ Variable `actualteclas` de lista a string
 #### **Mejora 6 :** [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py)
 
      incorporar LCD -> borra pantalla si llega al final
+
+## Versiones teclado 4x4 con Timer (avanzado)
+
+#### **Mejora 7**: [R2425CL7_K4x4Tim2_2.py](R2425CL7_K4x4Tim2_2.py)
+
+Usando Timers, me 'olvido' de tener que controlar el tiempo en mi bucle de programa principal.
+
+> Referencia a timer en la documentacion RP2 [Quick reference for the RP2 &mdash; MicroPython 1.17 documentation](https://docs.micropython.org/en/v1.17/rp2/quickref.html#timers)
+
+
+
+Video tutorial de uso de timers [Raspberry Pi Pico W :04 Timer y uso de funciones en micropython - YouTube](https://youtu.be/QgMzBqXYkJ0?si=imbH7JCFVmeZx601)
+
+
+
+
+
+La version Tim2_2 es un 'clon' funcional de la versión 2_2 del solo teclado , pero sin tener que preocuparse de controlar el tiempo, porque eso lo hace el timer. Solo hay que empaquetar las acciones periódicas en una función que llamara el timer en el tiempo revisto.
+
+No se hace la evolucion de 2_2 -> 3_1 con LCD por ser sencilla.
 
 ## Conceptos cubiertos en este capitulo - 5'
 

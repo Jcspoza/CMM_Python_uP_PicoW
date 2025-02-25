@@ -26,7 +26,7 @@ from lcd_api import LcdApi
 from pico_i2c_lcd import I2cLcd
 
 # CONSTANTS
-TIMEREPEAT = 700 # ms 1/2 second
+TIMEREPEAT = 500 # ms 1/2 second
 LCD_ADDR = 0x3F
 LCD_NUM_ROWS = 2
 LCD_NUM_COLS = 16
@@ -93,6 +93,7 @@ while True:
         sleep(0.01)
     else:
         ultimasTeclas = actualTeclas
+        last_time = ticks_ms() # si tecla nueva re-inicio tiempo repeticion
         if actualTeclas != None:
             # print(actualTeclas)
             teclas = "".join(actualTeclas)
