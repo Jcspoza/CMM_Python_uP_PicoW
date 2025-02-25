@@ -54,17 +54,18 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
 
 ### Tabla resumen de programas
 
-| Programa                                               | Lenguaje | HW- Notas                                | Objetivo                                                                                 |
-| ------------------------------------------------------ | -------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- |
-| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)                 | uPy      | Original de sunfounder tal cual          | **NO funciona con nuestro montaje**                                                      |
-| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py)         | uPy      | Original SF con cambio pines y pull-down | Funcionará con nuestro montaje, cambian los GPIOs                                        |
-| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py)         | uPy      | original SF limpio                       | Sin repetición                                                                           |
-| [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py)         | uPy      |                                          | Mejoras 1 y 2: belleza de codigo + repeticion                                            |
-| [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)         | uPy      |                                          | Mejora 3: continue -> if else                                                            |
-| [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)         | uPy      |                                          | Mejora 4: Variable `actualteclas` de lista a string para print, y luego LCD              |
-| [R2425CL7_K4x4SF_LCD3.py](R2425CL7_K4x4SF_LCD3.py)     | uPy      | + LCD en GPIO 4&5                        | Mejora 5: incorporar LCD , salida por LCD de teclas pulsadas                             |
-| [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py) | uPy      | + LCD en GPIO 4&5                        | Mejora 6: incorporar LCD -> borra pantalla si llega al final escribiendo teclas pulsadas |
-| [R2425CL7_K4x4Tim2_2.py](R2425CL7_K4x4Tim2_2.py)       | uPy      | solo 4x4keyboard                         | Mejora 7: uso de timers , para accione speriodicas                                       |
+| Programa                                                   | Lenguaje | HW- Notas                                | Objetivo                                                                                 |
+| ---------------------------------------------------------- | -------- | ---------------------------------------- | ---------------------------------------------------------------------------------------- |
+| [4.2_4x4_keypad.py](4.2_4x4_keypad.py)                     | uPy      | Original de sunfounder tal cual          | **NO funciona con nuestro montaje**                                                      |
+| [R2425CL7_K4x4SF0_0.py](R2425CL7_K4x4SF0_0.py)             | uPy      | Original SF con cambio pines y pull-down | Funcionará con nuestro montaje, cambian los GPIOs                                        |
+| [R2425CL7_K4x4SF1_0.py](R2425CL7_K4x4SF1_0.py)             | uPy      | original SF limpio                       | Sin repetición                                                                           |
+| [R2425CL7_K4x4SF2_0.py](R2425CL7_K4x4SF2_0.py)             | uPy      |                                          | Mejoras 1 y 2: belleza de codigo + repeticion                                            |
+| [R2425CL7_K4x4SF2_1.py](R2425CL7_K4x4SF2_1.py)             | uPy      |                                          | Mejora 3: continue -> if else                                                            |
+| [R2425CL7_K4x4SF2_2.py](R2425CL7_K4x4SF2_2.py)             | uPy      |                                          | Mejora 4: Variable `actualteclas` de lista a string para print, y luego LCD              |
+| [R2425CL7_K4x4SF_LCD3.py](R2425CL7_K4x4SF_LCD3.py)         | uPy      | + LCD en GPIO 4&5                        | Mejora 5: incorporar LCD , salida por LCD de teclas pulsadas                             |
+| [R2425CL7_K4x4SF_LCD3_1.py](R2425CL7_K4x4SF_LCD3_1.py)     | uPy      | + LCD en GPIO 4&5                        | Mejora 6: incorporar LCD -> borra pantalla si llega al final escribiendo teclas pulsadas |
+| [R2425CL3_blinkTimer_v2_0.py](R2425CL3_blinkTimer_v2_0.py) | uPy      |                                          | Demo que muestra como usar timers, con blink                                             |
+| [R2425CL7_K4x4Tim2_2.py](R2425CL7_K4x4Tim2_2.py)           | uPy      | solo 4x4keyboard                         | Mejora 7: uso de timers , para accione speriodicas                                       |
 
 ### Donde ampliar / afianzar
 
