@@ -304,17 +304,25 @@ Usando Timers, me 'olvido' de tener que controlar el tiempo en mi bucle de progr
 
 > Referencia a timer en la documentacion RP2 [Quick reference for the RP2 &mdash; MicroPython 1.17 documentation](https://docs.micropython.org/en/v1.17/rp2/quickref.html#timers)
 
+##### Entender los timers - blink con timers
 
+El videotutorial de abajo puede ser util
 
-Video tutorial de uso de timers [Raspberry Pi Pico W :04 Timer y uso de funciones en micropython - YouTube](https://youtu.be/QgMzBqXYkJ0?si=imbH7JCFVmeZx601)
+> Video tutorial de uso de timers [Raspberry Pi Pico W :04 Timer y uso de funciones en micropython - YouTube](https://youtu.be/QgMzBqXYkJ0?si=imbH7JCFVmeZx601)
 
+Para entender los timers lo mas recomendable es ver una versión del clásico programa blink  
 
+[R2425CL3_blinkTimer_v2_0.py](R2425CL3_blinkTimer_v2_0.py)
 
+El programa tiene un bucle infinito que simplemente muestra un contador. Pero prreviamente se ha definido un timer para que se ejecute cada 2 segundo, una función de parpadeo del led incorporado. 
 
+IMPORTANTE : En la salida del bucle se puede ver como se desactiva el timer. Si no se hace el micro sigue ejecutando el tiemer por siempre
 
-La version Tim2_2 es un 'clon' funcional de la versión 2_2 del solo teclado , pero sin tener que preocuparse de controlar el tiempo, porque eso lo hace el timer. Solo hay que empaquetar las acciones periódicas en una función que llamara el timer en el tiempo revisto.
+##### Versión timer del teclado 4x4
 
-No se hace la evolucion de 2_2 -> 3_1 con LCD por ser sencilla.
+La version Tim2_2 es un 'clon' funcional de la versión 2_2 con solo teclado , pero sin tener que preocuparse de controlar el tiempo, porque eso lo hace el timer. Solo hay que empaquetar las acciones periódicas en una función que llamara el timer en el tiempo previsto.
+
+No se hace la evolución de 2_2 -> 3_1 con LCD por ser sencilla y no alargar mas esta leccion
 
 ## Conceptos cubiertos en este capitulo - 5'
 
@@ -326,7 +334,7 @@ En esta clase hemos cubierto los siguientes conceptos de Robotica / micropython:
 - Listas uso practico
 - List comprehension
 - cambiar un continue -> if else , que mejora la limpieza del codigo
-- **Pulsadores momentáneos por scan periódico**
+- **Timer : Pulsadores momentáneos por scan periódico**
 
 ## Sección para que los alumnos pregunten sus dudas durante la clase
 
