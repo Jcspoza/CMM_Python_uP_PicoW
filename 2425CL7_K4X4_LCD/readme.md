@@ -28,15 +28,17 @@ Vamos a ir elaborando clases con Hw de entrada por humanos, que sea mas adecuado
   
   - Entenderemos como funciona el algoritmo del programa
   
-  - Entenderemos por que se emplean las resistencias de pull-up y pull-down
+  - Entenderemos por que se emplean las resistencias de pull-up y pull-down **<u>-&gt; Fin dia 1</u>**
 
 - Montaje CON uC, Prototipos basados en la demo de Sunfounder
   
-  - 0.0 y 1.0 : Tal cual -> cambios en pines y pull-down  -> Fin dia 2
+  - 0.0 y 1.0 : Tal cual -> cambios en pines y pull-down  **<u>-> Fin dia 2</u>**
   
   - Versiones 2.0 , 2.1 y 2.2 : Mejoras 1,2,3 y 4
   
   - Versiones teclado 4x4 + LCD : 3.0 y 3.1
+  
+  - Versión solo teclado con timers
 
 - Conceptos cubiertos en este capitulo
 
@@ -315,7 +317,7 @@ Para entender los timers lo mas recomendable es ver una versión del clásico pr
 
 [R2425CL3_blinkTimer_v2_0.py](R2425CL3_blinkTimer_v2_0.py)
 
-El programa tiene un bucle infinito que simplemente muestra un contador. Pero prreviamente se ha definido un timer para que se ejecute cada 2 segundo, una función de parpadeo del led incorporado. 
+El programa tiene un bucle infinito que simplemente muestra un contador. Pero previamente se ha definido un timer para que se ejecute cada 2 segundos una función de parpadeo del led incorporado. 
 
 IMPORTANTE : En la salida del bucle se puede ver como se desactiva el timer. Si no se hace el micro sigue ejecutando el tiemer por siempre
 
@@ -323,7 +325,7 @@ IMPORTANTE : En la salida del bucle se puede ver como se desactiva el timer. Si 
 
 La version Tim2_2 es un 'clon' funcional de la versión 2_2 con solo teclado , pero sin tener que preocuparse de controlar el tiempo, porque eso lo hace el timer. Solo hay que empaquetar las acciones periódicas en una función que llamara el timer en el tiempo previsto.
 
-No se hace la evolución de 2_2 -> 3_1 con LCD por ser sencilla y no alargar mas esta leccion
+Todo : No se hace la evolución de 2_2 -> 3_1 con LCD por ser sencilla y no alargar mas esta lección
 
 ## Conceptos cubiertos en este capitulo - 5'
 
@@ -341,8 +343,4 @@ En esta clase hemos cubierto los siguientes conceptos de Robotica / micropython:
 
 ---
 
-TO DO :  Timer en vez de scaneo periódico 
-
-- con 1 solo pulsador scaneado en pasivo
-
-- con 4x4 pulsadores 
+TO DO :  version con timer que lea teclado 4x4 (hecho) + LCD ( pendiente) 
