@@ -4,7 +4,7 @@
 
 - ¿Por qué necesitamos un entorno para programar en Python? – 15 minutos
 
-- IDE elegido : Thonny  – 15 min
+- IDE elegido : [Thonny](https://thonny.org/)  – 15 min
 
 - Instalación de Thonny : Opciones para configurar Python + Thonny en PC  > Lo hacemos – 30 mins
   
@@ -24,25 +24,21 @@
 
 - Preguntas sobre la Clase 1 - 10 minutos
 
-## Tutoriales y Programas que vamos a seguir
-
-### Tutoriales resumen
-[Introducing Thonny - YouTube](https://youtu.be/nwIgxrXP-X4?si=eb19qXyd4cJWSYng)
+## Tutoriales que vamos a seguir
 
 ### Tabla resumen de programas
 
 | Programa                       | Lenguaje | HW si Robotica y Notas                            | Objetivo de Aprendizaje   |
 | ------------------------------ | -------- | ------------------------------------------------- | ------------------------- |
-| [Hola mundo](./P_holamundo.py) | Python   | El programa mas sencillo posible                   | Primer programa de Python |
-| [Blink 2 leds](./R_2425CL0_Exblink_v1_2.py) | Python   | Blink con 2 leds | Primer programa de microPython |
+| [Hola mundo](./P_holamundo.py) | Python   | Input()no funciona con algunos IDE python on line | Primer programa de Python |
 
 ### Recomendaciones de estudio despues de la clase
 
-Ayuda de Thonny y
+Ayuda de Thony y
 
 **+**
 
-Leer capitulo 2 de libro "Invent with python"" [Chapter 2 - Writing Programs](https://inventwithpython.com/invent4thed/chapter2.html), que muestra un IDE muy sencillo que vien con el propio Python y que se llama IDLE
+Leer capitulo 2 de libro "Invent with python"" [Chapter 2 - Writing Programs](https://inventwithpython.com/invent4thed/chapter2.html), que muestra un IDE muy sencillo que viene con el propio Python y que se llama IDLE
 
 ---
 
@@ -74,7 +70,7 @@ Veamos algunas ventajas de programar con un IDE
 
 9. Terminal integrado : Shell y Consola
 
-**IDE elegido : Thonny**:
+**IDE elegido : [Thonny](https://thonny.org/)**:
 
 Thony tiene la mayoría de las ventajas descritas arriba , y a la vez es sencillo para principiantes:
 
@@ -92,37 +88,31 @@ Instalación de Thonny : Opciones para configurar Python + Thonny en PC
    
    - Luego instalar Thony
 
-
-
 Vamos a hacer **la instalación simple** que incluye un interprete Python. 
 
 => Si tenemos un portátil propio que podamos traer a clase elegiremos la instalación 
 
-**Installer with 64-bit Python 3.10**, requires 64-bit Windows 8.1 / 10 / 11  
+**Installer with 64-bit Python 3.10****, requires 64-bit Windows 8.1 / 10 / 11  
 [thonny-4.1.6.exe (21 MB)](https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6.exe)
 
-
-
-=> Si tenemos un PC fijo, que no podamos traer al CMM BML, elegimos la opcion de instalacion portail con pendrive USB:
+=> Si tenemos un PC fijo, elegimos la opcion de instalacion portail con pendrive USB:
 
 **Portable variant with 64-bit Python 3.10**  
 [thonny-4.1.6-windows-portable.zip (31 MB)](https://github.com/thonny/thonny/releases/download/v4.1.6/thonny-4.1.6-windows-portable.zip)
 
-NOTA: en un PC con windows, si queremos ejecutar programas en python fuera de Thonny y desde cualquier directorio, habra que añadir la localizacion de python.exe a PATH
+![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL1_Entorno\doc\instalar_thonny.png)
 
-![](./doc/instalar_thonny.png)
-
-## Probar que Python+Thony esta OK - 20 mins
+## Probar que Python+Thonny esta OK - 20 mins
 
 ### Probar cada alumno - 15'
 
-Ejecutamos Thonny y probamos:
+Ejhecutamos Thonny y probamso:
 
 1. La consola de comandos con operaciones tipo calculadora, y 
 
 2. Con un programa pequeño
 
-![](./doc/prueba_hola.png)
+![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL1_Entorno\doc\prueba_hola.png)
 
 ### Probar micropython : solo profesor - 5'
 
@@ -134,11 +124,11 @@ Se muestra como programar con Pico + micropython:
 
 3. Conectar al puerto de la Pico o Pico W
 
-4. Cargar el progrma de test blink
+4. Cargar el programa de test blink
 
 5. Ejecutar en la Pico
 
-![](./doc/prueba_blink.png)
+![](C:\Users\josec\OneDrive\Documentos\03_MAKER\MK_PROJECTS\CMM_MK_2410O_J25\2425CL1_Entorno\doc\prueba_blink.png)
 
 ## Preguntas sobre la Clase 1 - 10 minutos
 
